@@ -89,10 +89,14 @@ class FileATests(unittest.TestCase):
         rows = [
             {**base, "allocation_transfer_agency_identifier_code": "", "treasury_account_symbol": "072-2025/2026-1037-000"},
             {**base, "allocation_transfer_agency_identifier_code": "019", "treasury_account_symbol": "019-072-2025/2026-1037-000"},
+            {**base, "allocation_transfer_agency_identifier_code": "", "beginning_period_of_availability": "2024", "ending_period_of_availability": "2025", "treasury_account_symbol": "072-2024/2025-1037-000"},
             {**base, "allocation_transfer_agency_identifier_code": "", "beginning_period_of_availability": "2025", "ending_period_of_availability": "2029", "treasury_account_symbol": "072-2025/2029-1037-000"},
         ]
         accounts = [{"slug": "esf", "aid": "072", "main": "1037"}]
-        got = pull_accounts.normalize(self.make_zip(rows), accounts, 2026, 9)
+        got = pull_accounts.normalize(
+            self.make_zip(rows), accounts, 2026, 9,
+            {"yearOne": 2025, "yearTwo": 2026},
+        )
         self.assertEqual(len(got), 2)
         self.assertEqual(sum(float(r["obligations_incurred"]) for r in got.values()), 20)
 
