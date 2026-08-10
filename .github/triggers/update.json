@@ -1,4 +1,4 @@
 {
-  "requested": "2026-08-10T20:43:00Z",
-  "reason": "Initial full File A and award-level backfill on the review branch"
+  "requested": "2026-08-10T21:00:00Z",
+  "reason": "Post-merge refresh and GitHub Pages deployment on main"
 }
