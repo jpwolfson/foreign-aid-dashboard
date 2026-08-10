@@ -1325,57 +1325,57 @@
         "slug": "esf",
         "denominator": 1940400000,
         "yearOneObligations": 7253510245.32,
-        "yearTwoObligations": 1019240018.93,
-        "cumulativeObligations": 8272750264.25,
-        "percent": 426.3425
+        "yearTwoObligations": 980073597.44,
+        "cumulativeObligations": 8233583842.76,
+        "percent": 424.324
       },
       {
         "slug": "da",
         "denominator": 1431000000,
         "yearOneObligations": 836712025.18,
-        "yearTwoObligations": 40108135.78,
-        "cumulativeObligations": 876820160.96,
+        "yearTwoObligations": 40108000.0,
+        "cumulativeObligations": 876820025.18,
         "percent": 61.2732
       },
       {
         "slug": "ghp",
         "denominator": 3485450000,
         "yearOneObligations": 3618145180.76,
-        "yearTwoObligations": 642608562.93,
-        "cumulativeObligations": 4260753743.69,
-        "percent": 122.244
+        "yearTwoObligations": 231279589.02,
+        "cumulativeObligations": 3849424769.78,
+        "percent": 110.4427
       },
       {
         "slug": "aeeca",
         "denominator": 334000,
         "yearOneObligations": 1875627665.99,
-        "yearTwoObligations": 474999269.42,
-        "cumulativeObligations": 2350626935.41,
-        "percent": 703780.5196
+        "yearTwoObligations": 0.0,
+        "cumulativeObligations": 1875627665.99,
+        "percent": 561565.1695
       },
       {
         "slug": "incle",
         "denominator": 1285000000,
         "yearOneObligations": 1452701824.78,
-        "yearTwoObligations": 197548652.11,
-        "cumulativeObligations": 1650250476.89,
-        "percent": 128.4242
+        "yearTwoObligations": 99211352.48,
+        "cumulativeObligations": 1551913177.26,
+        "percent": 120.7715
       },
       {
         "slug": "nadr",
         "denominator": 870000000,
         "yearOneObligations": 821348287.55,
-        "yearTwoObligations": 287192185.13,
-        "cumulativeObligations": 1108540472.68,
-        "percent": 127.4184
+        "yearTwoObligations": 271891032.3,
+        "cumulativeObligations": 1093239319.85,
+        "percent": 125.6597
       },
       {
         "slug": "df",
         "denominator": 262200000,
         "yearOneObligations": 28598508.89,
-        "yearTwoObligations": 10071810.75,
-        "cumulativeObligations": 38670319.64,
-        "percent": 14.7484
+        "yearTwoObligations": 9999999.77,
+        "cumulativeObligations": 38598508.66,
+        "percent": 14.721
       }
     ]
   },
