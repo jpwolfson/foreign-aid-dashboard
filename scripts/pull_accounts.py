@@ -170,7 +170,6 @@ def main():
     cfg = json.loads(CONFIG.read_text())
     periods = available_periods()
     store = load_store()
-    present = {(int(k[1]), int(k[2])) for k in store}
     cohort = cfg["fileACrosscheck"]
     year_one, year_two = cohort["yearOne"], cohort["yearTwo"]
     if 12 not in periods.get(year_one, set()):
@@ -178,10 +177,10 @@ def main():
     if not periods.get(year_two):
         raise RuntimeError(f"FY{year_two} has no available USAspending periods")
     checkpoints = [(year_one, 12), (year_two, max(periods[year_two]))]
-    wanted = [
-        point for point in checkpoints
-        if args.full or point not in present or point[0] == year_two
-    ]
+    # Refresh both bounded checkpoints every run. This also replaces rows when
+    # cohort-matching logic changes; four generated files is safely below the
+    # custom-download throttle observed for large historical backfills.
+    wanted = checkpoints
     print(f"{len(wanted)} fiscal-period snapshot(s); {len(store)} stored TAFS rows")
     for fy, period in wanted:
         replacement_keys = {k for k in store if int(k[1]) == fy and int(k[2]) == period}
