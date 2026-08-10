@@ -4,6 +4,7 @@
 import argparse
 import calendar
 import csv
+import http.client
 import json
 import time
 import urllib.error
@@ -43,7 +44,13 @@ def api_post(payload, retries=6):
         try:
             with urllib.request.urlopen(req, timeout=90) as response:
                 return json.load(response)
-        except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
+        except (
+            urllib.error.URLError,
+            http.client.HTTPException,
+            ConnectionError,
+            TimeoutError,
+            json.JSONDecodeError,
+        ) as exc:
             if attempt == retries - 1:
                 raise RuntimeError("USAspending award query failed") from exc
             time.sleep(min(30, 2 ** attempt))

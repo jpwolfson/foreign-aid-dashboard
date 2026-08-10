@@ -9,6 +9,7 @@ kept in the durable store.
 
 import argparse
 import csv
+import http.client
 import io
 import json
 import ssl
@@ -43,7 +44,13 @@ def request_json(path, payload=None, retries=6):
         try:
             with urllib.request.urlopen(req, timeout=90) as response:
                 return json.load(response)
-        except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
+        except (
+            urllib.error.URLError,
+            http.client.HTTPException,
+            ConnectionError,
+            TimeoutError,
+            json.JSONDecodeError,
+        ) as exc:
             if attempt == retries - 1:
                 raise RuntimeError(f"USAspending request failed: {path}") from exc
             time.sleep(min(30, 2 ** attempt))
@@ -55,7 +62,12 @@ def download_bytes(url, retries=6):
         try:
             with urllib.request.urlopen(req, timeout=120) as response:
                 return response.read()
-        except (urllib.error.URLError, TimeoutError) as exc:
+        except (
+            urllib.error.URLError,
+            http.client.HTTPException,
+            ConnectionError,
+            TimeoutError,
+        ) as exc:
             if attempt == retries - 1:
                 raise RuntimeError(f"download failed: {url}") from exc
             time.sleep(min(30, 2 ** attempt))
