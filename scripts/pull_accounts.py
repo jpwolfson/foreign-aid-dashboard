@@ -116,7 +116,7 @@ def csv_rows(blob):
             yield from csv.DictReader(text)
 
 
-def normalize(blob, accounts, fy, period):
+def normalize(blob, accounts, fy, period, cohort=None):
     by_key = {}
     lookup = {(a["aid"], a["main"]): a["slug"] for a in accounts}
     for row in csv_rows(blob):
@@ -124,9 +124,13 @@ def normalize(blob, accounts, fy, period):
         if not slug:
             continue
         bpoa, epoa = row["beginning_period_of_availability"], row["ending_period_of_availability"]
-        # Keep only two-year cohort TAFS. Other availability periods use the
-        # same federal account but do not belong in the filing comparison.
-        if not (bpoa.isdigit() and epoa.isdigit() and int(epoa) == int(bpoa) + 1):
+        # Keep the exact filing cohort. Adjacent two-year TAFS share the same
+        # agency/main-account code and would otherwise inflate the numerator.
+        is_two_year = bpoa.isdigit() and epoa.isdigit() and int(epoa) == int(bpoa) + 1
+        is_target = is_two_year and (not cohort or (
+            int(bpoa) == cohort["yearOne"] and int(epoa) == cohort["yearTwo"]
+        ))
+        if not is_target:
             continue
         out = {k: row.get(k, "") for k in HEADER}
         out.update({"slug": slug, "reporting_fy": str(fy), "reporting_period": str(period)})
@@ -184,7 +188,10 @@ def main():
         fresh = {}
         for agency in cfg["downloadAgencies"]:
             print(f"FY{fy} P{period:02d} {agency}")
-            fresh.update(normalize(request_snapshot(agency, fy, period), cfg["accounts"], fy, period))
+            fresh.update(normalize(
+                request_snapshot(agency, fy, period), cfg["accounts"], fy, period,
+                cfg["fileACrosscheck"],
+            ))
             time.sleep(args.pause)
         if not fresh:
             raise RuntimeError(f"FY{fy} P{period:02d} returned no configured account rows")
