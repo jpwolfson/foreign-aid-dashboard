@@ -1,0 +1,76 @@
+{
+  "benchmarkCutoff": "2026-06-30",
+  "fileAStartFY": 2020,
+  "awardSeriesStart": "2015-10-01",
+  "awardAgencies": [
+    "Agency for International Development",
+    "Department of State"
+  ],
+  "downloadAgencies": ["USAID", "DOS"],
+  "accounts": [
+    {
+      "slug": "esf",
+      "abbrev": "ESF",
+      "name": "Economic Support Fund",
+      "aid": "072",
+      "main": "1037",
+      "displayTafs": ["72-1037", "19-72-1037", "20-72-1037"],
+      "denominators": {"2025/2026": 1940400000}
+    },
+    {
+      "slug": "da",
+      "abbrev": "DA",
+      "name": "Development Assistance",
+      "aid": "072",
+      "main": "1021",
+      "displayTafs": ["72-1021", "19-72-1021"],
+      "denominators": {"2025/2026": 1431000000}
+    },
+    {
+      "slug": "ghp",
+      "abbrev": "GHP",
+      "name": "Global Health Programs (2-year)",
+      "aid": "019",
+      "main": "1031",
+      "displayTafs": ["19-1031", "72-19-1031"],
+      "denominators": {"2025/2026": 3485450000}
+    },
+    {
+      "slug": "aeeca",
+      "abbrev": "AEECA",
+      "name": "Assistance for Europe, Eurasia and Central Asia",
+      "aid": "072",
+      "main": "0306",
+      "displayTafs": ["72-0306", "19-72-0306"],
+      "denominators": {"2025/2026": 334000}
+    },
+    {
+      "slug": "incle",
+      "abbrev": "INCLE",
+      "name": "International Narcotics Control and Law Enforcement",
+      "aid": "011",
+      "main": "1022",
+      "displayTafs": ["11-1022", "19-11-1022"],
+      "denominators": {"2025/2026": 1285000000}
+    },
+    {
+      "slug": "nadr",
+      "abbrev": "NADR",
+      "name": "Nonproliferation, Anti-terrorism, Demining, and Related Programs",
+      "aid": "011",
+      "main": "1075",
+      "displayTafs": ["11-1075", "19-11-1075"],
+      "denominators": {"2025/2026": 870000000},
+      "note": "The filing's Chart 6 subtitle says 1022; 1075 is the NADR main account code."
+    },
+    {
+      "slug": "df",
+      "abbrev": "DF",
+      "name": "Democracy Fund",
+      "aid": "019",
+      "main": "1121",
+      "displayTafs": ["19-1121", "72-19-1121"],
+      "denominators": {"2025/2026": 262200000}
+    }
+  ]
+}
