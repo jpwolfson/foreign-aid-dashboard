@@ -17,9 +17,9 @@ for the legal appropriation denominator used in the filing.
 ## What is included
 
 - Exact court-filing benchmark data for the 20/21 through 25/26 cohorts.
-- A File A puller that downloads monthly Treasury-account snapshots from
-  USAspending, aggregates transfer-allocation TAFS, and cross-checks the live
-  25/26 obligations against the filing.
+- A File A puller that downloads the two Treasury-account checkpoints needed
+  for the filing comparison, aggregates transfer-allocation TAFS, and
+  cross-checks the live 25/26 obligations.
 - An award puller for USAID and State grants (award type codes 02-05), with a
   durable award store and compact dashboard aggregate.
 - A dependency-free static site, tests, and GitHub Actions for weekly refreshes
@@ -53,20 +53,21 @@ python scripts/pull_accounts.py --full
 python scripts/pull_awards.py --full
 ```
 
-The first full account backfill requests two agency files for each available
-monthly reporting period. Later runs fetch only new/current snapshots. The
-award pull is partitioned by agency and month so no large paginated query is
-trusted as the sole source of a fiscal year.
+The account refresh requests two agency files for the year-one September close
+and the latest year-two reporting period. This is deliberately bounded because
+USAspending throttles repeated generated custom-download files; the filing
+supplies the full historical profiles. The award pull is partitioned by agency
+and month so no large paginated query is trusted as the sole source of a fiscal
+year.
 
 ## Methodological boundary
 
 Appropriation denominators are legal/budgetary judgments, not mechanically
 recoverable from award records. The 25/26 denominators in `accounts.json` are
 the adjusted values documented in the declaration (appropriation less
-rescissions and amounts precluded from obligation). A future cohort appears in
-the live File A data automatically, but percentage-of-appropriation reporting
-stays explicitly unavailable until its curated denominator is added. This is a
-deliberate guardrail against publishing a plausible but legally wrong ratio.
+rescissions and amounts precluded from obligation). Adding a future cohort
+requires both its year pair and curated denominator in `accounts.json`. This is
+a deliberate guardrail against publishing a plausible but legally wrong ratio.
 
 The filing's Chart 6 subtitle repeats the INCLE account code `1022` for NADR.
 The dashboard uses the actual NADR account code, `1075`, and records the

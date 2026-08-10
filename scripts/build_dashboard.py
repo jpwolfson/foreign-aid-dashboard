@@ -24,7 +24,7 @@ def money(value):
     return float(value or 0)
 
 
-def load_file_a_crosscheck(accounts):
+def load_file_a_crosscheck(accounts, cohort):
     if not SNAPSHOTS.exists():
         return {
             "status": "awaiting-refresh",
@@ -38,10 +38,11 @@ def load_file_a_crosscheck(accounts):
     if not rows:
         return {"status": "awaiting-refresh", "latestPeriod": None, "accounts": []}
 
-    # Filing cohort 25/26: year-one P12 plus year-two cumulative obligations.
+    # Filing cohort: year-one P12 plus year-two cumulative obligations.
     # Period 1 (October) is not a monthly DATA Act submission.
+    year_one, year_two = cohort["yearOne"], cohort["yearTwo"]
     latest_p = max(
-        (int(r["reporting_period"]) for r in rows if int(r["reporting_fy"]) == 2026),
+        (int(r["reporting_period"]) for r in rows if int(r["reporting_fy"]) == year_two),
         default=None,
     )
     index = defaultdict(float)
@@ -56,11 +57,11 @@ def load_file_a_crosscheck(accounts):
 
     result = []
     for account in accounts:
-        denom = account.get("denominators", {}).get("2025/2026")
+        denom = account.get("denominators", {}).get(cohort["cohort"])
         if not latest_p or not denom:
             continue
-        first = index[(account["slug"], 2025, 12)]
-        second = index[(account["slug"], 2026, latest_p)]
+        first = index[(account["slug"], year_one, 12)]
+        second = index[(account["slug"], year_two, latest_p)]
         obligations = first + second
         result.append({
             "slug": account["slug"],
@@ -72,7 +73,7 @@ def load_file_a_crosscheck(accounts):
         })
     return {
         "status": "available" if result else "partial",
-        "latestPeriod": f"FY2026P{latest_p:02d}" if latest_p else None,
+        "latestPeriod": f"FY{year_two}P{latest_p:02d}" if latest_p else None,
         "lastModified": newest_date,
         "accounts": result,
     }
@@ -117,7 +118,7 @@ def main():
         },
         "accounts": accounts,
         "table1Medians": dict(zip(cohorts, benchmark["table1Medians"])),
-        "fileA": load_file_a_crosscheck(cfg["accounts"]),
+        "fileA": load_file_a_crosscheck(cfg["accounts"], cfg["fileACrosscheck"]),
         "method": {
             "numerator": "Cumulative new obligations and upward adjustments; year-two values add the year-one September total.",
             "denominator": "Enacted appropriation net of rescissions and amounts precluded from obligation, as documented in the filing.",

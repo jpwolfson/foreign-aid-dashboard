@@ -113,7 +113,7 @@ class FileATests(unittest.TestCase):
                 build_dashboard.SNAPSHOTS = path
                 result = build_dashboard.load_file_a_crosscheck([
                     {"slug":"esf","denominators":{"2025/2026":1000}}
-                ])
+                ], {"cohort":"2025/2026", "yearOne":2025, "yearTwo":2026})
             finally:
                 build_dashboard.SNAPSHOTS = old
         self.assertEqual(result["accounts"][0]["cumulativeObligations"], 500)

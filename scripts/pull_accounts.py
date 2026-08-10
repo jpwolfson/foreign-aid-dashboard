@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Pull monthly USAspending File A snapshots for the seven focus accounts.
 
-The custom-account download endpoint is asynchronous. A full backfill requests
-each available fiscal month for USAID and State; incremental runs request the
-latest published snapshot and any missing months. Only matching TAFS rows are
-kept in the durable store.
+The custom-account download endpoint is asynchronous and throttles repeated
+generated files. The filing cross-check only requires two checkpoints: the
+year-one September close and the latest year-two month. Keeping that request
+surface small makes scheduled refreshes reliable while the immutable filing
+benchmark supplies the full historical profiles.
 """
 
 import argparse
@@ -159,18 +160,24 @@ def write_store(store):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--full", action="store_true", help="reconcile every available monthly snapshot")
+    parser.add_argument("--full", action="store_true", help="reconcile both filing cross-check checkpoints")
     parser.add_argument("--pause", type=float, default=1.0, help="seconds between download requests")
     args = parser.parse_args()
     cfg = json.loads(CONFIG.read_text())
     periods = available_periods()
     store = load_store()
     present = {(int(k[1]), int(k[2])) for k in store}
-    wanted = []
-    for fy in range(cfg["fileAStartFY"], max(periods) + 1):
-        for period in sorted(periods.get(fy, set())):
-            if args.full or (fy, period) not in present or period == max(periods.get(fy, {0})):
-                wanted.append((fy, period))
+    cohort = cfg["fileACrosscheck"]
+    year_one, year_two = cohort["yearOne"], cohort["yearTwo"]
+    if 12 not in periods.get(year_one, set()):
+        raise RuntimeError(f"FY{year_one} P12 is not available from USAspending")
+    if not periods.get(year_two):
+        raise RuntimeError(f"FY{year_two} has no available USAspending periods")
+    checkpoints = [(year_one, 12), (year_two, max(periods[year_two]))]
+    wanted = [
+        point for point in checkpoints
+        if args.full or point not in present or point[0] == year_two
+    ]
     print(f"{len(wanted)} fiscal-period snapshot(s); {len(store)} stored TAFS rows")
     for fy, period in wanted:
         replacement_keys = {k for k in store if int(k[1]) == fy and int(k[2]) == period}
