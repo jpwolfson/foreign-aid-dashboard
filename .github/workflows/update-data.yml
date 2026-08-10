@@ -1,0 +1,116 @@
+name: Refresh foreign aid data
+
+on:
+  schedule:
+    - cron: "17 10 * * 2" # Tuesdays 10:17 UTC
+  push:
+    branches: ["agent/**"]
+    paths: [".github/triggers/update.json"]
+  workflow_dispatch:
+    inputs:
+      full_accounts:
+        description: "Reconcile both File A filing checkpoints"
+        type: boolean
+        default: false
+      full_awards:
+        description: "Reconcile award history from FY2016"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: foreign-aid-refresh-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    env:
+      BRANCH: ${{ github.ref_name }}
+      PYTHONUNBUFFERED: "1"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Sync to branch tip
+        run: git pull --ff-only origin "$BRANCH"
+      - name: Configure refresh commits
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Refresh File A account balances
+        run: |
+          FLAG=""
+          if [ "${{ inputs.full_accounts }}" = "true" ] || [ ! -f data/file_a_snapshots.csv ]; then FLAG="--full"; fi
+          python scripts/pull_accounts.py $FLAG
+      - name: Checkpoint File A data
+        run: |
+          git add data
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Refresh File A data [skip ci]"
+          git push origin "HEAD:$BRANCH"
+      - name: Backfill award archives with yearly checkpoints
+        run: |
+          END_FY=$(python -c 'from datetime import date; d=date.today(); print(d.year + (d.month >= 10))')
+          FORCE=""
+          if [ "${{ inputs.full_awards }}" = "true" ]; then FORCE="--force-archive"; fi
+          for FY in $(seq 2016 "$((END_FY - 1))"); do
+            python scripts/pull_awards.py --archive-fy "$FY" $FORCE
+            git add data
+            if git diff --cached --quiet; then continue; fi
+            git commit -m "Checkpoint FY${FY} foreign aid awards [skip ci]"
+            git push origin "HEAD:$BRANCH"
+          done
+          python scripts/pull_awards.py --archive-fy "$END_FY" --force-archive
+          git add data
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh FY${END_FY} foreign aid awards [skip ci]"
+            git push origin "HEAD:$BRANCH"
+          fi
+      - name: Verify benchmark and transforms
+        run: python -m unittest discover -s tests -v
+      - name: Commit refreshed data
+        run: |
+          git add data
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Refresh foreign aid data [skip ci]"
+          for i in 1 2 3 4 5; do
+            git push origin "HEAD:$BRANCH" && exit 0
+            git pull --rebase -X theirs origin "$BRANCH" || { git rebase --abort; exit 1; }
+          done
+          exit 1
+
+  deploy:
+    needs: refresh
+    if: ${{ !cancelled() && needs.refresh.result == 'success' && github.ref_name == 'main' }}
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+      contents: read
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - name: Assemble site
+        run: |
+          mkdir -p _site
+          cp site/index.html _site/
+          cp -r data _site/data
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
