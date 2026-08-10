@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
     inputs:
       full_accounts:
-        description: "Reconcile every available File A month"
+        description: "Reconcile both File A filing checkpoints"
         type: boolean
         default: false
       full_awards:
@@ -40,22 +40,39 @@ jobs:
           python-version: "3.12"
       - name: Sync to branch tip
         run: git pull --ff-only origin "$BRANCH"
+      - name: Configure refresh commits
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
       - name: Refresh File A account balances
         run: |
           FLAG=""
           if [ "${{ inputs.full_accounts }}" = "true" ] || [ ! -f data/file_a_snapshots.csv ]; then FLAG="--full"; fi
           python scripts/pull_accounts.py $FLAG
-      - name: Refresh award detail
+      - name: Checkpoint File A data
         run: |
-          FLAG=""
-          if [ "${{ inputs.full_awards }}" = "true" ] || [ ! -f data/awards.csv ]; then FLAG="--full"; fi
-          python scripts/pull_awards.py $FLAG
+          git add data
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Refresh File A data [skip ci]"
+          git push origin "HEAD:$BRANCH"
+      - name: Backfill award archives with yearly checkpoints
+        run: |
+          END_FY=$(python -c 'from datetime import date; d=date.today(); print(d.year + (d.month >= 10))')
+          FORCE=""
+          if [ "${{ inputs.full_awards }}" = "true" ]; then FORCE="--force-archive"; fi
+          for FY in $(seq 2016 "$END_FY"); do
+            python scripts/pull_awards.py --archive-fy "$FY" $FORCE
+            git add data
+            if git diff --cached --quiet; then continue; fi
+            git commit -m "Checkpoint FY${FY} foreign aid awards [skip ci]"
+            git push origin "HEAD:$BRANCH"
+          done
+      - name: Refresh recent award detail
+        run: python scripts/pull_awards.py
       - name: Verify benchmark and transforms
         run: python -m unittest discover -s tests -v
       - name: Commit refreshed data
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "Refresh foreign aid data [skip ci]"
@@ -78,6 +95,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
       - name: Assemble site
         run: |
           mkdir -p _site

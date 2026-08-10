@@ -128,6 +128,29 @@ class AwardTests(unittest.TestCase):
         self.assertEqual(pull_awards.fiscal_year("2025-09-30"), 2025)
         self.assertEqual(pull_awards.fiscal_year("2025-10-01"), 2026)
 
+    def test_archive_transactions_collapse_to_latest_award(self):
+        rows = []
+        for action, amount, modified in [
+            ("2024-10-01", "100", "2024-10-02"),
+            ("2025-02-01", "250", "2025-02-02"),
+        ]:
+            rows.append({
+                "assistance_type_code": "03",
+                "assistance_award_unique_key": "ASST_TEST_072",
+                "award_id_fain": "TEST-1",
+                "action_date": action,
+                "last_modified_date": modified,
+                "total_obligated_amount": amount,
+                "total_outlayed_amount_for_overall_award": "50",
+                "recipient_name": "Test Recipient",
+                "cfda_number": "98.001",
+                "awarding_agency_name": "Agency for International Development",
+            })
+        store = pull_awards.merge_archive({}, rows)
+        self.assertEqual(len(store), 1)
+        self.assertEqual(store["ASST_TEST_072"]["base_date"], "2024-10-01")
+        self.assertEqual(store["ASST_TEST_072"]["amount"], "250.0")
+
 
 if __name__ == "__main__":
     unittest.main()

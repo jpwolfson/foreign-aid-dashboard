@@ -2,6 +2,11 @@
   "benchmarkCutoff": "2026-06-30",
   "fileACrosscheck": {"cohort": "2025/2026", "yearOne": 2025, "yearTwo": 2026},
   "awardSeriesStart": "2015-10-01",
+  "awardArchiveStartFY": 2016,
+  "awardArchiveAgencies": [
+    {"id": 65, "name": "Agency for International Development"},
+    {"id": 21, "name": "Department of State"}
+  ],
   "awardAgencies": [
     "Agency for International Development",
     "Department of State"
