@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: "17 10 * * 2" # Tuesdays 10:17 UTC
   push:
-    branches: ["agent/**"]
+    branches: ["main", "agent/**"]
     paths: [".github/triggers/update.json"]
   workflow_dispatch:
     inputs:
