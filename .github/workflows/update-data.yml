@@ -60,15 +60,19 @@ jobs:
           END_FY=$(python -c 'from datetime import date; d=date.today(); print(d.year + (d.month >= 10))')
           FORCE=""
           if [ "${{ inputs.full_awards }}" = "true" ]; then FORCE="--force-archive"; fi
-          for FY in $(seq 2016 "$END_FY"); do
+          for FY in $(seq 2016 "$((END_FY - 1))"); do
             python scripts/pull_awards.py --archive-fy "$FY" $FORCE
             git add data
             if git diff --cached --quiet; then continue; fi
             git commit -m "Checkpoint FY${FY} foreign aid awards [skip ci]"
             git push origin "HEAD:$BRANCH"
           done
-      - name: Refresh recent award detail
-        run: python scripts/pull_awards.py
+          python scripts/pull_awards.py --archive-fy "$END_FY" --force-archive
+          git add data
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh FY${END_FY} foreign aid awards [skip ci]"
+            git push origin "HEAD:$BRANCH"
+          fi
       - name: Verify benchmark and transforms
         run: python -m unittest discover -s tests -v
       - name: Commit refreshed data
