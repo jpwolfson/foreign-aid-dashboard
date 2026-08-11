@@ -5456,6 +5456,538 @@ action_date,fiscal_year,awarding_agency,transactions,obligations
 2024-09-29,2024,Department of State,72,27676585.30
 2024-09-30,2024,Agency for International Development,98,242900822.00
 2024-09-30,2024,Department of State,365,127737588.56
+2024-10-01,2025,Agency for International Development,1,0.00
+2024-10-01,2025,Department of State,8,705140.88
+2024-10-02,2025,Agency for International Development,1,0.00
+2024-10-02,2025,Department of State,3,-1500.13
+2024-10-03,2025,Department of State,1,0.00
+2024-10-07,2025,Agency for International Development,7,27692347.00
+2024-10-07,2025,Department of State,3,0.00
+2024-10-08,2025,Agency for International Development,9,9912109.00
+2024-10-08,2025,Department of State,6,-30169.35
+2024-10-09,2025,Agency for International Development,5,26207565.00
+2024-10-09,2025,Department of State,4,100596.00
+2024-10-10,2025,Agency for International Development,8,16311908.00
+2024-10-10,2025,Department of State,8,52993.00
+2024-10-11,2025,Agency for International Development,5,5941013.00
+2024-10-11,2025,Department of State,9,46808.36
+2024-10-12,2025,Agency for International Development,1,0.00
+2024-10-13,2025,Agency for International Development,1,8500000.00
+2024-10-14,2025,Department of State,1,0.00
+2024-10-15,2025,Agency for International Development,10,4766496.00
+2024-10-15,2025,Department of State,18,6715.17
+2024-10-16,2025,Agency for International Development,24,16001591.00
+2024-10-16,2025,Department of State,4,0.00
+2024-10-17,2025,Agency for International Development,12,7895526.00
+2024-10-17,2025,Department of State,8,-69386.58
+2024-10-18,2025,Agency for International Development,11,14355264.00
+2024-10-18,2025,Department of State,9,-475370.91
+2024-10-20,2025,Agency for International Development,1,7180000.00
+2024-10-21,2025,Agency for International Development,12,9693357.00
+2024-10-21,2025,Department of State,11,-52811.78
+2024-10-22,2025,Agency for International Development,8,15791288.00
+2024-10-22,2025,Department of State,17,272832.12
+2024-10-23,2025,Agency for International Development,13,5950048.00
+2024-10-23,2025,Department of State,13,-55010.44
+2024-10-24,2025,Agency for International Development,12,18787278.00
+2024-10-24,2025,Department of State,8,-27838.15
+2024-10-25,2025,Agency for International Development,9,8764898.00
+2024-10-25,2025,Department of State,19,519600.46
+2024-10-26,2025,Department of State,1,0.00
+2024-10-27,2025,Agency for International Development,1,0.00
+2024-10-28,2025,Agency for International Development,13,37138851.00
+2024-10-28,2025,Department of State,12,3660.00
+2024-10-29,2025,Agency for International Development,13,3789025.00
+2024-10-29,2025,Department of State,4,0.00
+2024-10-30,2025,Agency for International Development,19,11137777.00
+2024-10-30,2025,Department of State,15,5177.17
+2024-10-31,2025,Agency for International Development,15,7640056.00
+2024-10-31,2025,Department of State,15,2493908.71
+2024-11-01,2025,Agency for International Development,14,15905539.00
+2024-11-01,2025,Department of State,8,-3866.00
+2024-11-02,2025,Agency for International Development,1,3600000.00
+2024-11-03,2025,Agency for International Development,1,8195034.00
+2024-11-04,2025,Agency for International Development,7,2990710.00
+2024-11-04,2025,Department of State,13,-46247.51
+2024-11-05,2025,Agency for International Development,4,4771059.00
+2024-11-05,2025,Department of State,8,199032.90
+2024-11-06,2025,Agency for International Development,10,14041861.00
+2024-11-06,2025,Department of State,7,5491.82
+2024-11-07,2025,Agency for International Development,6,15938294.00
+2024-11-07,2025,Department of State,12,7995.16
+2024-11-08,2025,Agency for International Development,11,43134838.00
+2024-11-08,2025,Department of State,12,-1960562.91
+2024-11-10,2025,Department of State,2,-48857.51
+2024-11-11,2025,Agency for International Development,2,8118988.00
+2024-11-11,2025,Department of State,1,24940.00
+2024-11-12,2025,Agency for International Development,20,10322636.00
+2024-11-12,2025,Department of State,19,459013.54
+2024-11-13,2025,Agency for International Development,18,6052088.00
+2024-11-13,2025,Department of State,6,-264872.96
+2024-11-14,2025,Agency for International Development,8,9331666.00
+2024-11-14,2025,Department of State,17,-32640.86
+2024-11-15,2025,Agency for International Development,6,6900000.00
+2024-11-15,2025,Department of State,14,948394.90
+2024-11-16,2025,Department of State,1,0.00
+2024-11-17,2025,Department of State,1,0.00
+2024-11-18,2025,Agency for International Development,22,30878119.00
+2024-11-18,2025,Department of State,15,-376913.04
+2024-11-19,2025,Agency for International Development,19,5690346.00
+2024-11-19,2025,Department of State,22,-1966562.62
+2024-11-20,2025,Agency for International Development,17,20519897.00
+2024-11-20,2025,Department of State,15,4401288.32
+2024-11-21,2025,Agency for International Development,14,44177308.00
+2024-11-21,2025,Department of State,22,3600828.51
+2024-11-22,2025,Agency for International Development,14,6480236.00
+2024-11-22,2025,Department of State,14,2321948.40
+2024-11-23,2025,Department of State,1,0.00
+2024-11-24,2025,Department of State,4,-24387.00
+2024-11-25,2025,Agency for International Development,12,7225086.00
+2024-11-25,2025,Department of State,28,-457133.85
+2024-11-26,2025,Agency for International Development,17,36369194.00
+2024-11-26,2025,Department of State,18,-3542944.30
+2024-11-27,2025,Agency for International Development,13,9100673.00
+2024-11-27,2025,Department of State,14,1602392.93
+2024-11-28,2025,Agency for International Development,4,3911044.00
+2024-11-29,2025,Agency for International Development,13,33541743.00
+2024-11-29,2025,Department of State,8,-14787.49
+2024-12-01,2025,Agency for International Development,1,1425197.00
+2024-12-01,2025,Department of State,3,400000.00
+2024-12-02,2025,Agency for International Development,19,7146066.00
+2024-12-02,2025,Department of State,24,5205954.52
+2024-12-03,2025,Agency for International Development,11,14386672.00
+2024-12-03,2025,Department of State,14,76675.37
+2024-12-04,2025,Agency for International Development,17,41833878.00
+2024-12-04,2025,Department of State,35,-6327563.52
+2024-12-05,2025,Agency for International Development,18,28226770.00
+2024-12-05,2025,Department of State,20,231322.74
+2024-12-06,2025,Agency for International Development,13,24891808.00
+2024-12-06,2025,Department of State,20,-1248685.85
+2024-12-07,2025,Department of State,1,0.00
+2024-12-08,2025,Agency for International Development,2,743914.00
+2024-12-08,2025,Department of State,17,0.00
+2024-12-09,2025,Agency for International Development,10,25603399.00
+2024-12-09,2025,Department of State,21,5061252.64
+2024-12-10,2025,Agency for International Development,23,15413563.00
+2024-12-10,2025,Department of State,20,616366.61
+2024-12-11,2025,Agency for International Development,28,30308744.00
+2024-12-11,2025,Department of State,18,4988476.85
+2024-12-12,2025,Agency for International Development,31,52134167.00
+2024-12-12,2025,Department of State,30,79474941.81
+2024-12-13,2025,Agency for International Development,24,26945788.00
+2024-12-13,2025,Department of State,26,-20540658.04
+2024-12-14,2025,Department of State,2,1494147.00
+2024-12-15,2025,Agency for International Development,1,2325000.00
+2024-12-16,2025,Agency for International Development,14,8969649.00
+2024-12-16,2025,Department of State,24,-4089104.85
+2024-12-17,2025,Agency for International Development,13,26935748.00
+2024-12-17,2025,Department of State,37,1427828.11
+2024-12-18,2025,Agency for International Development,24,23033310.00
+2024-12-18,2025,Department of State,32,9481892.41
+2024-12-19,2025,Agency for International Development,26,54419291.00
+2024-12-19,2025,Department of State,21,3262316.44
+2024-12-20,2025,Agency for International Development,69,118349937.00
+2024-12-20,2025,Department of State,72,229424156.37
+2024-12-21,2025,Department of State,4,3460000.00
+2024-12-22,2025,Agency for International Development,4,7126625.00
+2024-12-22,2025,Department of State,3,0.00
+2024-12-23,2025,Agency for International Development,18,33016341.00
+2024-12-23,2025,Department of State,19,4356940.30
+2024-12-24,2025,Department of State,1,4379733.00
+2024-12-26,2025,Agency for International Development,13,12016968.00
+2024-12-26,2025,Department of State,14,1445689.87
+2024-12-27,2025,Agency for International Development,3,-103352.00
+2024-12-27,2025,Department of State,10,7355.00
+2024-12-29,2025,Department of State,1,0.00
+2024-12-30,2025,Agency for International Development,20,28963882.00
+2024-12-30,2025,Department of State,31,22283210.28
+2024-12-31,2025,Agency for International Development,15,37728583.00
+2024-12-31,2025,Department of State,16,-1112781.36
+2025-01-01,2025,Agency for International Development,1,4130000.00
+2025-01-01,2025,Department of State,1,0.00
+2025-01-02,2025,Agency for International Development,7,16497012.00
+2025-01-02,2025,Department of State,9,-460611.12
+2025-01-03,2025,Agency for International Development,9,21722784.00
+2025-01-03,2025,Department of State,10,-1101357.14
+2025-01-05,2025,Agency for International Development,2,0.00
+2025-01-05,2025,Department of State,3,-2071.69
+2025-01-06,2025,Agency for International Development,9,27978635.00
+2025-01-06,2025,Department of State,17,29628.48
+2025-01-07,2025,Agency for International Development,6,8462731.00
+2025-01-07,2025,Department of State,10,-60028604.28
+2025-01-08,2025,Agency for International Development,13,10924937.00
+2025-01-08,2025,Department of State,14,-11397.42
+2025-01-09,2025,Agency for International Development,1,-168960.00
+2025-01-09,2025,Department of State,8,20000.00
+2025-01-10,2025,Agency for International Development,14,38575174.00
+2025-01-10,2025,Department of State,15,361183.65
+2025-01-11,2025,Agency for International Development,1,3066467.00
+2025-01-11,2025,Department of State,1,2546179.26
+2025-01-12,2025,Agency for International Development,2,19348225.00
+2025-01-13,2025,Agency for International Development,16,34836156.00
+2025-01-13,2025,Department of State,10,30124.00
+2025-01-14,2025,Agency for International Development,11,14098159.00
+2025-01-14,2025,Department of State,8,972390.00
+2025-01-15,2025,Agency for International Development,30,64460793.00
+2025-01-15,2025,Department of State,19,82812426.78
+2025-01-16,2025,Agency for International Development,53,204362047.00
+2025-01-16,2025,Department of State,25,31668722.59
+2025-01-17,2025,Agency for International Development,107,291631837.00
+2025-01-17,2025,Department of State,39,83928150.77
+2025-01-18,2025,Agency for International Development,16,22187869.00
+2025-01-18,2025,Department of State,1,0.00
+2025-01-19,2025,Agency for International Development,28,69475798.00
+2025-01-20,2025,Agency for International Development,5,6626662.00
+2025-01-20,2025,Department of State,2,0.00
+2025-01-21,2025,Agency for International Development,6,-15485721.00
+2025-01-21,2025,Department of State,23,-554039.48
+2025-01-22,2025,Agency for International Development,2,0.00
+2025-01-22,2025,Department of State,10,1952311.98
+2025-01-23,2025,Agency for International Development,6,-76297.00
+2025-01-23,2025,Department of State,5,10205.76
+2025-01-24,2025,Agency for International Development,1,0.00
+2025-01-24,2025,Department of State,14,3230774.87
+2025-01-25,2025,Department of State,1,0.00
+2025-01-26,2025,Department of State,1,0.00
+2025-01-27,2025,Department of State,7,-10387.42
+2025-01-28,2025,Department of State,6,-14725.61
+2025-01-29,2025,Agency for International Development,14,-300000.00
+2025-01-29,2025,Department of State,4,-83.00
+2025-01-30,2025,Agency for International Development,53,0.00
+2025-01-30,2025,Department of State,12,-107541.56
+2025-01-31,2025,Agency for International Development,1,0.00
+2025-01-31,2025,Department of State,3,-85000.00
+2025-02-02,2025,Department of State,6,-5668.47
+2025-02-03,2025,Department of State,7,-10655.54
+2025-02-04,2025,Agency for International Development,1,12000000.00
+2025-02-04,2025,Department of State,33,-86471.04
+2025-02-05,2025,Department of State,53,-11354.64
+2025-02-06,2025,Agency for International Development,2,3667782.00
+2025-02-06,2025,Department of State,67,-31045.79
+2025-02-07,2025,Agency for International Development,2,22034926.00
+2025-02-07,2025,Department of State,43,-32680.54
+2025-02-09,2025,Department of State,5,-451125.00
+2025-02-10,2025,Department of State,44,5069525.86
+2025-02-11,2025,Department of State,80,-68732.09
+2025-02-12,2025,Department of State,37,-31482.38
+2025-02-13,2025,Department of State,32,599.91
+2025-02-14,2025,Department of State,45,-352.00
+2025-02-17,2025,Department of State,2,-97181.34
+2025-02-18,2025,Department of State,56,-59182.60
+2025-02-19,2025,Department of State,101,-123710.74
+2025-02-20,2025,Department of State,157,-116201.19
+2025-02-21,2025,Department of State,61,-17203.18
+2025-02-23,2025,Department of State,1,-8.00
+2025-02-24,2025,Department of State,55,-3506.28
+2025-02-25,2025,Department of State,39,-184468.01
+2025-02-26,2025,Agency for International Development,2,26833333.00
+2025-02-26,2025,Department of State,57,-84656.62
+2025-02-27,2025,Department of State,360,-4550218.89
+2025-02-28,2025,Department of State,330,-171670.20
+2025-03-01,2025,Department of State,6,0.00
+2025-03-02,2025,Department of State,33,-129653.75
+2025-03-03,2025,Department of State,238,5043811.33
+2025-03-04,2025,Department of State,222,-102552.39
+2025-03-05,2025,Department of State,592,-176043.00
+2025-03-06,2025,Department of State,852,-644058.09
+2025-03-07,2025,Department of State,180,-202100.44
+2025-03-08,2025,Department of State,8,0.00
+2025-03-09,2025,Department of State,2,0.00
+2025-03-10,2025,Department of State,73,-27616.49
+2025-03-11,2025,Department of State,53,-20028.56
+2025-03-12,2025,Department of State,72,8508363.58
+2025-03-13,2025,Department of State,129,1005556.23
+2025-03-14,2025,Department of State,61,-168154.58
+2025-03-15,2025,Department of State,1,0.00
+2025-03-16,2025,Department of State,1,0.00
+2025-03-17,2025,Department of State,28,-654450.91
+2025-03-18,2025,Department of State,53,-87917.50
+2025-03-19,2025,Department of State,99,72465910.21
+2025-03-20,2025,Department of State,82,-58906.72
+2025-03-21,2025,Department of State,80,17645695.38
+2025-03-22,2025,Agency for International Development,1,0.00
+2025-03-23,2025,Department of State,1,-7610.00
+2025-03-24,2025,Agency for International Development,7,0.00
+2025-03-24,2025,Department of State,75,-47478.89
+2025-03-25,2025,Agency for International Development,4,-14934.00
+2025-03-25,2025,Department of State,51,23437.65
+2025-03-26,2025,Agency for International Development,8,0.00
+2025-03-26,2025,Department of State,67,-63348.87
+2025-03-27,2025,Agency for International Development,6,0.00
+2025-03-27,2025,Department of State,107,5623014.61
+2025-03-28,2025,Agency for International Development,2,0.00
+2025-03-28,2025,Department of State,87,770157.11
+2025-03-29,2025,Department of State,1,0.00
+2025-03-30,2025,Department of State,2,-1739.26
+2025-03-31,2025,Agency for International Development,7,0.00
+2025-03-31,2025,Department of State,105,-66599.93
+2025-04-01,2025,Agency for International Development,2,0.00
+2025-04-01,2025,Department of State,146,-213361.99
+2025-04-02,2025,Agency for International Development,4,4067603.00
+2025-04-02,2025,Department of State,178,-241871.59
+2025-04-03,2025,Agency for International Development,2,500000.00
+2025-04-03,2025,Department of State,79,-303144.18
+2025-04-04,2025,Department of State,65,-4226194.45
+2025-04-05,2025,Agency for International Development,1,-53473.00
+2025-04-05,2025,Department of State,1,0.00
+2025-04-06,2025,Department of State,2,0.00
+2025-04-07,2025,Agency for International Development,2,0.00
+2025-04-07,2025,Department of State,42,-35383.00
+2025-04-08,2025,Agency for International Development,1,100000.00
+2025-04-08,2025,Department of State,56,-23012.27
+2025-04-09,2025,Agency for International Development,1,0.00
+2025-04-09,2025,Department of State,11,-2481.60
+2025-04-10,2025,Agency for International Development,1,-7352.00
+2025-04-10,2025,Department of State,7,-69107.00
+2025-04-11,2025,Agency for International Development,4,0.00
+2025-04-11,2025,Department of State,15,-1805.00
+2025-04-12,2025,Department of State,1,0.00
+2025-04-14,2025,Agency for International Development,3,0.00
+2025-04-14,2025,Department of State,35,-52008.07
+2025-04-15,2025,Agency for International Development,5,0.00
+2025-04-15,2025,Department of State,35,14109056.81
+2025-04-16,2025,Agency for International Development,1,-1681938.00
+2025-04-16,2025,Department of State,49,5297176.51
+2025-04-17,2025,Agency for International Development,1,0.00
+2025-04-17,2025,Department of State,35,-2547544.83
+2025-04-18,2025,Department of State,18,-167309.13
+2025-04-19,2025,Department of State,2,11570.00
+2025-04-21,2025,Department of State,35,11470707.98
+2025-04-22,2025,Agency for International Development,1,0.00
+2025-04-22,2025,Department of State,62,2555749.73
+2025-04-23,2025,Department of State,55,-337703.01
+2025-04-24,2025,Department of State,57,35872.22
+2025-04-25,2025,Department of State,44,-128550.69
+2025-04-26,2025,Department of State,2,0.00
+2025-04-27,2025,Department of State,1,2160.00
+2025-04-28,2025,Agency for International Development,2,944364.00
+2025-04-28,2025,Department of State,48,-74199.72
+2025-04-29,2025,Agency for International Development,3,-450000.00
+2025-04-29,2025,Department of State,53,-139677.07
+2025-04-30,2025,Agency for International Development,2,2630658.00
+2025-04-30,2025,Department of State,49,-201678.31
+2025-05-01,2025,Agency for International Development,1,0.00
+2025-05-01,2025,Department of State,16,-53911.99
+2025-05-02,2025,Department of State,34,6371455.73
+2025-05-04,2025,Department of State,3,-52494.96
+2025-05-05,2025,Department of State,33,-349464.77
+2025-05-06,2025,Department of State,42,6281001.76
+2025-05-07,2025,Department of State,31,18124580.38
+2025-05-08,2025,Agency for International Development,1,0.00
+2025-05-08,2025,Department of State,36,2302738.47
+2025-05-09,2025,Department of State,32,26618204.80
+2025-05-11,2025,Department of State,3,0.00
+2025-05-12,2025,Agency for International Development,1,0.00
+2025-05-12,2025,Department of State,51,3830468.66
+2025-05-13,2025,Department of State,50,-1190602.94
+2025-05-14,2025,Department of State,38,-84538.64
+2025-05-15,2025,Agency for International Development,6,5230994.00
+2025-05-15,2025,Department of State,47,-380104.18
+2025-05-16,2025,Agency for International Development,1,3000000.00
+2025-05-16,2025,Department of State,47,7161511.74
+2025-05-18,2025,Department of State,1,-13806.52
+2025-05-19,2025,Agency for International Development,1,0.00
+2025-05-19,2025,Department of State,40,3705397.61
+2025-05-20,2025,Agency for International Development,1,0.00
+2025-05-20,2025,Department of State,47,-417544.13
+2025-05-21,2025,Agency for International Development,1,0.00
+2025-05-21,2025,Department of State,53,1095124.24
+2025-05-22,2025,Agency for International Development,2,0.00
+2025-05-22,2025,Department of State,60,-560047.45
+2025-05-23,2025,Agency for International Development,1,0.00
+2025-05-23,2025,Department of State,32,1210141.00
+2025-05-25,2025,Department of State,5,-1694162.28
+2025-05-26,2025,Department of State,2,-33.19
+2025-05-27,2025,Agency for International Development,4,858116.00
+2025-05-27,2025,Department of State,29,1440811.95
+2025-05-28,2025,Agency for International Development,14,2883642.00
+2025-05-28,2025,Department of State,35,1479032.61
+2025-05-29,2025,Agency for International Development,24,-17732197.00
+2025-05-29,2025,Department of State,38,13222773.93
+2025-05-30,2025,Agency for International Development,13,-950001.00
+2025-05-30,2025,Department of State,28,3955361.39
+2025-06-01,2025,Department of State,6,-7733.69
+2025-06-02,2025,Agency for International Development,3,4183427.00
+2025-06-02,2025,Department of State,54,30873379.29
+2025-06-03,2025,Agency for International Development,1,0.00
+2025-06-03,2025,Department of State,47,2748403.10
+2025-06-04,2025,Agency for International Development,8,4747848.00
+2025-06-04,2025,Department of State,50,3720295.59
+2025-06-05,2025,Agency for International Development,6,234382.00
+2025-06-05,2025,Department of State,56,-1099402.70
+2025-06-06,2025,Agency for International Development,2,0.00
+2025-06-06,2025,Department of State,30,-251016.31
+2025-06-07,2025,Agency for International Development,1,0.00
+2025-06-09,2025,Agency for International Development,6,-249531.00
+2025-06-09,2025,Department of State,25,-461801.18
+2025-06-10,2025,Agency for International Development,10,-4300881.00
+2025-06-10,2025,Department of State,57,3323214.90
+2025-06-11,2025,Department of State,50,-680718.94
+2025-06-12,2025,Agency for International Development,7,-700000.00
+2025-06-12,2025,Department of State,40,2184741.10
+2025-06-13,2025,Agency for International Development,21,-10159952.00
+2025-06-13,2025,Department of State,42,-1359817.45
+2025-06-14,2025,Department of State,1,-27280.00
+2025-06-15,2025,Agency for International Development,3,0.00
+2025-06-15,2025,Department of State,13,-1000019.42
+2025-06-16,2025,Agency for International Development,1,0.00
+2025-06-16,2025,Department of State,66,279880.75
+2025-06-17,2025,Department of State,65,729444.39
+2025-06-18,2025,Agency for International Development,1,0.00
+2025-06-18,2025,Department of State,68,3674192.71
+2025-06-19,2025,Department of State,5,1786113.58
+2025-06-20,2025,Agency for International Development,3,-3505520.00
+2025-06-20,2025,Department of State,29,6203582.74
+2025-06-22,2025,Department of State,1,-4900.00
+2025-06-23,2025,Agency for International Development,4,3904226.00
+2025-06-23,2025,Department of State,35,-549918.81
+2025-06-24,2025,Agency for International Development,2,24958794.00
+2025-06-24,2025,Department of State,42,279214.56
+2025-06-25,2025,Agency for International Development,2,0.00
+2025-06-25,2025,Department of State,53,-1063607.43
+2025-06-26,2025,Agency for International Development,5,24400000.00
+2025-06-26,2025,Department of State,44,1669670.76
+2025-06-27,2025,Agency for International Development,4,0.00
+2025-06-27,2025,Department of State,30,2026481.56
+2025-06-28,2025,Department of State,1,-16065.05
+2025-06-29,2025,Department of State,4,-17294.10
+2025-06-30,2025,Agency for International Development,7,14266558.00
+2025-06-30,2025,Department of State,42,-532244.19
+2025-07-01,2025,Agency for International Development,2,-3155133.00
+2025-07-01,2025,Department of State,31,-254912.29
+2025-07-02,2025,Department of State,31,-1263045.53
+2025-07-03,2025,Agency for International Development,1,-31.00
+2025-07-03,2025,Department of State,17,-335851.42
+2025-07-06,2025,Department of State,4,-121484.59
+2025-07-07,2025,Agency for International Development,2,1309431.00
+2025-07-07,2025,Department of State,21,-441243.47
+2025-07-08,2025,Agency for International Development,1,0.00
+2025-07-08,2025,Department of State,30,-414703.25
+2025-07-09,2025,Agency for International Development,2,1843273.00
+2025-07-09,2025,Department of State,35,619277.79
+2025-07-10,2025,Department of State,35,1537095.06
+2025-07-11,2025,Department of State,13,-198288.83
+2025-07-13,2025,Department of State,3,-18544.53
+2025-07-14,2025,Agency for International Development,5,-3458840.00
+2025-07-14,2025,Department of State,20,581495.73
+2025-07-15,2025,Agency for International Development,2,-899800.00
+2025-07-15,2025,Department of State,26,-608687.12
+2025-07-16,2025,Agency for International Development,3,185283.00
+2025-07-16,2025,Department of State,23,1754149.92
+2025-07-17,2025,Agency for International Development,1,-757032.00
+2025-07-17,2025,Department of State,27,10075744.51
+2025-07-18,2025,Department of State,40,27793787.23
+2025-07-20,2025,Department of State,5,-119273.55
+2025-07-21,2025,Agency for International Development,4,-2165151.00
+2025-07-21,2025,Department of State,29,-180282.38
+2025-07-22,2025,Agency for International Development,6,-2339227.00
+2025-07-22,2025,Department of State,24,751444.60
+2025-07-23,2025,Agency for International Development,2,-472781.00
+2025-07-23,2025,Department of State,28,2179705.43
+2025-07-24,2025,Agency for International Development,2,-425630.00
+2025-07-24,2025,Department of State,25,-493326.38
+2025-07-25,2025,Agency for International Development,3,-5078943.00
+2025-07-25,2025,Department of State,34,-1807261.66
+2025-07-26,2025,Department of State,1,-1274.32
+2025-07-27,2025,Department of State,1,0.00
+2025-07-28,2025,Agency for International Development,4,-3655810.00
+2025-07-28,2025,Department of State,46,-86289.75
+2025-07-29,2025,Agency for International Development,1,-384918.00
+2025-07-29,2025,Department of State,23,-1341591.73
+2025-07-30,2025,Agency for International Development,1,0.00
+2025-07-30,2025,Department of State,23,9340471.59
+2025-07-31,2025,Agency for International Development,2,-831076.00
+2025-07-31,2025,Department of State,25,65925.83
+2025-08-01,2025,Department of State,15,-280556.44
+2025-08-03,2025,Department of State,7,-111780.23
+2025-08-04,2025,Agency for International Development,2,-9598.00
+2025-08-04,2025,Department of State,24,-500023.27
+2025-08-05,2025,Agency for International Development,7,-3078220.00
+2025-08-05,2025,Department of State,27,59772624.53
+2025-08-06,2025,Agency for International Development,3,-2040879.00
+2025-08-06,2025,Department of State,41,-4196907.68
+2025-08-07,2025,Agency for International Development,1,-1978880.00
+2025-08-07,2025,Department of State,46,-9574987.65
+2025-08-08,2025,Agency for International Development,2,987486.00
+2025-08-08,2025,Department of State,28,-810176.34
+2025-08-09,2025,Department of State,2,0.00
+2025-08-10,2025,Department of State,2,-7871.78
+2025-08-11,2025,Agency for International Development,2,-14274.00
+2025-08-11,2025,Department of State,42,8876072.84
+2025-08-12,2025,Department of State,29,5499871.27
+2025-08-13,2025,Department of State,34,2549262.36
+2025-08-14,2025,Agency for International Development,1,0.00
+2025-08-14,2025,Department of State,19,2943991.85
+2025-08-15,2025,Agency for International Development,2,0.00
+2025-08-15,2025,Department of State,24,-36919.12
+2025-08-16,2025,Department of State,2,-204187.46
+2025-08-17,2025,Department of State,4,-39018.52
+2025-08-18,2025,Department of State,24,-712182.68
+2025-08-19,2025,Agency for International Development,2,0.00
+2025-08-19,2025,Department of State,47,-416348.38
+2025-08-20,2025,Agency for International Development,5,0.00
+2025-08-20,2025,Department of State,35,87613156.36
+2025-08-21,2025,Agency for International Development,5,10100000.00
+2025-08-21,2025,Department of State,44,-238777.93
+2025-08-22,2025,Department of State,25,-38402.26
+2025-08-25,2025,Agency for International Development,2,0.00
+2025-08-25,2025,Department of State,36,-3734804.63
+2025-08-26,2025,Agency for International Development,4,4398000.00
+2025-08-26,2025,Department of State,52,6841648.76
+2025-08-27,2025,Agency for International Development,2,1700000.00
+2025-08-27,2025,Department of State,50,-96604503.69
+2025-08-28,2025,Agency for International Development,3,4000000.00
+2025-08-28,2025,Department of State,37,-347919.83
+2025-08-29,2025,Agency for International Development,3,1478744.00
+2025-08-29,2025,Department of State,65,93464564.42
+2025-09-01,2025,Department of State,3,-719912.26
+2025-09-02,2025,Agency for International Development,1,6840000.00
+2025-09-02,2025,Department of State,58,-3311497.74
+2025-09-03,2025,Agency for International Development,1,1615000.00
+2025-09-03,2025,Department of State,49,2233470.67
+2025-09-04,2025,Agency for International Development,3,9621007.00
+2025-09-04,2025,Department of State,59,-32351568.54
+2025-09-05,2025,Agency for International Development,2,0.00
+2025-09-05,2025,Department of State,25,205349.85
+2025-09-07,2025,Department of State,3,58090.00
+2025-09-08,2025,Agency for International Development,1,0.00
+2025-09-08,2025,Department of State,29,138392.83
+2025-09-09,2025,Department of State,37,6946146.22
+2025-09-10,2025,Agency for International Development,2,3057732.00
+2025-09-10,2025,Department of State,39,-56263269.09
+2025-09-11,2025,Agency for International Development,2,1385650.00
+2025-09-11,2025,Department of State,40,-29944.48
+2025-09-12,2025,Agency for International Development,1,0.00
+2025-09-12,2025,Department of State,40,3754354.38
+2025-09-13,2025,Department of State,5,-5000.00
+2025-09-14,2025,Department of State,3,-12315.46
+2025-09-15,2025,Department of State,61,15387209.13
+2025-09-16,2025,Agency for International Development,2,0.00
+2025-09-16,2025,Department of State,64,868249.43
+2025-09-17,2025,Agency for International Development,4,360000.00
+2025-09-17,2025,Department of State,44,12701501.95
+2025-09-18,2025,Agency for International Development,1,4248000.00
+2025-09-18,2025,Department of State,70,14414828.32
+2025-09-19,2025,Department of State,46,19931175.58
+2025-09-20,2025,Department of State,4,1095257.00
+2025-09-21,2025,Department of State,1,0.00
+2025-09-22,2025,Agency for International Development,3,12145000.00
+2025-09-22,2025,Department of State,58,9254910.29
+2025-09-23,2025,Agency for International Development,2,1680000.00
+2025-09-23,2025,Department of State,53,24296229.75
+2025-09-24,2025,Agency for International Development,3,7749000.00
+2025-09-24,2025,Department of State,77,29476826.92
+2025-09-25,2025,Agency for International Development,4,1449316.00
+2025-09-25,2025,Department of State,80,17561275.59
+2025-09-26,2025,Department of State,111,68687324.43
+2025-09-27,2025,Agency for International Development,1,1000000.00
+2025-09-27,2025,Department of State,23,24270146.02
+2025-09-28,2025,Agency for International Development,1,2970000.00
+2025-09-28,2025,Department of State,27,18166721.97
+2025-09-29,2025,Agency for International Development,20,63202936.00
+2025-09-29,2025,Department of State,184,95027546.99
+2025-09-30,2025,Agency for International Development,9,19680213.00
+2025-09-30,2025,Department of State,215,21106118.60
 2025-10-01,2026,Agency for International Development,8,-549038.00
 2025-10-01,2026,Department of State,27,32232813.99
 2025-10-02,2026,Agency for International Development,7,-4261136.00
