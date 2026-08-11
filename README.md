@@ -35,9 +35,16 @@ for the legal appropriation denominator used in the filing.
 - `scripts/build_dashboard.py` - merges the immutable benchmark with live data.
 - `data/dashboard.json` - execution data consumed by the site.
 - `data/awards.json` - compact award aggregate consumed by the site.
+- `data/execution_profiles.csv` - flat account/cohort/month values behind the
+  appropriation execution chart.
 - `data/file_a_snapshots.csv` and `data/awards.csv` - durable stores created by
   refresh runs; records are replaced by stable keys, never silently pruned.
 - `site/index.html` - static dashboard.
+
+The public site links each CSV directly and provides an expandable table for
+every chart. The browser award table intentionally loads only the 1,000 most
+recent records (and displays at most 200 filtered results); `data/awards.csv`
+is the complete downloadable store.
 
 ## Local use
 
