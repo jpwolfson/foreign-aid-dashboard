@@ -111,6 +111,10 @@
 <script>
 "use strict";
 const DATA = location.pathname.includes("/site/") ? "../data" : "data";
+// Bump this whenever the page's expected JSON schema changes. GitHub Pages
+// caches HTML and data independently, so a versioned URL prevents a newly
+// deployed page from receiving an older, incompatible JSON response.
+const DATA_SCHEMA_VERSION = "award-transactions-v1";
 const COLORS = ["#2878b5","#16847a","#d86d2c","#8d66b2","#839c35","#171b19"];
 const $ = s => document.querySelector(s);
 const el = (tag, attrs={}, ...kids) => {
@@ -360,7 +364,10 @@ function renderMethod(data) {
   p.append(el("div",{class:"card"},el("h2",{text:"Sources"}),el("p",{class:"note"},document.createTextNode(`${data.benchmark.title}, ${data.benchmark.case}, ${data.benchmark.document}, Appendix A pages ${data.benchmark.pages}. `),el("a",{href:"https://api.usaspending.gov/docs/endpoints",text:"USAspending API endpoint documentation"}),document.createTextNode(". File A is generated from agencies’ GTAS account-balance submissions."))));
 }
 
-Promise.all([fetch(`${DATA}/dashboard.json`).then(r=>{if(!r.ok)throw Error(r.status);return r.json()}),fetch(`${DATA}/awards.json`).then(r=>{if(!r.ok)throw Error(r.status);return r.json()})]).then(([execution,awards])=>{renderExecution(execution);renderAwards(awards);renderMethod(execution);}).catch(err=>{document.querySelectorAll(".panel").forEach(p=>p.innerHTML=`<div class="card empty"><strong>Data could not be loaded</strong>${String(err)}</div>`);});
+Promise.all([
+  fetch(`${DATA}/dashboard.json?v=${DATA_SCHEMA_VERSION}`,{cache:"no-store"}).then(r=>{if(!r.ok)throw Error(r.status);return r.json()}),
+  fetch(`${DATA}/awards.json?v=${DATA_SCHEMA_VERSION}`,{cache:"no-store"}).then(r=>{if(!r.ok)throw Error(r.status);return r.json()})
+]).then(([execution,awards])=>{renderExecution(execution);renderAwards(awards);renderMethod(execution);}).catch(err=>{document.querySelectorAll(".panel").forEach(p=>p.innerHTML=`<div class="card empty"><strong>Data could not be loaded</strong>${String(err)}</div>`);});
 </script>
 </body>
 </html>
