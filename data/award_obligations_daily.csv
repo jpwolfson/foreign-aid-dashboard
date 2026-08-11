@@ -3582,3 +3582,626 @@ action_date,fiscal_year,awarding_agency,transactions,obligations
 2021-09-29,2021,Department of State,301,87962423.20
 2021-09-30,2021,Agency for International Development,97,284659850.00
 2021-09-30,2021,Department of State,163,12273107.98
+2021-10-01,2022,Department of State,4,117248.00
+2021-10-05,2022,Agency for International Development,3,0.00
+2021-10-05,2022,Department of State,1,0.00
+2021-10-06,2022,Agency for International Development,4,11115000.00
+2021-10-07,2022,Agency for International Development,10,8746073.00
+2021-10-07,2022,Department of State,4,-5472.00
+2021-10-08,2022,Agency for International Development,5,968958.00
+2021-10-08,2022,Department of State,2,0.00
+2021-10-09,2022,Agency for International Development,1,1380000.00
+2021-10-11,2022,Agency for International Development,1,-153935.00
+2021-10-12,2022,Agency for International Development,3,0.00
+2021-10-12,2022,Department of State,7,-1488.19
+2021-10-13,2022,Agency for International Development,16,16580185.00
+2021-10-13,2022,Department of State,9,-16602.26
+2021-10-14,2022,Agency for International Development,9,8355764.00
+2021-10-14,2022,Department of State,6,17016.43
+2021-10-15,2022,Agency for International Development,12,675674.00
+2021-10-15,2022,Department of State,9,-198639.37
+2021-10-17,2022,Agency for International Development,2,3562598.00
+2021-10-17,2022,Department of State,2,0.00
+2021-10-18,2022,Agency for International Development,3,725000.00
+2021-10-18,2022,Department of State,15,450.00
+2021-10-19,2022,Agency for International Development,16,40289659.00
+2021-10-19,2022,Department of State,25,-9104.65
+2021-10-20,2022,Agency for International Development,12,20012747.00
+2021-10-20,2022,Department of State,10,-5117.58
+2021-10-21,2022,Agency for International Development,11,35524483.00
+2021-10-21,2022,Department of State,23,-2218.67
+2021-10-22,2022,Agency for International Development,10,24080055.00
+2021-10-22,2022,Department of State,26,2485604.00
+2021-10-24,2022,Agency for International Development,2,3250000.00
+2021-10-25,2022,Agency for International Development,6,9375469.00
+2021-10-25,2022,Department of State,20,-16074.09
+2021-10-26,2022,Agency for International Development,14,8304807.00
+2021-10-26,2022,Department of State,29,-1409708.22
+2021-10-27,2022,Agency for International Development,9,8647439.00
+2021-10-27,2022,Department of State,22,2731262.03
+2021-10-28,2022,Agency for International Development,24,30565809.00
+2021-10-28,2022,Department of State,17,1007031.88
+2021-10-29,2022,Agency for International Development,14,50700409.00
+2021-10-29,2022,Department of State,21,558888.51
+2021-10-30,2022,Department of State,1,0.00
+2021-10-31,2022,Agency for International Development,2,0.00
+2021-10-31,2022,Department of State,2,0.00
+2021-11-01,2022,Agency for International Development,7,7898666.00
+2021-11-01,2022,Department of State,16,1717888.57
+2021-11-02,2022,Agency for International Development,28,46471666.00
+2021-11-02,2022,Department of State,13,3771455.78
+2021-11-03,2022,Agency for International Development,6,6866050.00
+2021-11-03,2022,Department of State,12,-85249.00
+2021-11-04,2022,Agency for International Development,15,19926940.00
+2021-11-04,2022,Department of State,29,1695278.98
+2021-11-05,2022,Agency for International Development,4,20941818.00
+2021-11-05,2022,Department of State,15,14176.00
+2021-11-06,2022,Department of State,2,607861.01
+2021-11-07,2022,Department of State,7,775619.22
+2021-11-08,2022,Agency for International Development,5,2233400.00
+2021-11-08,2022,Department of State,34,13226685.33
+2021-11-09,2022,Agency for International Development,20,13907055.00
+2021-11-09,2022,Department of State,20,138774.46
+2021-11-10,2022,Agency for International Development,29,35967583.00
+2021-11-10,2022,Department of State,22,785938.88
+2021-11-12,2022,Agency for International Development,9,9339902.00
+2021-11-12,2022,Department of State,13,76595897.83
+2021-11-13,2022,Department of State,1,-532000.00
+2021-11-14,2022,Department of State,5,2500.00
+2021-11-15,2022,Agency for International Development,12,990012.00
+2021-11-15,2022,Department of State,14,24491252.00
+2021-11-16,2022,Agency for International Development,18,23174743.00
+2021-11-16,2022,Department of State,32,24879712.67
+2021-11-17,2022,Agency for International Development,10,37605204.00
+2021-11-17,2022,Department of State,33,3912293.87
+2021-11-18,2022,Agency for International Development,16,13567167.00
+2021-11-18,2022,Department of State,25,33532.76
+2021-11-19,2022,Agency for International Development,6,4173102.00
+2021-11-19,2022,Department of State,30,-39862.70
+2021-11-21,2022,Agency for International Development,2,0.00
+2021-11-21,2022,Department of State,4,4543.50
+2021-11-22,2022,Agency for International Development,10,14714398.00
+2021-11-22,2022,Department of State,26,29636618.89
+2021-11-23,2022,Agency for International Development,22,4574912.00
+2021-11-23,2022,Department of State,30,17767497.38
+2021-11-24,2022,Agency for International Development,11,14466906.00
+2021-11-24,2022,Department of State,44,73936439.42
+2021-11-25,2022,Agency for International Development,1,3370000.00
+2021-11-25,2022,Department of State,1,0.00
+2021-11-26,2022,Agency for International Development,13,4452599.00
+2021-11-26,2022,Department of State,14,-342954.53
+2021-11-28,2022,Agency for International Development,4,909282.00
+2021-11-28,2022,Department of State,1,0.00
+2021-11-29,2022,Agency for International Development,13,17117621.00
+2021-11-29,2022,Department of State,55,648635.51
+2021-11-30,2022,Agency for International Development,16,43381807.00
+2021-11-30,2022,Department of State,35,1134690.45
+2021-12-01,2022,Agency for International Development,22,20146519.00
+2021-12-01,2022,Department of State,44,1812003.72
+2021-12-02,2022,Agency for International Development,13,1450000.00
+2021-12-02,2022,Department of State,38,12604827.98
+2021-12-03,2022,Agency for International Development,15,75110796.00
+2021-12-03,2022,Department of State,27,4003523.44
+2021-12-04,2022,Agency for International Development,2,0.00
+2021-12-05,2022,Department of State,2,4743.50
+2021-12-06,2022,Agency for International Development,18,25290116.00
+2021-12-06,2022,Department of State,41,-4423472.00
+2021-12-07,2022,Agency for International Development,2,0.00
+2021-12-07,2022,Department of State,19,-3895186.00
+2021-12-08,2022,Agency for International Development,30,27132546.00
+2021-12-08,2022,Department of State,22,-3185219.75
+2021-12-09,2022,Agency for International Development,33,39347842.00
+2021-12-09,2022,Department of State,27,1695275.77
+2021-12-10,2022,Agency for International Development,8,6125825.00
+2021-12-10,2022,Department of State,30,2050136.44
+2021-12-12,2022,Agency for International Development,1,0.00
+2021-12-12,2022,Department of State,3,0.00
+2021-12-13,2022,Agency for International Development,10,28901921.00
+2021-12-13,2022,Department of State,38,9562.46
+2021-12-14,2022,Agency for International Development,18,17218608.00
+2021-12-14,2022,Department of State,31,4978476.32
+2021-12-15,2022,Agency for International Development,30,26916518.00
+2021-12-15,2022,Department of State,32,5405.64
+2021-12-16,2022,Agency for International Development,26,33794897.00
+2021-12-16,2022,Department of State,22,739600.00
+2021-12-17,2022,Agency for International Development,12,10576178.00
+2021-12-17,2022,Department of State,36,2271465.00
+2021-12-20,2022,Agency for International Development,16,8088734.00
+2021-12-20,2022,Department of State,34,-148228.32
+2021-12-21,2022,Agency for International Development,17,22485761.00
+2021-12-21,2022,Department of State,35,64425510.60
+2021-12-22,2022,Agency for International Development,21,26698901.00
+2021-12-22,2022,Department of State,52,3651940.18
+2021-12-23,2022,Agency for International Development,14,15512851.00
+2021-12-23,2022,Department of State,36,-1521.30
+2021-12-24,2022,Department of State,7,4902074.00
+2021-12-27,2022,Agency for International Development,10,1797536.00
+2021-12-27,2022,Department of State,47,18507.00
+2021-12-28,2022,Agency for International Development,18,7931153.00
+2021-12-28,2022,Department of State,35,6952.19
+2021-12-29,2022,Agency for International Development,9,290969621.00
+2021-12-29,2022,Department of State,57,418916.35
+2021-12-30,2022,Agency for International Development,11,18650735.00
+2021-12-30,2022,Department of State,46,9449573.61
+2021-12-31,2022,Agency for International Development,1,100000.00
+2021-12-31,2022,Department of State,8,190000.00
+2022-01-01,2022,Department of State,2,0.00
+2022-01-02,2022,Department of State,2,-11075.72
+2022-01-03,2022,Agency for International Development,14,6905141.00
+2022-01-03,2022,Department of State,23,1499681.31
+2022-01-04,2022,Agency for International Development,10,12982288.00
+2022-01-04,2022,Department of State,25,564259.00
+2022-01-05,2022,Agency for International Development,16,22159398.00
+2022-01-05,2022,Department of State,28,1071123.00
+2022-01-06,2022,Agency for International Development,14,27919155.00
+2022-01-06,2022,Department of State,19,957367.10
+2022-01-07,2022,Agency for International Development,12,10054258.00
+2022-01-07,2022,Department of State,15,1384913.00
+2022-01-09,2022,Agency for International Development,2,100000.00
+2022-01-10,2022,Agency for International Development,16,3719912.00
+2022-01-10,2022,Department of State,24,3014470.10
+2022-01-11,2022,Agency for International Development,16,41792190.00
+2022-01-11,2022,Department of State,23,3026653.29
+2022-01-12,2022,Agency for International Development,19,44692907.00
+2022-01-12,2022,Department of State,31,-53236.48
+2022-01-13,2022,Agency for International Development,17,16824594.00
+2022-01-13,2022,Department of State,17,-2969489.00
+2022-01-14,2022,Agency for International Development,9,18870358.00
+2022-01-14,2022,Department of State,31,526729.16
+2022-01-15,2022,Department of State,3,1524.00
+2022-01-16,2022,Department of State,3,-46642.66
+2022-01-17,2022,Agency for International Development,2,3265916.00
+2022-01-17,2022,Department of State,6,0.00
+2022-01-18,2022,Agency for International Development,11,23821351.00
+2022-01-18,2022,Department of State,39,7512286.41
+2022-01-19,2022,Agency for International Development,23,-12347824.00
+2022-01-19,2022,Department of State,40,7170419.92
+2022-01-20,2022,Agency for International Development,20,-26545565.00
+2022-01-20,2022,Department of State,17,-2281420.59
+2022-01-21,2022,Agency for International Development,14,7152383.00
+2022-01-21,2022,Department of State,20,40534.01
+2022-01-22,2022,Department of State,1,0.00
+2022-01-23,2022,Department of State,2,10783.32
+2022-01-24,2022,Agency for International Development,12,2561119.00
+2022-01-24,2022,Department of State,27,20038714.33
+2022-01-25,2022,Agency for International Development,15,14143028.00
+2022-01-25,2022,Department of State,29,-32864.99
+2022-01-26,2022,Agency for International Development,12,1915602.00
+2022-01-26,2022,Department of State,29,1152349.50
+2022-01-27,2022,Agency for International Development,18,17237653.00
+2022-01-27,2022,Department of State,15,54712.28
+2022-01-28,2022,Agency for International Development,12,22640738.00
+2022-01-28,2022,Department of State,20,605135.38
+2022-01-29,2022,Agency for International Development,1,3408899.00
+2022-01-30,2022,Agency for International Development,2,5395000.00
+2022-01-30,2022,Department of State,1,11000.00
+2022-01-31,2022,Agency for International Development,27,27023303.00
+2022-01-31,2022,Department of State,28,749535.63
+2022-02-01,2022,Agency for International Development,18,14050149.00
+2022-02-01,2022,Department of State,39,20675363.98
+2022-02-02,2022,Agency for International Development,13,22059807.00
+2022-02-02,2022,Department of State,26,2006015.22
+2022-02-03,2022,Agency for International Development,11,14005122.00
+2022-02-03,2022,Department of State,32,14483913.51
+2022-02-04,2022,Agency for International Development,22,27449205.00
+2022-02-04,2022,Department of State,24,50135.48
+2022-02-05,2022,Department of State,2,9285287.13
+2022-02-06,2022,Agency for International Development,3,7041208.00
+2022-02-07,2022,Agency for International Development,20,19238831.00
+2022-02-07,2022,Department of State,40,480306.14
+2022-02-08,2022,Agency for International Development,31,43597751.00
+2022-02-08,2022,Department of State,30,6415200.88
+2022-02-09,2022,Agency for International Development,28,22280715.00
+2022-02-09,2022,Department of State,28,574567.53
+2022-02-10,2022,Agency for International Development,24,30341651.00
+2022-02-10,2022,Department of State,33,5073994.20
+2022-02-11,2022,Agency for International Development,11,3377571.00
+2022-02-11,2022,Department of State,23,5576706.66
+2022-02-12,2022,Agency for International Development,1,100000.00
+2022-02-12,2022,Department of State,2,995672.00
+2022-02-13,2022,Agency for International Development,4,1785000.00
+2022-02-14,2022,Agency for International Development,20,51554064.00
+2022-02-14,2022,Department of State,20,5031865.73
+2022-02-15,2022,Agency for International Development,22,36781260.00
+2022-02-15,2022,Department of State,33,1515231.16
+2022-02-16,2022,Agency for International Development,41,86953418.00
+2022-02-16,2022,Department of State,27,435830.46
+2022-02-17,2022,Agency for International Development,33,31203715.00
+2022-02-17,2022,Department of State,30,14796562.60
+2022-02-18,2022,Department of State,34,1019962.79
+2022-02-19,2022,Department of State,1,0.00
+2022-02-21,2022,Department of State,1,1653.00
+2022-02-22,2022,Agency for International Development,12,8900000.00
+2022-02-22,2022,Department of State,25,6900133.46
+2022-02-23,2022,Agency for International Development,24,29768359.00
+2022-02-23,2022,Department of State,33,5693089.08
+2022-02-24,2022,Agency for International Development,22,71029524.00
+2022-02-24,2022,Department of State,43,-32732.67
+2022-02-25,2022,Agency for International Development,13,6666501.00
+2022-02-25,2022,Department of State,28,1187620.38
+2022-02-26,2022,Department of State,1,1110.00
+2022-02-27,2022,Department of State,1,0.00
+2022-02-28,2022,Agency for International Development,25,34135547.00
+2022-02-28,2022,Department of State,52,1301379.67
+2022-03-01,2022,Agency for International Development,47,37243418.00
+2022-03-01,2022,Department of State,41,7558964.50
+2022-03-02,2022,Agency for International Development,22,63002512.00
+2022-03-02,2022,Department of State,40,788443.98
+2022-03-03,2022,Agency for International Development,18,18156298.00
+2022-03-03,2022,Department of State,37,7441122.44
+2022-03-04,2022,Agency for International Development,31,33144276.00
+2022-03-04,2022,Department of State,27,921833.92
+2022-03-05,2022,Department of State,1,7058065.00
+2022-03-06,2022,Department of State,1,0.00
+2022-03-07,2022,Agency for International Development,19,4776410.00
+2022-03-07,2022,Department of State,33,471718.21
+2022-03-08,2022,Agency for International Development,21,28405981.00
+2022-03-08,2022,Department of State,31,3711978.38
+2022-03-09,2022,Agency for International Development,45,26027366.00
+2022-03-09,2022,Department of State,30,90933.00
+2022-03-10,2022,Agency for International Development,23,12439353.00
+2022-03-10,2022,Department of State,37,11001952.65
+2022-03-11,2022,Agency for International Development,21,10101018.00
+2022-03-11,2022,Department of State,30,626692.36
+2022-03-12,2022,Department of State,1,132.00
+2022-03-13,2022,Agency for International Development,2,5800000.00
+2022-03-13,2022,Department of State,5,330.00
+2022-03-14,2022,Agency for International Development,28,25285785.00
+2022-03-14,2022,Department of State,54,19098421.99
+2022-03-15,2022,Agency for International Development,34,54263614.00
+2022-03-15,2022,Department of State,34,4842891.93
+2022-03-16,2022,Agency for International Development,22,22956196.00
+2022-03-16,2022,Department of State,45,18981452.37
+2022-03-17,2022,Agency for International Development,21,13527827.00
+2022-03-17,2022,Department of State,70,8944719.41
+2022-03-18,2022,Agency for International Development,32,18401094.00
+2022-03-18,2022,Department of State,55,564982.13
+2022-03-19,2022,Department of State,1,0.00
+2022-03-20,2022,Agency for International Development,1,0.00
+2022-03-21,2022,Agency for International Development,18,16874717.00
+2022-03-21,2022,Department of State,9,-445078.51
+2022-03-22,2022,Agency for International Development,34,35157900.00
+2022-03-22,2022,Department of State,2,-4054.67
+2022-03-23,2022,Agency for International Development,27,56165157.00
+2022-03-23,2022,Department of State,3,0.00
+2022-03-24,2022,Agency for International Development,22,13926935.00
+2022-03-24,2022,Department of State,3,951654.00
+2022-03-25,2022,Agency for International Development,12,18024244.00
+2022-03-26,2022,Agency for International Development,1,2039000.00
+2022-03-27,2022,Agency for International Development,2,3450000.00
+2022-03-27,2022,Department of State,1,0.00
+2022-03-28,2022,Agency for International Development,26,13357237.00
+2022-03-28,2022,Department of State,67,1393056.49
+2022-03-29,2022,Agency for International Development,19,18862732.00
+2022-03-29,2022,Department of State,41,32176.66
+2022-03-30,2022,Agency for International Development,29,32814229.00
+2022-03-30,2022,Department of State,60,796034.57
+2022-03-31,2022,Agency for International Development,32,15441519.00
+2022-03-31,2022,Department of State,40,2244315.25
+2022-04-01,2022,Agency for International Development,24,23016150.00
+2022-04-01,2022,Department of State,54,1324532.85
+2022-04-02,2022,Department of State,3,0.00
+2022-04-03,2022,Department of State,2,0.00
+2022-04-04,2022,Agency for International Development,42,27216173.00
+2022-04-04,2022,Department of State,54,429621.63
+2022-04-05,2022,Agency for International Development,21,17134292.00
+2022-04-05,2022,Department of State,32,721881.60
+2022-04-06,2022,Agency for International Development,16,18761186.00
+2022-04-06,2022,Department of State,32,326159.98
+2022-04-07,2022,Agency for International Development,17,8800861.00
+2022-04-07,2022,Department of State,33,535080.37
+2022-04-08,2022,Agency for International Development,15,12823788.00
+2022-04-08,2022,Department of State,32,195041025.10
+2022-04-09,2022,Agency for International Development,1,1500000.00
+2022-04-10,2022,Agency for International Development,2,2436202.00
+2022-04-11,2022,Agency for International Development,33,29656253.00
+2022-04-11,2022,Department of State,68,9530969.28
+2022-04-12,2022,Agency for International Development,14,31764119.00
+2022-04-12,2022,Department of State,33,6467713.23
+2022-04-13,2022,Agency for International Development,23,25386828.00
+2022-04-13,2022,Department of State,14,8753538.06
+2022-04-14,2022,Agency for International Development,29,36206379.00
+2022-04-14,2022,Department of State,26,214282.96
+2022-04-15,2022,Agency for International Development,20,129063089.00
+2022-04-15,2022,Department of State,10,1787378.61
+2022-04-16,2022,Department of State,3,0.00
+2022-04-17,2022,Agency for International Development,1,0.00
+2022-04-17,2022,Department of State,1,0.00
+2022-04-18,2022,Agency for International Development,11,3190123.00
+2022-04-18,2022,Department of State,20,264593.98
+2022-04-19,2022,Agency for International Development,18,36854227.00
+2022-04-19,2022,Department of State,51,1310631.28
+2022-04-20,2022,Agency for International Development,19,11942376.00
+2022-04-20,2022,Department of State,45,-94631.09
+2022-04-21,2022,Agency for International Development,19,511030800.00
+2022-04-21,2022,Department of State,52,3141492.36
+2022-04-22,2022,Agency for International Development,13,6473437.00
+2022-04-22,2022,Department of State,23,12458037.21
+2022-04-24,2022,Agency for International Development,1,21063865.00
+2022-04-24,2022,Department of State,1,-45.93
+2022-04-25,2022,Agency for International Development,13,10965838.00
+2022-04-25,2022,Department of State,59,3698012.18
+2022-04-26,2022,Agency for International Development,22,16514114.00
+2022-04-26,2022,Department of State,45,8453426.98
+2022-04-27,2022,Agency for International Development,16,1427102.00
+2022-04-27,2022,Department of State,58,3217936.46
+2022-04-28,2022,Agency for International Development,17,28264319.00
+2022-04-28,2022,Department of State,42,6307001.17
+2022-04-29,2022,Agency for International Development,26,44764501.00
+2022-04-29,2022,Department of State,45,9736436.06
+2022-04-30,2022,Agency for International Development,2,4806800.00
+2022-04-30,2022,Department of State,1,0.00
+2022-05-01,2022,Agency for International Development,4,3000000.00
+2022-05-02,2022,Agency for International Development,4,7087092.00
+2022-05-02,2022,Department of State,33,10488893.11
+2022-05-03,2022,Agency for International Development,8,8313752.00
+2022-05-03,2022,Department of State,10,25225693.00
+2022-05-04,2022,Agency for International Development,21,11831439.00
+2022-05-04,2022,Department of State,12,5126376.25
+2022-05-05,2022,Agency for International Development,21,12924446.00
+2022-05-05,2022,Department of State,11,1670772.00
+2022-05-06,2022,Agency for International Development,15,14269276.00
+2022-05-06,2022,Department of State,43,-161171.81
+2022-05-07,2022,Department of State,1,24985.00
+2022-05-08,2022,Agency for International Development,1,1193485.00
+2022-05-08,2022,Department of State,3,7820397.00
+2022-05-09,2022,Agency for International Development,12,20882036.00
+2022-05-09,2022,Department of State,58,13374175.94
+2022-05-10,2022,Agency for International Development,24,11788350.00
+2022-05-10,2022,Department of State,30,257312.11
+2022-05-11,2022,Agency for International Development,20,58616315.00
+2022-05-11,2022,Department of State,48,109270.12
+2022-05-12,2022,Agency for International Development,28,36894094.00
+2022-05-12,2022,Department of State,48,-586761.69
+2022-05-13,2022,Agency for International Development,25,65169744.00
+2022-05-13,2022,Department of State,42,5273732.87
+2022-05-14,2022,Department of State,1,15780.00
+2022-05-15,2022,Agency for International Development,4,-111312.00
+2022-05-15,2022,Department of State,9,41640.00
+2022-05-16,2022,Agency for International Development,17,25942296.00
+2022-05-16,2022,Department of State,30,625807.97
+2022-05-17,2022,Agency for International Development,18,58781179.00
+2022-05-17,2022,Department of State,30,3862695.75
+2022-05-18,2022,Agency for International Development,26,54054976.00
+2022-05-18,2022,Department of State,58,30587172.50
+2022-05-19,2022,Agency for International Development,20,30634795.00
+2022-05-19,2022,Department of State,82,13041574.81
+2022-05-20,2022,Agency for International Development,15,25849554.00
+2022-05-20,2022,Department of State,55,373286.75
+2022-05-21,2022,Department of State,4,-13946.97
+2022-05-22,2022,Agency for International Development,1,1500000.00
+2022-05-22,2022,Department of State,1,19554.00
+2022-05-23,2022,Agency for International Development,19,18721272.00
+2022-05-23,2022,Department of State,45,4293353.44
+2022-05-24,2022,Agency for International Development,18,114752662.00
+2022-05-24,2022,Department of State,64,2864364.31
+2022-05-25,2022,Agency for International Development,22,12405402.00
+2022-05-25,2022,Department of State,37,3522235.00
+2022-05-26,2022,Agency for International Development,32,96403848.00
+2022-05-26,2022,Department of State,65,5869671.60
+2022-05-27,2022,Agency for International Development,17,14107788.00
+2022-05-27,2022,Department of State,36,683672.12
+2022-05-30,2022,Department of State,6,115952.00
+2022-05-31,2022,Agency for International Development,26,51115459.00
+2022-05-31,2022,Department of State,59,3845719.86
+2022-06-01,2022,Agency for International Development,31,155779234.00
+2022-06-01,2022,Department of State,64,5043972.47
+2022-06-02,2022,Agency for International Development,24,97649265.00
+2022-06-02,2022,Department of State,54,3683051.62
+2022-06-03,2022,Agency for International Development,18,30218740.00
+2022-06-03,2022,Department of State,48,7852075.49
+2022-06-05,2022,Agency for International Development,2,3600000.00
+2022-06-05,2022,Department of State,5,1735.00
+2022-06-06,2022,Agency for International Development,27,74219981.00
+2022-06-06,2022,Department of State,38,2939012.08
+2022-06-07,2022,Agency for International Development,22,27994036.00
+2022-06-07,2022,Department of State,46,1122106.17
+2022-06-08,2022,Agency for International Development,26,59464943.00
+2022-06-08,2022,Department of State,91,38881.41
+2022-06-09,2022,Agency for International Development,16,35330545.00
+2022-06-09,2022,Department of State,52,1463048.81
+2022-06-10,2022,Agency for International Development,32,95111681.00
+2022-06-10,2022,Department of State,53,1263012.11
+2022-06-11,2022,Department of State,6,-70469.32
+2022-06-12,2022,Department of State,3,100000.00
+2022-06-13,2022,Agency for International Development,21,42675905.00
+2022-06-13,2022,Department of State,47,2676359.33
+2022-06-14,2022,Agency for International Development,23,73017655.00
+2022-06-14,2022,Department of State,58,2709515.91
+2022-06-15,2022,Agency for International Development,19,29606302.00
+2022-06-15,2022,Department of State,67,13764052.61
+2022-06-16,2022,Agency for International Development,27,67121793.00
+2022-06-16,2022,Department of State,35,23673091.39
+2022-06-17,2022,Agency for International Development,21,95830748.00
+2022-06-17,2022,Department of State,29,839325.27
+2022-06-18,2022,Department of State,1,0.00
+2022-06-19,2022,Agency for International Development,2,2470044.00
+2022-06-19,2022,Department of State,2,1331268.00
+2022-06-20,2022,Agency for International Development,4,3417599.00
+2022-06-20,2022,Department of State,15,992356.99
+2022-06-21,2022,Agency for International Development,35,49859185.00
+2022-06-21,2022,Department of State,71,853950.07
+2022-06-22,2022,Agency for International Development,13,32549384.00
+2022-06-22,2022,Department of State,66,4215712.96
+2022-06-23,2022,Agency for International Development,18,37175708.00
+2022-06-23,2022,Department of State,53,4001823.89
+2022-06-24,2022,Agency for International Development,21,36414588.00
+2022-06-24,2022,Department of State,33,779017.82
+2022-06-25,2022,Agency for International Development,1,1400000.00
+2022-06-26,2022,Agency for International Development,1,0.00
+2022-06-26,2022,Department of State,4,519710.01
+2022-06-27,2022,Agency for International Development,24,25994484.00
+2022-06-27,2022,Department of State,67,416128.54
+2022-06-28,2022,Agency for International Development,29,38986185.00
+2022-06-28,2022,Department of State,69,1413935.53
+2022-06-29,2022,Agency for International Development,44,94236956.00
+2022-06-29,2022,Department of State,93,11814404.39
+2022-06-30,2022,Agency for International Development,36,91579644.00
+2022-06-30,2022,Department of State,59,5901186.17
+2022-07-01,2022,Agency for International Development,6,3085042.00
+2022-07-01,2022,Department of State,53,1060047.15
+2022-07-03,2022,Department of State,4,273668.00
+2022-07-04,2022,Department of State,4,1522.00
+2022-07-05,2022,Agency for International Development,10,9528017.00
+2022-07-05,2022,Department of State,85,5948906.17
+2022-07-06,2022,Agency for International Development,15,23705726.00
+2022-07-06,2022,Department of State,36,570682.23
+2022-07-07,2022,Agency for International Development,29,52367556.00
+2022-07-07,2022,Department of State,68,2424274.30
+2022-07-08,2022,Agency for International Development,15,20840022.00
+2022-07-08,2022,Department of State,46,5098939.25
+2022-07-09,2022,Agency for International Development,1,3094896.00
+2022-07-11,2022,Agency for International Development,24,69986389.00
+2022-07-11,2022,Department of State,29,13093417.52
+2022-07-12,2022,Agency for International Development,30,63528451.00
+2022-07-12,2022,Department of State,71,17768718.64
+2022-07-13,2022,Agency for International Development,29,96778927.00
+2022-07-13,2022,Department of State,60,1544530.34
+2022-07-14,2022,Agency for International Development,23,43647685.00
+2022-07-14,2022,Department of State,43,1092257.02
+2022-07-15,2022,Agency for International Development,31,286623824.00
+2022-07-15,2022,Department of State,59,10234001.21
+2022-07-18,2022,Agency for International Development,33,64273778.00
+2022-07-18,2022,Department of State,54,908907.99
+2022-07-19,2022,Agency for International Development,24,55470199.00
+2022-07-19,2022,Department of State,47,1719840.64
+2022-07-20,2022,Agency for International Development,12,47418282.00
+2022-07-20,2022,Department of State,57,9277140.11
+2022-07-21,2022,Agency for International Development,14,41479614.00
+2022-07-21,2022,Department of State,48,4623077.10
+2022-07-22,2022,Agency for International Development,40,91820146.00
+2022-07-22,2022,Department of State,69,4419093.92
+2022-07-23,2022,Agency for International Development,1,2300000.00
+2022-07-23,2022,Department of State,1,0.00
+2022-07-24,2022,Agency for International Development,1,4400000.00
+2022-07-24,2022,Department of State,1,4087000.00
+2022-07-25,2022,Agency for International Development,25,36274880.00
+2022-07-25,2022,Department of State,43,37863729.66
+2022-07-26,2022,Agency for International Development,21,32459681.00
+2022-07-26,2022,Department of State,45,18723402.31
+2022-07-27,2022,Agency for International Development,42,108283838.00
+2022-07-27,2022,Department of State,68,2417636.37
+2022-07-28,2022,Agency for International Development,26,149013583.00
+2022-07-28,2022,Department of State,58,7011415.17
+2022-07-29,2022,Agency for International Development,26,52331409.00
+2022-07-29,2022,Department of State,72,37492244.66
+2022-07-30,2022,Agency for International Development,1,-28070.00
+2022-07-30,2022,Department of State,5,1456929.22
+2022-07-31,2022,Agency for International Development,1,100000.00
+2022-07-31,2022,Department of State,3,-11729.46
+2022-08-01,2022,Agency for International Development,24,77369248.00
+2022-08-01,2022,Department of State,53,16803901.93
+2022-08-02,2022,Agency for International Development,13,22379632.00
+2022-08-02,2022,Department of State,75,11011853.20
+2022-08-03,2022,Agency for International Development,25,49487295.00
+2022-08-03,2022,Department of State,50,16152363.54
+2022-08-04,2022,Agency for International Development,30,63316431.00
+2022-08-04,2022,Department of State,57,7744717.61
+2022-08-05,2022,Agency for International Development,31,25992289.00
+2022-08-05,2022,Department of State,40,20081492.78
+2022-08-06,2022,Department of State,2,96819.23
+2022-08-07,2022,Agency for International Development,1,1370000.00
+2022-08-07,2022,Department of State,12,6186910.00
+2022-08-08,2022,Agency for International Development,16,43075425.00
+2022-08-08,2022,Department of State,91,12461581.18
+2022-08-09,2022,Agency for International Development,35,20463876.00
+2022-08-09,2022,Department of State,58,1376278.75
+2022-08-10,2022,Agency for International Development,29,126435805.00
+2022-08-10,2022,Department of State,50,24273531.72
+2022-08-11,2022,Agency for International Development,19,30132979.00
+2022-08-11,2022,Department of State,66,13952786.76
+2022-08-12,2022,Agency for International Development,27,45283087.00
+2022-08-12,2022,Department of State,85,1049159.88
+2022-08-13,2022,Agency for International Development,2,-65038.00
+2022-08-13,2022,Department of State,4,107602.60
+2022-08-14,2022,Agency for International Development,5,6147932.00
+2022-08-14,2022,Department of State,10,895820.27
+2022-08-15,2022,Agency for International Development,33,31271435.00
+2022-08-15,2022,Department of State,74,11024322.58
+2022-08-16,2022,Agency for International Development,24,32271117.00
+2022-08-16,2022,Department of State,68,3947014.24
+2022-08-17,2022,Agency for International Development,48,30044170.00
+2022-08-17,2022,Department of State,52,20314957.93
+2022-08-18,2022,Agency for International Development,18,27295915.00
+2022-08-18,2022,Department of State,97,3581364.96
+2022-08-19,2022,Agency for International Development,43,25909439.00
+2022-08-19,2022,Department of State,46,20091771.28
+2022-08-20,2022,Department of State,1,136113.00
+2022-08-21,2022,Agency for International Development,2,-1250000.00
+2022-08-21,2022,Department of State,13,2921219.80
+2022-08-22,2022,Agency for International Development,20,30257669.00
+2022-08-22,2022,Department of State,81,14842710.28
+2022-08-23,2022,Agency for International Development,21,13459768.00
+2022-08-23,2022,Department of State,93,24148524.06
+2022-08-24,2022,Agency for International Development,24,30363325.00
+2022-08-24,2022,Department of State,109,14374113.08
+2022-08-25,2022,Agency for International Development,25,47489926.00
+2022-08-25,2022,Department of State,78,17582171.22
+2022-08-26,2022,Agency for International Development,23,75160772.00
+2022-08-26,2022,Department of State,75,27960751.82
+2022-08-27,2022,Agency for International Development,2,1865000.00
+2022-08-27,2022,Department of State,1,500000.00
+2022-08-28,2022,Department of State,7,96504.00
+2022-08-29,2022,Agency for International Development,20,29208564.00
+2022-08-29,2022,Department of State,79,39693325.58
+2022-08-30,2022,Agency for International Development,30,48452605.00
+2022-08-30,2022,Department of State,127,34901157.16
+2022-08-31,2022,Agency for International Development,31,64956163.00
+2022-08-31,2022,Department of State,140,53700548.00
+2022-09-01,2022,Agency for International Development,27,76046644.00
+2022-09-01,2022,Department of State,89,9301508.80
+2022-09-02,2022,Agency for International Development,33,88311002.00
+2022-09-02,2022,Department of State,104,31196577.08
+2022-09-03,2022,Agency for International Development,1,100000.00
+2022-09-03,2022,Department of State,8,18671240.00
+2022-09-04,2022,Department of State,3,1377396.80
+2022-09-05,2022,Department of State,17,5365886.90
+2022-09-06,2022,Agency for International Development,19,38795414.00
+2022-09-06,2022,Department of State,114,19167701.18
+2022-09-07,2022,Agency for International Development,37,100327104.00
+2022-09-07,2022,Department of State,130,29915972.53
+2022-09-08,2022,Agency for International Development,28,78007691.00
+2022-09-08,2022,Department of State,133,15675206.72
+2022-09-09,2022,Agency for International Development,21,38696511.00
+2022-09-09,2022,Department of State,152,11293261.22
+2022-09-10,2022,Department of State,4,4704015.00
+2022-09-11,2022,Agency for International Development,8,2306611.00
+2022-09-11,2022,Department of State,12,1243479.82
+2022-09-12,2022,Agency for International Development,29,40301450.00
+2022-09-12,2022,Department of State,136,13580633.38
+2022-09-13,2022,Agency for International Development,53,94471120.00
+2022-09-13,2022,Department of State,178,50555631.98
+2022-09-14,2022,Agency for International Development,37,46822083.00
+2022-09-14,2022,Department of State,198,30804662.49
+2022-09-15,2022,Agency for International Development,28,35957049.00
+2022-09-15,2022,Department of State,172,49381794.19
+2022-09-16,2022,Agency for International Development,31,86229714.00
+2022-09-16,2022,Department of State,154,37869198.27
+2022-09-17,2022,Agency for International Development,1,0.00
+2022-09-17,2022,Department of State,6,11233431.25
+2022-09-18,2022,Agency for International Development,3,4175000.00
+2022-09-18,2022,Department of State,29,2931130.54
+2022-09-19,2022,Agency for International Development,46,61037015.00
+2022-09-19,2022,Department of State,213,24817174.80
+2022-09-20,2022,Agency for International Development,38,92537890.00
+2022-09-20,2022,Department of State,226,58363426.90
+2022-09-21,2022,Agency for International Development,37,41225515.00
+2022-09-21,2022,Department of State,224,69141028.42
+2022-09-22,2022,Agency for International Development,48,223639540.00
+2022-09-22,2022,Department of State,289,71555421.23
+2022-09-23,2022,Agency for International Development,71,75197635.00
+2022-09-23,2022,Department of State,234,54523710.76
+2022-09-24,2022,Agency for International Development,5,12850947.00
+2022-09-24,2022,Department of State,7,252533656.18
+2022-09-25,2022,Agency for International Development,5,12702052.00
+2022-09-25,2022,Department of State,17,2595685.65
+2022-09-26,2022,Agency for International Development,23,21525891.00
+2022-09-26,2022,Department of State,290,53900620.12
+2022-09-27,2022,Agency for International Development,92,96267221.00
+2022-09-27,2022,Department of State,288,114391959.94
+2022-09-28,2022,Agency for International Development,76,152982142.00
+2022-09-28,2022,Department of State,353,58598076.49
+2022-09-29,2022,Agency for International Development,91,191321380.00
+2022-09-29,2022,Department of State,327,78871054.97
+2022-09-30,2022,Agency for International Development,67,89332400.00
+2022-09-30,2022,Department of State,228,83465462.54
