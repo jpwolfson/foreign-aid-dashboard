@@ -18,6 +18,7 @@ CONFIG = ROOT / "config" / "accounts.json"
 BENCHMARK = ROOT / "reference" / "court-filing-benchmark.json"
 SNAPSHOTS = ROOT / "data" / "file_a_snapshots.csv"
 OUTPUT = ROOT / "data" / "dashboard.json"
+PROFILE_CSV = ROOT / "data" / "execution_profiles.csv"
 
 
 def money(value):
@@ -79,6 +80,32 @@ def load_file_a_crosscheck(accounts, cohort):
     }
 
 
+def write_execution_profiles(accounts, cohorts, source, path=PROFILE_CSV):
+    """Write the chart's filing-benchmark series in a reusable flat format."""
+    fields = [
+        "account_slug", "account_abbrev", "account_name", "treasury_accounts",
+        "cohort", "month", "percent_obligated", "source_title", "source_document",
+    ]
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer.writeheader()
+        for account in accounts:
+            for cohort in cohorts:
+                for month, value in enumerate(account["profiles"][cohort], start=1):
+                    writer.writerow({
+                        "account_slug": account["slug"],
+                        "account_abbrev": account["abbrev"],
+                        "account_name": account["name"],
+                        "treasury_accounts": " + ".join(account["displayTafs"]),
+                        "cohort": cohort,
+                        "month": month,
+                        "percent_obligated": value,
+                        "source_title": source["title"],
+                        "source_document": source["document"],
+                    })
+
+
 def main():
     cfg = json.loads(CONFIG.read_text())
     benchmark = json.loads(BENCHMARK.read_text())
@@ -128,7 +155,11 @@ def main():
     }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps(output, indent=2) + "\n")
-    print(f"Wrote {OUTPUT.relative_to(ROOT)} ({len(accounts)} accounts)")
+    write_execution_profiles(accounts, cohorts, benchmark["source"])
+    print(
+        f"Wrote {OUTPUT.relative_to(ROOT)} and {PROFILE_CSV.relative_to(ROOT)} "
+        f"({len(accounts)} accounts)"
+    )
 
 
 if __name__ == "__main__":
