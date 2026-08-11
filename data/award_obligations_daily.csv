@@ -2345,3 +2345,622 @@ action_date,fiscal_year,awarding_agency,transactions,obligations
 2019-09-29,2019,Department of State,70,25504552.94
 2019-09-30,2019,Agency for International Development,164,282540713.00
 2019-09-30,2019,Department of State,460,161706533.42
+2019-10-01,2020,Agency for International Development,1,0.00
+2019-10-01,2020,Department of State,3,3004900.00
+2019-10-02,2020,Agency for International Development,4,6849279.00
+2019-10-03,2020,Department of State,1,-1181.58
+2019-10-04,2020,Department of State,1,0.00
+2019-10-06,2020,Agency for International Development,1,0.00
+2019-10-07,2020,Agency for International Development,5,0.00
+2019-10-07,2020,Department of State,1,0.00
+2019-10-08,2020,Agency for International Development,5,1100000.00
+2019-10-08,2020,Department of State,2,9700.00
+2019-10-09,2020,Agency for International Development,8,3452987.00
+2019-10-09,2020,Department of State,2,23075.80
+2019-10-10,2020,Agency for International Development,22,9471378.00
+2019-10-10,2020,Department of State,11,745200.35
+2019-10-11,2020,Agency for International Development,9,9967919.00
+2019-10-11,2020,Department of State,6,-2726.80
+2019-10-14,2020,Agency for International Development,3,589799.00
+2019-10-14,2020,Department of State,2,0.00
+2019-10-15,2020,Agency for International Development,6,4156000.00
+2019-10-15,2020,Department of State,12,207492.00
+2019-10-16,2020,Agency for International Development,24,12125840.00
+2019-10-16,2020,Department of State,18,994.84
+2019-10-17,2020,Agency for International Development,11,10042625.00
+2019-10-17,2020,Department of State,10,15572.00
+2019-10-18,2020,Agency for International Development,5,2775765.00
+2019-10-18,2020,Department of State,18,-19519.54
+2019-10-20,2020,Department of State,1,0.00
+2019-10-21,2020,Agency for International Development,13,10946923.00
+2019-10-21,2020,Department of State,9,10876.07
+2019-10-22,2020,Agency for International Development,8,12952557.00
+2019-10-22,2020,Department of State,30,-231466.59
+2019-10-23,2020,Agency for International Development,21,6178085.00
+2019-10-23,2020,Department of State,20,124215.06
+2019-10-24,2020,Agency for International Development,19,3409721.00
+2019-10-24,2020,Department of State,17,333869.33
+2019-10-25,2020,Agency for International Development,16,-66728.00
+2019-10-25,2020,Department of State,16,-26396.17
+2019-10-26,2020,Agency for International Development,1,0.00
+2019-10-27,2020,Department of State,1,0.00
+2019-10-28,2020,Agency for International Development,15,13342182.00
+2019-10-28,2020,Department of State,25,-76952.34
+2019-10-29,2020,Agency for International Development,23,31336793.00
+2019-10-29,2020,Department of State,47,790170.88
+2019-10-30,2020,Agency for International Development,32,22782596.00
+2019-10-30,2020,Department of State,26,-143989.81
+2019-10-31,2020,Agency for International Development,34,4542542.00
+2019-10-31,2020,Department of State,30,4159045.87
+2019-11-01,2020,Agency for International Development,27,12654063.00
+2019-11-01,2020,Department of State,6,1489550.00
+2019-11-02,2020,Agency for International Development,6,10784784.00
+2019-11-03,2020,Agency for International Development,2,1500000.00
+2019-11-04,2020,Agency for International Development,8,1709744.00
+2019-11-04,2020,Department of State,9,-520094.00
+2019-11-05,2020,Agency for International Development,19,306907881.00
+2019-11-05,2020,Department of State,28,21249.52
+2019-11-06,2020,Agency for International Development,29,8504458.00
+2019-11-06,2020,Department of State,18,600118.59
+2019-11-07,2020,Agency for International Development,22,58808786.00
+2019-11-07,2020,Department of State,21,1129612.16
+2019-11-08,2020,Agency for International Development,9,9063878.00
+2019-11-08,2020,Department of State,18,509066.54
+2019-11-11,2020,Department of State,1,700.00
+2019-11-12,2020,Agency for International Development,9,6057612.00
+2019-11-12,2020,Department of State,18,1540943.99
+2019-11-13,2020,Agency for International Development,15,9062786.00
+2019-11-13,2020,Department of State,22,-272019.95
+2019-11-14,2020,Agency for International Development,14,29429660.00
+2019-11-14,2020,Department of State,30,-328192.24
+2019-11-15,2020,Agency for International Development,20,13437238.00
+2019-11-15,2020,Department of State,27,5879351.23
+2019-11-16,2020,Agency for International Development,1,7630708.00
+2019-11-16,2020,Department of State,1,7503.00
+2019-11-17,2020,Agency for International Development,1,0.00
+2019-11-17,2020,Department of State,3,5553.00
+2019-11-18,2020,Agency for International Development,20,8138377.00
+2019-11-18,2020,Department of State,25,30121.58
+2019-11-19,2020,Agency for International Development,11,1529969.00
+2019-11-19,2020,Department of State,28,-24042.52
+2019-11-20,2020,Agency for International Development,26,32074905.00
+2019-11-20,2020,Department of State,27,919773.12
+2019-11-21,2020,Agency for International Development,25,16098652.00
+2019-11-21,2020,Department of State,18,207197.31
+2019-11-22,2020,Agency for International Development,18,82303961.00
+2019-11-22,2020,Department of State,37,1023566.78
+2019-11-24,2020,Agency for International Development,1,0.00
+2019-11-25,2020,Agency for International Development,10,9365837.00
+2019-11-25,2020,Department of State,39,758822.00
+2019-11-26,2020,Agency for International Development,31,12138269.00
+2019-11-26,2020,Department of State,36,5177405.69
+2019-11-27,2020,Agency for International Development,19,26595916.00
+2019-11-27,2020,Department of State,26,146270.39
+2019-11-28,2020,Department of State,1,2741.00
+2019-11-29,2020,Agency for International Development,7,4088715.00
+2019-11-29,2020,Department of State,29,25883503.10
+2019-12-02,2020,Agency for International Development,5,3550000.00
+2019-12-02,2020,Department of State,10,6507303.60
+2019-12-03,2020,Agency for International Development,14,15283333.00
+2019-12-03,2020,Department of State,35,-30410.99
+2019-12-04,2020,Agency for International Development,6,10621231.00
+2019-12-04,2020,Department of State,41,9542414.73
+2019-12-05,2020,Agency for International Development,15,7991299.00
+2019-12-05,2020,Department of State,35,465870.42
+2019-12-06,2020,Agency for International Development,10,9360504.00
+2019-12-06,2020,Department of State,28,39162.99
+2019-12-08,2020,Department of State,1,0.00
+2019-12-09,2020,Agency for International Development,19,37446840.00
+2019-12-09,2020,Department of State,24,973129.72
+2019-12-10,2020,Agency for International Development,23,10512801.00
+2019-12-10,2020,Department of State,37,2424556.80
+2019-12-11,2020,Agency for International Development,11,14630011.00
+2019-12-11,2020,Department of State,20,-444001.27
+2019-12-12,2020,Agency for International Development,15,4475451.00
+2019-12-12,2020,Department of State,34,4290727.99
+2019-12-13,2020,Agency for International Development,10,18104202.00
+2019-12-13,2020,Department of State,28,7819668.49
+2019-12-14,2020,Agency for International Development,1,0.00
+2019-12-16,2020,Agency for International Development,7,11322647.00
+2019-12-16,2020,Department of State,22,1286597.41
+2019-12-17,2020,Agency for International Development,14,20540905.00
+2019-12-17,2020,Department of State,50,3490717.69
+2019-12-18,2020,Agency for International Development,30,23096576.00
+2019-12-18,2020,Department of State,46,12151208.78
+2019-12-19,2020,Agency for International Development,65,74090351.00
+2019-12-19,2020,Department of State,35,11309890.12
+2019-12-20,2020,Agency for International Development,20,22241662.00
+2019-12-20,2020,Department of State,53,24033373.84
+2019-12-21,2020,Department of State,2,5072427.00
+2019-12-22,2020,Department of State,2,0.00
+2019-12-23,2020,Agency for International Development,18,32265581.00
+2019-12-23,2020,Department of State,45,6533203.97
+2019-12-25,2020,Department of State,1,0.00
+2019-12-26,2020,Agency for International Development,4,5550000.00
+2019-12-26,2020,Department of State,41,479648.21
+2019-12-27,2020,Agency for International Development,8,8259473.00
+2019-12-27,2020,Department of State,31,481402.29
+2019-12-29,2020,Agency for International Development,2,800000.00
+2019-12-29,2020,Department of State,1,0.00
+2019-12-30,2020,Agency for International Development,10,9009357.00
+2019-12-30,2020,Department of State,46,1545851.01
+2019-12-31,2020,Agency for International Development,16,22802906.00
+2019-12-31,2020,Department of State,25,6091178.00
+2020-01-02,2020,Agency for International Development,10,900000.00
+2020-01-02,2020,Department of State,3,40000.00
+2020-01-03,2020,Department of State,10,6534.90
+2020-01-04,2020,Agency for International Development,1,0.00
+2020-01-05,2020,Agency for International Development,1,-16106.00
+2020-01-06,2020,Agency for International Development,16,20502599.00
+2020-01-06,2020,Department of State,21,-2589415.89
+2020-01-07,2020,Agency for International Development,8,18566048.00
+2020-01-07,2020,Department of State,31,-131959.13
+2020-01-08,2020,Agency for International Development,16,1677356.00
+2020-01-08,2020,Department of State,31,875806.72
+2020-01-09,2020,Agency for International Development,16,22325009.00
+2020-01-09,2020,Department of State,19,2355708.50
+2020-01-10,2020,Agency for International Development,23,12235861.00
+2020-01-10,2020,Department of State,56,1828711.61
+2020-01-12,2020,Agency for International Development,1,800000.00
+2020-01-13,2020,Agency for International Development,40,10602696.00
+2020-01-13,2020,Department of State,31,811627.14
+2020-01-14,2020,Agency for International Development,10,9868908.00
+2020-01-14,2020,Department of State,37,222027.12
+2020-01-15,2020,Agency for International Development,22,4840129.00
+2020-01-15,2020,Department of State,29,35957.75
+2020-01-16,2020,Agency for International Development,18,10412395.00
+2020-01-16,2020,Department of State,25,282834.42
+2020-01-17,2020,Agency for International Development,9,21514700.00
+2020-01-17,2020,Department of State,36,366617.68
+2020-01-18,2020,Agency for International Development,1,100000.00
+2020-01-19,2020,Department of State,1,400.00
+2020-01-20,2020,Agency for International Development,1,500000.00
+2020-01-21,2020,Agency for International Development,21,7606762.00
+2020-01-21,2020,Department of State,22,-5619237.00
+2020-01-22,2020,Agency for International Development,24,46508861.00
+2020-01-22,2020,Department of State,50,10925376.47
+2020-01-23,2020,Agency for International Development,25,22535249.00
+2020-01-23,2020,Department of State,37,11441364.01
+2020-01-24,2020,Agency for International Development,8,40793102.00
+2020-01-24,2020,Department of State,29,624158.92
+2020-01-26,2020,Department of State,7,5386.00
+2020-01-27,2020,Agency for International Development,22,21752568.00
+2020-01-27,2020,Department of State,29,18540920.64
+2020-01-28,2020,Agency for International Development,15,17112631.00
+2020-01-28,2020,Department of State,36,175671.31
+2020-01-29,2020,Agency for International Development,10,43828085.00
+2020-01-29,2020,Department of State,17,442099.50
+2020-01-30,2020,Agency for International Development,25,19046228.00
+2020-01-30,2020,Department of State,37,136877.06
+2020-01-31,2020,Agency for International Development,17,17163064.00
+2020-01-31,2020,Department of State,35,896429.26
+2020-02-01,2020,Department of State,1,0.00
+2020-02-03,2020,Agency for International Development,20,3049567.00
+2020-02-03,2020,Department of State,36,122386.37
+2020-02-04,2020,Agency for International Development,10,8147558.00
+2020-02-04,2020,Department of State,45,886821.46
+2020-02-05,2020,Agency for International Development,8,4377589.00
+2020-02-05,2020,Department of State,40,433915.73
+2020-02-06,2020,Agency for International Development,10,2400000.00
+2020-02-06,2020,Department of State,31,-976734.60
+2020-02-07,2020,Agency for International Development,31,4958085.00
+2020-02-07,2020,Department of State,51,9219372.36
+2020-02-10,2020,Agency for International Development,17,13788042.00
+2020-02-10,2020,Department of State,68,-1077745.48
+2020-02-11,2020,Agency for International Development,9,13467425.00
+2020-02-11,2020,Department of State,50,8771303.45
+2020-02-12,2020,Agency for International Development,21,6823923.00
+2020-02-12,2020,Department of State,36,13428644.74
+2020-02-13,2020,Agency for International Development,8,21673319.00
+2020-02-13,2020,Department of State,30,600170.89
+2020-02-14,2020,Agency for International Development,7,3858000.00
+2020-02-14,2020,Department of State,57,92949.83
+2020-02-15,2020,Agency for International Development,1,6335871.00
+2020-02-16,2020,Department of State,1,826.00
+2020-02-17,2020,Department of State,3,11169.50
+2020-02-18,2020,Agency for International Development,15,10944539.00
+2020-02-18,2020,Department of State,37,260470612.49
+2020-02-19,2020,Agency for International Development,23,18250000.00
+2020-02-19,2020,Department of State,31,32086.05
+2020-02-20,2020,Agency for International Development,24,20156176.00
+2020-02-20,2020,Department of State,125,264305.52
+2020-02-21,2020,Agency for International Development,33,8875409.00
+2020-02-21,2020,Department of State,49,213443.00
+2020-02-22,2020,Department of State,3,0.00
+2020-02-23,2020,Agency for International Development,1,624444.00
+2020-02-23,2020,Department of State,4,14064.82
+2020-02-24,2020,Agency for International Development,24,18362251.00
+2020-02-24,2020,Department of State,35,5275546.59
+2020-02-25,2020,Agency for International Development,12,-14641573.00
+2020-02-25,2020,Department of State,54,8455142.94
+2020-02-26,2020,Agency for International Development,19,39820433.00
+2020-02-26,2020,Department of State,63,23367938.24
+2020-02-27,2020,Agency for International Development,12,395176.00
+2020-02-27,2020,Department of State,51,1623654.61
+2020-02-28,2020,Agency for International Development,24,20293249.00
+2020-02-28,2020,Department of State,45,20299995.62
+2020-03-01,2020,Agency for International Development,1,793332.00
+2020-03-01,2020,Department of State,1,49768.58
+2020-03-02,2020,Agency for International Development,11,3010368.00
+2020-03-02,2020,Department of State,21,4032983.38
+2020-03-03,2020,Agency for International Development,27,13273573.00
+2020-03-03,2020,Department of State,37,9050596.26
+2020-03-04,2020,Agency for International Development,16,67750563.00
+2020-03-04,2020,Department of State,36,11268010.14
+2020-03-05,2020,Agency for International Development,19,21535359.00
+2020-03-05,2020,Department of State,42,3150142.15
+2020-03-06,2020,Agency for International Development,12,26416185.00
+2020-03-06,2020,Department of State,27,365488.92
+2020-03-08,2020,Agency for International Development,2,137996.00
+2020-03-08,2020,Department of State,5,9550.00
+2020-03-09,2020,Agency for International Development,17,5087012.00
+2020-03-09,2020,Department of State,33,9823090.05
+2020-03-10,2020,Agency for International Development,23,32112112.00
+2020-03-10,2020,Department of State,19,1319266.76
+2020-03-11,2020,Agency for International Development,30,93609961.00
+2020-03-11,2020,Department of State,38,21300571.93
+2020-03-12,2020,Agency for International Development,15,19710555.00
+2020-03-12,2020,Department of State,29,613495.04
+2020-03-13,2020,Agency for International Development,9,8535829.00
+2020-03-13,2020,Department of State,38,7273941.72
+2020-03-14,2020,Department of State,1,41000.00
+2020-03-15,2020,Agency for International Development,1,1715000.00
+2020-03-15,2020,Department of State,1,1019.00
+2020-03-16,2020,Agency for International Development,12,18521149.00
+2020-03-16,2020,Department of State,31,15479986.04
+2020-03-17,2020,Agency for International Development,8,1326574.00
+2020-03-17,2020,Department of State,42,2482264.88
+2020-03-18,2020,Agency for International Development,11,12938957.00
+2020-03-18,2020,Department of State,28,10872682.25
+2020-03-19,2020,Agency for International Development,21,15143251.00
+2020-03-19,2020,Department of State,30,13308738.62
+2020-03-20,2020,Agency for International Development,25,44089190.00
+2020-03-20,2020,Department of State,23,6235969.27
+2020-03-21,2020,Department of State,1,20000.00
+2020-03-22,2020,Agency for International Development,2,7101574.00
+2020-03-22,2020,Department of State,9,0.00
+2020-03-23,2020,Agency for International Development,27,39090874.00
+2020-03-23,2020,Department of State,18,9494504.00
+2020-03-24,2020,Agency for International Development,13,8301046.00
+2020-03-24,2020,Department of State,28,801904.48
+2020-03-25,2020,Agency for International Development,14,11858501.00
+2020-03-25,2020,Department of State,69,291679.31
+2020-03-26,2020,Agency for International Development,19,17586676.00
+2020-03-26,2020,Department of State,24,8317841.87
+2020-03-27,2020,Agency for International Development,38,31416055.00
+2020-03-27,2020,Department of State,47,55333.73
+2020-03-28,2020,Agency for International Development,2,2819744.00
+2020-03-29,2020,Agency for International Development,3,1825727.00
+2020-03-29,2020,Department of State,4,0.00
+2020-03-30,2020,Agency for International Development,32,36018100.00
+2020-03-30,2020,Department of State,49,15477537.87
+2020-03-31,2020,Agency for International Development,19,17771253.00
+2020-03-31,2020,Department of State,42,310305.68
+2020-04-01,2020,Agency for International Development,22,17544860.00
+2020-04-01,2020,Department of State,28,-77894.48
+2020-04-02,2020,Agency for International Development,16,15563346.00
+2020-04-02,2020,Department of State,18,209321.54
+2020-04-03,2020,Agency for International Development,25,48723819.00
+2020-04-03,2020,Department of State,9,8744752.88
+2020-04-04,2020,Agency for International Development,1,4477036.00
+2020-04-04,2020,Department of State,1,0.00
+2020-04-05,2020,Agency for International Development,4,22225852.00
+2020-04-06,2020,Agency for International Development,23,23475267.00
+2020-04-06,2020,Department of State,18,-142824.55
+2020-04-07,2020,Agency for International Development,19,21886838.00
+2020-04-07,2020,Department of State,25,8339111.65
+2020-04-08,2020,Agency for International Development,24,10773449.00
+2020-04-08,2020,Department of State,25,-101661.25
+2020-04-09,2020,Agency for International Development,8,10599864.00
+2020-04-09,2020,Department of State,27,887943.42
+2020-04-10,2020,Agency for International Development,18,12718972.00
+2020-04-10,2020,Department of State,25,150400.00
+2020-04-11,2020,Agency for International Development,1,0.00
+2020-04-11,2020,Department of State,3,-1528.00
+2020-04-12,2020,Agency for International Development,6,16355000.00
+2020-04-13,2020,Agency for International Development,13,3727857.00
+2020-04-13,2020,Department of State,24,-21323.44
+2020-04-14,2020,Agency for International Development,21,31810912.00
+2020-04-14,2020,Department of State,30,376582.18
+2020-04-15,2020,Agency for International Development,13,1427524.00
+2020-04-15,2020,Department of State,16,1623895.00
+2020-04-16,2020,Agency for International Development,16,24523668.00
+2020-04-16,2020,Department of State,21,-131436.00
+2020-04-17,2020,Agency for International Development,19,9128386.00
+2020-04-17,2020,Department of State,26,402264.71
+2020-04-18,2020,Agency for International Development,1,0.00
+2020-04-18,2020,Department of State,1,40185.00
+2020-04-19,2020,Agency for International Development,1,0.00
+2020-04-19,2020,Department of State,2,11965.00
+2020-04-20,2020,Agency for International Development,23,41081266.00
+2020-04-20,2020,Department of State,24,40033.40
+2020-04-21,2020,Agency for International Development,62,73782010.00
+2020-04-21,2020,Department of State,45,13398652.08
+2020-04-22,2020,Agency for International Development,18,21878560.00
+2020-04-22,2020,Department of State,26,5783395.53
+2020-04-23,2020,Agency for International Development,28,14646724.00
+2020-04-23,2020,Department of State,27,377705.45
+2020-04-24,2020,Agency for International Development,14,14934574.00
+2020-04-24,2020,Department of State,36,-151635.63
+2020-04-25,2020,Department of State,4,-1600.00
+2020-04-26,2020,Agency for International Development,3,10860432.00
+2020-04-26,2020,Department of State,4,1891.73
+2020-04-27,2020,Agency for International Development,19,12458359.00
+2020-04-27,2020,Department of State,36,10776013.82
+2020-04-28,2020,Agency for International Development,26,36747514.00
+2020-04-28,2020,Department of State,36,3545907.00
+2020-04-29,2020,Agency for International Development,22,14833753.00
+2020-04-29,2020,Department of State,25,1659047.36
+2020-04-30,2020,Agency for International Development,23,32594880.00
+2020-04-30,2020,Department of State,33,2201309.20
+2020-05-01,2020,Agency for International Development,17,11255857.00
+2020-05-01,2020,Department of State,13,70862.62
+2020-05-03,2020,Agency for International Development,5,3000000.00
+2020-05-03,2020,Department of State,1,17360.00
+2020-05-04,2020,Agency for International Development,13,20326102.00
+2020-05-04,2020,Department of State,62,973175.19
+2020-05-05,2020,Agency for International Development,12,20943748.00
+2020-05-05,2020,Department of State,26,4385708.00
+2020-05-06,2020,Agency for International Development,17,14807370.00
+2020-05-06,2020,Department of State,23,14545913.50
+2020-05-07,2020,Agency for International Development,13,18815270.00
+2020-05-07,2020,Department of State,39,657205.14
+2020-05-08,2020,Agency for International Development,13,28072926.00
+2020-05-08,2020,Department of State,31,919393.22
+2020-05-10,2020,Agency for International Development,1,1744451.00
+2020-05-10,2020,Department of State,3,0.00
+2020-05-11,2020,Agency for International Development,24,15931465.00
+2020-05-11,2020,Department of State,34,6223159.00
+2020-05-12,2020,Agency for International Development,19,18770667.00
+2020-05-12,2020,Department of State,37,295561.89
+2020-05-13,2020,Agency for International Development,29,29956453.00
+2020-05-13,2020,Department of State,42,14119.45
+2020-05-14,2020,Agency for International Development,26,39320825.00
+2020-05-14,2020,Department of State,32,24386690.00
+2020-05-15,2020,Agency for International Development,45,87403450.00
+2020-05-15,2020,Department of State,24,2532155.00
+2020-05-16,2020,Agency for International Development,3,13590251.00
+2020-05-17,2020,Agency for International Development,10,10899626.00
+2020-05-17,2020,Department of State,3,36724.12
+2020-05-18,2020,Agency for International Development,63,198494949.00
+2020-05-18,2020,Department of State,55,820157.01
+2020-05-19,2020,Agency for International Development,40,179840273.00
+2020-05-19,2020,Department of State,35,10881419.00
+2020-05-20,2020,Department of State,46,10218957.30
+2020-05-21,2020,Department of State,35,6946323.48
+2020-05-22,2020,Department of State,29,-2482810.29
+2020-05-25,2020,Agency for International Development,1,0.00
+2020-05-26,2020,Agency for International Development,21,31149204.00
+2020-05-26,2020,Department of State,26,10543100.60
+2020-05-27,2020,Agency for International Development,17,12833883.00
+2020-05-27,2020,Department of State,33,2243518.82
+2020-05-28,2020,Agency for International Development,28,31791552.00
+2020-05-28,2020,Department of State,31,1489392.64
+2020-05-29,2020,Agency for International Development,23,43495294.00
+2020-05-29,2020,Department of State,53,28257123.38
+2020-05-30,2020,Agency for International Development,1,4296931.00
+2020-05-31,2020,Agency for International Development,3,3149192.00
+2020-05-31,2020,Department of State,4,-47000.00
+2020-06-01,2020,Agency for International Development,20,48723341.00
+2020-06-01,2020,Department of State,36,3326986.38
+2020-06-02,2020,Agency for International Development,15,15663199.00
+2020-06-02,2020,Department of State,30,1357345.98
+2020-06-03,2020,Agency for International Development,17,17067810.00
+2020-06-03,2020,Department of State,27,-288194.49
+2020-06-04,2020,Agency for International Development,17,18398872.00
+2020-06-04,2020,Department of State,48,6490012.93
+2020-06-05,2020,Agency for International Development,17,24657551.00
+2020-06-05,2020,Department of State,51,415958.80
+2020-06-07,2020,Agency for International Development,2,3500000.00
+2020-06-08,2020,Agency for International Development,22,15949245.00
+2020-06-08,2020,Department of State,68,266728.32
+2020-06-09,2020,Agency for International Development,15,1759225.00
+2020-06-09,2020,Department of State,67,1563685.06
+2020-06-10,2020,Agency for International Development,17,10710556.00
+2020-06-10,2020,Department of State,63,1538952.56
+2020-06-11,2020,Agency for International Development,20,53252080.00
+2020-06-11,2020,Department of State,84,2545029.03
+2020-06-12,2020,Agency for International Development,15,24939101.00
+2020-06-12,2020,Department of State,61,3678528.21
+2020-06-13,2020,Agency for International Development,4,29760149.00
+2020-06-13,2020,Department of State,1,2250.00
+2020-06-14,2020,Agency for International Development,3,9452391.00
+2020-06-14,2020,Department of State,2,69725.00
+2020-06-15,2020,Agency for International Development,22,34761903.00
+2020-06-15,2020,Department of State,47,689204.35
+2020-06-16,2020,Agency for International Development,24,41033195.00
+2020-06-16,2020,Department of State,62,1591169.69
+2020-06-17,2020,Department of State,47,4636004.65
+2020-06-18,2020,Agency for International Development,15,18187618.00
+2020-06-18,2020,Department of State,33,1007503.52
+2020-06-19,2020,Agency for International Development,39,64753382.00
+2020-06-19,2020,Department of State,46,1430219.37
+2020-06-20,2020,Agency for International Development,6,10905512.00
+2020-06-21,2020,Agency for International Development,2,0.00
+2020-06-21,2020,Department of State,1,19231.00
+2020-06-22,2020,Agency for International Development,8,4560934.00
+2020-06-22,2020,Department of State,14,6982594.00
+2020-06-23,2020,Agency for International Development,20,28270209.00
+2020-06-23,2020,Department of State,64,1031700.22
+2020-06-24,2020,Agency for International Development,35,29552718.00
+2020-06-24,2020,Department of State,75,4122609.27
+2020-06-25,2020,Agency for International Development,31,76338815.00
+2020-06-25,2020,Department of State,57,6419113.91
+2020-06-26,2020,Agency for International Development,44,137088057.00
+2020-06-26,2020,Department of State,65,3485309.29
+2020-06-27,2020,Agency for International Development,2,2300000.00
+2020-06-27,2020,Department of State,2,34464.00
+2020-06-28,2020,Department of State,14,36034.28
+2020-06-29,2020,Agency for International Development,48,97378793.00
+2020-06-29,2020,Department of State,69,1632966.13
+2020-06-30,2020,Agency for International Development,64,135934102.00
+2020-06-30,2020,Department of State,96,17002447.26
+2020-07-01,2020,Agency for International Development,26,27888936.00
+2020-07-01,2020,Department of State,72,9782073.24
+2020-07-02,2020,Agency for International Development,26,55741999.00
+2020-07-02,2020,Department of State,68,3264234.68
+2020-07-03,2020,Agency for International Development,1,20199162.00
+2020-07-03,2020,Department of State,3,29850.00
+2020-07-04,2020,Department of State,1,0.00
+2020-07-05,2020,Agency for International Development,2,3000000.00
+2020-07-06,2020,Agency for International Development,12,7340390.00
+2020-07-06,2020,Department of State,61,10220894.19
+2020-07-07,2020,Agency for International Development,20,27366839.00
+2020-07-07,2020,Department of State,40,6810048.82
+2020-07-08,2020,Agency for International Development,25,18077264.00
+2020-07-08,2020,Department of State,45,11652911.58
+2020-07-09,2020,Agency for International Development,30,48017165.00
+2020-07-09,2020,Department of State,57,8157819.43
+2020-07-10,2020,Agency for International Development,19,67353244.00
+2020-07-10,2020,Department of State,73,11167263.13
+2020-07-11,2020,Agency for International Development,3,2850000.00
+2020-07-12,2020,Agency for International Development,3,2742841.00
+2020-07-12,2020,Department of State,2,39307.00
+2020-07-13,2020,Agency for International Development,17,15178773.00
+2020-07-13,2020,Department of State,43,11099160.03
+2020-07-14,2020,Agency for International Development,23,21729583.00
+2020-07-14,2020,Department of State,97,20157271.44
+2020-07-15,2020,Agency for International Development,26,37410637.00
+2020-07-15,2020,Department of State,104,62792275.71
+2020-07-16,2020,Agency for International Development,32,32160564.00
+2020-07-16,2020,Department of State,93,35042155.72
+2020-07-17,2020,Agency for International Development,14,8153171.00
+2020-07-17,2020,Department of State,84,46904665.83
+2020-07-18,2020,Agency for International Development,2,500000.00
+2020-07-18,2020,Department of State,2,0.00
+2020-07-19,2020,Agency for International Development,4,3983000.00
+2020-07-19,2020,Department of State,1,16970.27
+2020-07-20,2020,Agency for International Development,28,3456138.00
+2020-07-20,2020,Department of State,38,746990.79
+2020-07-21,2020,Agency for International Development,20,27627239.00
+2020-07-21,2020,Department of State,42,43187.74
+2020-07-22,2020,Agency for International Development,32,38599308.00
+2020-07-22,2020,Department of State,37,440940.87
+2020-07-23,2020,Agency for International Development,34,43143866.00
+2020-07-23,2020,Department of State,51,1425404.96
+2020-07-24,2020,Agency for International Development,24,27015410.00
+2020-07-24,2020,Department of State,49,537343.31
+2020-07-25,2020,Agency for International Development,1,3683110.00
+2020-07-26,2020,Agency for International Development,10,16176351.00
+2020-07-26,2020,Department of State,1,0.00
+2020-07-27,2020,Agency for International Development,23,24610394.00
+2020-07-27,2020,Department of State,39,599708.32
+2020-07-28,2020,Agency for International Development,31,34562038.00
+2020-07-28,2020,Department of State,42,483508.94
+2020-07-29,2020,Agency for International Development,33,32837949.00
+2020-07-29,2020,Department of State,55,3579921.30
+2020-07-30,2020,Agency for International Development,41,52833629.00
+2020-07-30,2020,Department of State,41,178516.00
+2020-07-31,2020,Agency for International Development,22,43524039.00
+2020-07-31,2020,Department of State,34,8817421.70
+2020-08-01,2020,Agency for International Development,3,48651226.00
+2020-08-02,2020,Agency for International Development,5,5001516.00
+2020-08-02,2020,Department of State,3,593010.00
+2020-08-03,2020,Agency for International Development,17,12545312.50
+2020-08-03,2020,Department of State,58,5142715.34
+2020-08-04,2020,Agency for International Development,43,30367117.00
+2020-08-04,2020,Department of State,43,743701.22
+2020-08-05,2020,Agency for International Development,32,22687450.22
+2020-08-05,2020,Department of State,38,3853423.93
+2020-08-06,2020,Agency for International Development,33,24113230.65
+2020-08-06,2020,Department of State,42,3005261.10
+2020-08-07,2020,Agency for International Development,25,43770829.00
+2020-08-07,2020,Department of State,72,1415284.40
+2020-08-08,2020,Agency for International Development,3,6750000.01
+2020-08-08,2020,Department of State,3,996300.00
+2020-08-09,2020,Agency for International Development,5,5063380.00
+2020-08-09,2020,Department of State,4,3491689.00
+2020-08-10,2020,Agency for International Development,52,38283892.00
+2020-08-10,2020,Department of State,57,12602015.23
+2020-08-11,2020,Agency for International Development,71,81325640.00
+2020-08-11,2020,Department of State,57,6745725.60
+2020-08-12,2020,Agency for International Development,161,259123833.00
+2020-08-12,2020,Department of State,70,22726531.00
+2020-08-13,2020,Agency for International Development,14,15341188.00
+2020-08-13,2020,Department of State,68,20747472.15
+2020-08-14,2020,Agency for International Development,16,20240376.00
+2020-08-14,2020,Department of State,59,7761537.75
+2020-08-15,2020,Department of State,2,18500.00
+2020-08-16,2020,Department of State,12,291373.34
+2020-08-17,2020,Agency for International Development,17,3665889.00
+2020-08-17,2020,Department of State,60,4371385.68
+2020-08-18,2020,Agency for International Development,18,6028861.00
+2020-08-18,2020,Department of State,63,10478777.70
+2020-08-19,2020,Agency for International Development,20,13143572.00
+2020-08-19,2020,Department of State,108,10872719.31
+2020-08-20,2020,Agency for International Development,11,6637784.00
+2020-08-20,2020,Department of State,91,22462474.83
+2020-08-21,2020,Agency for International Development,17,45857265.00
+2020-08-21,2020,Department of State,67,5876849.92
+2020-08-22,2020,Department of State,3,-82.60
+2020-08-23,2020,Agency for International Development,1,478588.00
+2020-08-23,2020,Department of State,12,2130799.00
+2020-08-24,2020,Agency for International Development,13,11614792.00
+2020-08-24,2020,Department of State,149,14280629.36
+2020-08-25,2020,Agency for International Development,21,11409278.00
+2020-08-25,2020,Department of State,96,18750738.70
+2020-08-26,2020,Agency for International Development,16,9315550.00
+2020-08-26,2020,Department of State,86,13976008.68
+2020-08-27,2020,Agency for International Development,23,17825225.00
+2020-08-27,2020,Department of State,84,26243864.47
+2020-08-28,2020,Agency for International Development,6,12605304.00
+2020-08-28,2020,Department of State,103,19121030.17
+2020-08-30,2020,Agency for International Development,16,18607480.00
+2020-08-30,2020,Department of State,8,107188.11
+2020-08-31,2020,Agency for International Development,49,59251503.00
+2020-08-31,2020,Department of State,92,43791642.65
+2020-09-01,2020,Agency for International Development,21,90636551.00
+2020-09-01,2020,Department of State,114,18496954.47
+2020-09-02,2020,Agency for International Development,35,45602458.00
+2020-09-02,2020,Department of State,107,6162974.79
+2020-09-03,2020,Agency for International Development,37,49771687.00
+2020-09-03,2020,Department of State,72,6601607.45
+2020-09-04,2020,Agency for International Development,18,46613152.00
+2020-09-04,2020,Department of State,96,8136617.05
+2020-09-05,2020,Agency for International Development,2,1300000.00
+2020-09-05,2020,Department of State,4,-268858.43
+2020-09-07,2020,Agency for International Development,1,2200000.00
+2020-09-07,2020,Department of State,3,39299.00
+2020-09-08,2020,Agency for International Development,32,80189354.00
+2020-09-08,2020,Department of State,206,25647484.19
+2020-09-09,2020,Agency for International Development,32,29309440.00
+2020-09-09,2020,Department of State,134,9811228.16
+2020-09-10,2020,Agency for International Development,35,88855611.00
+2020-09-10,2020,Department of State,143,13568338.51
+2020-09-11,2020,Agency for International Development,7,3345000.00
+2020-09-11,2020,Department of State,220,40251520.15
+2020-09-12,2020,Department of State,2,-507.72
+2020-09-13,2020,Department of State,9,953779.65
+2020-09-14,2020,Agency for International Development,35,30829955.00
+2020-09-14,2020,Department of State,177,43995599.98
+2020-09-15,2020,Agency for International Development,32,49584711.00
+2020-09-15,2020,Department of State,221,45768980.59
+2020-09-16,2020,Agency for International Development,30,33390533.00
+2020-09-16,2020,Department of State,166,21638451.27
+2020-09-17,2020,Agency for International Development,24,23165902.00
+2020-09-17,2020,Department of State,201,21556995.14
+2020-09-18,2020,Agency for International Development,63,81132236.00
+2020-09-18,2020,Department of State,158,46330955.72
+2020-09-19,2020,Department of State,5,14160.03
+2020-09-20,2020,Agency for International Development,1,150000.00
+2020-09-20,2020,Department of State,22,3945948.84
+2020-09-21,2020,Agency for International Development,19,16620972.00
+2020-09-21,2020,Department of State,318,32209956.00
+2020-09-22,2020,Agency for International Development,47,96368458.00
+2020-09-22,2020,Department of State,277,33834228.85
+2020-09-23,2020,Agency for International Development,65,96606363.00
+2020-09-23,2020,Department of State,329,93370387.95
+2020-09-24,2020,Agency for International Development,59,134130133.00
+2020-09-24,2020,Department of State,272,31697630.05
+2020-09-25,2020,Agency for International Development,41,91026240.00
+2020-09-25,2020,Department of State,253,22565761.72
+2020-09-26,2020,Agency for International Development,2,1750000.00
+2020-09-26,2020,Department of State,34,7172617.05
+2020-09-27,2020,Agency for International Development,3,115128.00
+2020-09-27,2020,Department of State,74,9164918.23
+2020-09-28,2020,Agency for International Development,96,168994177.00
+2020-09-28,2020,Department of State,448,56054656.46
+2020-09-29,2020,Agency for International Development,146,489992364.00
+2020-09-29,2020,Department of State,368,48612509.67
+2020-09-30,2020,Agency for International Development,147,346065240.00
+2020-09-30,2020,Department of State,207,18002520.85
