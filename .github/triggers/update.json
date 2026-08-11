@@ -1,4 +1,4 @@
 {
-  "requested": "2026-08-11T14:40:00Z",
-  "reason": "Add the monthly obligations line chart and resume transaction backfill"
+  "requested": "2026-08-11T14:50:00Z",
+  "reason": "Fill the missing FY2025 daily transaction partition"
 }

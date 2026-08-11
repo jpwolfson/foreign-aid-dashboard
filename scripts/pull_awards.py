@@ -307,7 +307,9 @@ def load_progress():
 def pull_archive_year(cfg, fiscal_year, force=False):
     progress = load_progress()
     completed = {int(fy) for fy in progress.get("completedFiscalYears", [])}
-    if fiscal_year in completed and not force:
+    existing_obligations = load_daily_obligations()
+    obligation_fys = {int(r["fiscal_year"]) for r in existing_obligations}
+    if fiscal_year in completed and fiscal_year in obligation_fys and not force:
         print(f"FY{fiscal_year} archive already complete")
         return
     store = load_store()
@@ -325,7 +327,7 @@ def pull_archive_year(cfg, fiscal_year, force=False):
             daily[key]["transactions"] += values["transactions"]
             daily[key]["obligations"] += values["obligations"]
     obligation_rows = replace_obligation_fiscal_year(
-        load_daily_obligations(), fiscal_year, daily
+        existing_obligations, fiscal_year, daily
     )
     write_daily_obligations(obligation_rows)
     write_outputs(store, obligation_rows)
