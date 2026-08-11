@@ -23,6 +23,7 @@ OBLIGATIONS = ROOT / "data" / "award_obligations_daily.csv"
 OUTPUT = ROOT / "data" / "awards.json"
 PROGRESS = ROOT / "data" / "award_archive_progress.json"
 SEARCH_API = "https://api.usaspending.gov/api/v2/search/spending_by_award/"
+TRANSACTION_API = "https://api.usaspending.gov/api/v2/search/spending_by_transaction/"
 ARCHIVE_API = "https://api.usaspending.gov/api/v2/bulk_download/list_monthly_files/"
 USER_AGENT = "foreign-aid-dashboard/1.0 (github.com/jpwolfson/foreign-aid-dashboard)"
 AWARD_TYPES = ["02", "03", "04", "05"]
@@ -65,7 +66,7 @@ def api_post(payload, url=SEARCH_API, retries=10):
             time.sleep(min(300, 2 ** attempt))
 
 
-def download_bytes(url, retries=10):
+def download_bytes(url, retries=5):
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     for attempt in range(retries):
         try:
@@ -160,6 +161,14 @@ def decimal_amount(value):
         return Decimal(0)
 
 
+def add_daily_transaction(daily, action_date, agency, amount):
+    if not action_date:
+        return
+    bucket = daily[(action_date, agency or "Unknown agency")]
+    bucket["transactions"] += 1
+    bucket["obligations"] += decimal_amount(amount)
+
+
 def merge_archive(store, rows, daily=None):
     """Merge award snapshots and, when requested, aggregate transaction flows.
 
@@ -175,10 +184,10 @@ def merge_archive(store, rows, daily=None):
             continue
         action_date = row.get("action_date") or ""
         if daily is not None and action_date:
-            agency = row.get("awarding_agency_name") or "Unknown agency"
-            bucket = daily[(action_date, agency)]
-            bucket["transactions"] += 1
-            bucket["obligations"] += decimal_amount(row.get("federal_action_obligation"))
+            add_daily_transaction(
+                daily, action_date, row.get("awarding_agency_name"),
+                row.get("federal_action_obligation"),
+            )
         prior = store.get(aid)
         # The archive has no explicit signing/base-obligation date. Use the
         # performance start for award cohorting and action_date only as a final
@@ -212,6 +221,45 @@ def merge_archive(store, rows, daily=None):
             "description": row.get("prime_award_base_transaction_description") or row.get("transaction_description") or "",
             "last_modified": candidate_modified,
         }
+    return store
+
+
+def query_transaction_year(agency, fiscal_year_value):
+    """Fallback when an annual ZIP is unavailable: page through transactions."""
+    start, end = date(fiscal_year_value - 1, 10, 1), date(fiscal_year_value, 9, 30)
+    page = 1
+    daily = defaultdict(lambda: {"transactions": 0, "obligations": Decimal(0)})
+    while True:
+        payload = {
+            "filters": {
+                "award_type_codes": AWARD_TYPES,
+                "time_period": [{"start_date": start.isoformat(), "end_date": end.isoformat()}],
+                "agencies": [{"type": "awarding", "tier": "toptier", "name": agency}],
+            },
+            "fields": ["Action Date", "Transaction Amount", "Awarding Agency"],
+            "page": page, "limit": 100,
+            "sort": "Action Date", "order": "asc",
+        }
+        data = api_post(payload, url=TRANSACTION_API)
+        for row in data.get("results", []):
+            add_daily_transaction(
+                daily, row.get("Action Date"), row.get("Awarding Agency") or agency,
+                row.get("Transaction Amount"),
+            )
+        if not data.get("page_metadata", {}).get("hasNext"):
+            break
+        page += 1
+        if page > 10000:
+            raise RuntimeError("transaction pagination exceeded safety cap")
+    return daily
+
+
+def repair_cohort_dates(store):
+    """Prefer performance start dates over the old first-observed-action date."""
+    for row in store.values():
+        start, base = row.get("start_date") or "", row.get("base_date") or ""
+        if start and (not base or start < base):
+            row["base_date"] = start
     return store
 
 
@@ -265,9 +313,17 @@ def pull_archive_year(cfg, fiscal_year, force=False):
     store = load_store()
     daily = defaultdict(lambda: {"transactions": 0, "obligations": Decimal(0)})
     for agency in cfg["awardArchiveAgencies"]:
-        info = archive_file(agency["id"], fiscal_year)
-        print(f"{agency['name']}: {info['file_name']}")
-        merge_archive(store, archive_rows(download_bytes(info["url"])), daily)
+        agency_daily = defaultdict(lambda: {"transactions": 0, "obligations": Decimal(0)})
+        try:
+            info = archive_file(agency["id"], fiscal_year)
+            print(f"{agency['name']}: {info['file_name']}")
+            merge_archive(store, archive_rows(download_bytes(info["url"])), agency_daily)
+        except (RuntimeError, zipfile.BadZipFile) as exc:
+            print(f"Archive unavailable; using transaction-search fallback for {agency['name']}: {exc}")
+            agency_daily = query_transaction_year(agency["name"], fiscal_year)
+        for key, values in agency_daily.items():
+            daily[key]["transactions"] += values["transactions"]
+            daily[key]["obligations"] += values["obligations"]
     obligation_rows = replace_obligation_fiscal_year(
         load_daily_obligations(), fiscal_year, daily
     )
@@ -338,7 +394,37 @@ def cumulative_obligations(rows, today=None):
     return fy_totals, fy_cumulative
 
 
+def monthly_obligations(rows):
+    """Aggregate net transaction obligations at the DMS chart's month grain."""
+    buckets = defaultdict(lambda: {"transactions": 0, "obligations": Decimal(0)})
+    valid_dates = []
+    for row in rows:
+        try:
+            d = date.fromisoformat(row["action_date"][:10])
+        except (TypeError, ValueError):
+            continue
+        valid_dates.append(d)
+        bucket = buckets[d.strftime("%Y-%m")]
+        bucket["transactions"] += int(row.get("transactions") or 0)
+        bucket["obligations"] += decimal_amount(row.get("obligations"))
+    if not valid_dates:
+        return []
+    start = min(valid_dates).replace(day=1)
+    end = max(valid_dates)
+    result = []
+    for first, _ in months(start, end):
+        key = first.strftime("%Y-%m")
+        values = buckets[key]
+        result.append({
+            "month": key,
+            "transactions": values["transactions"],
+            "obligations": round(float(values["obligations"]), 2),
+        })
+    return result
+
+
 def write_outputs(store, obligation_rows=None):
+    repair_cohort_dates(store)
     STORE.parent.mkdir(parents=True, exist_ok=True)
     with STORE.open("w", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=HEADER)
@@ -367,6 +453,7 @@ def write_outputs(store, obligation_rows=None):
         "monthly": [{"month": k, "awards": v["awards"], "obligations": round(v["obligations"], 2)} for k, v in sorted(monthly.items())],
         "fiscalYears": [{"fy": k, "awards": v["awards"], "obligations": round(v["obligations"], 2)} for k, v in sorted(fys.items())],
         "transactionFiscalYears": transaction_fys,
+        "transactionMonthly": monthly_obligations(obligation_rows),
         "fyCumulative": fy_cumulative,
         "transactionLatestActionDate": max(
             (r["action_date"] for r in obligation_rows), default=""

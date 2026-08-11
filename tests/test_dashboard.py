@@ -214,6 +214,39 @@ class AwardTests(unittest.TestCase):
         self.assertEqual(series[0]["points"][-1]["obligations"], 130.0)
         self.assertFalse(series[0]["partial"])
 
+    def test_monthly_obligations_fill_zero_months(self):
+        rows = [
+            {"action_date":"2024-10-01","transactions":"2","obligations":"100.00"},
+            {"action_date":"2024-12-15","transactions":"1","obligations":"-25.00"},
+        ]
+        got = pull_awards.monthly_obligations(rows)
+        self.assertEqual([r["month"] for r in got], ["2024-10", "2024-11", "2024-12"])
+        self.assertEqual(got[1], {"month":"2024-11", "transactions":0, "obligations":0.0})
+        self.assertEqual(got[2]["obligations"], -25.0)
+
+    def test_transaction_search_fallback_pages_and_aggregates(self):
+        calls = []
+        def fake_post(payload, url, retries=10):
+            calls.append(payload["page"])
+            return {
+                "results": [{"Action Date":"2024-10-02", "Transaction Amount":"25.50", "Awarding Agency":"USAID"}],
+                "page_metadata": {"hasNext": payload["page"] == 1},
+            }
+        old = pull_awards.api_post
+        try:
+            pull_awards.api_post = fake_post
+            got = pull_awards.query_transaction_year("USAID", 2025)
+        finally:
+            pull_awards.api_post = old
+        self.assertEqual(calls, [1, 2])
+        self.assertEqual(got[("2024-10-02", "USAID")]["transactions"], 2)
+        self.assertEqual(got[("2024-10-02", "USAID")]["obligations"], Decimal("51.00"))
+
+    def test_repair_cohort_dates_prefers_performance_start(self):
+        store = {"old": {"base_date":"2016-02-05", "start_date":"2002-06-05"}}
+        pull_awards.repair_cohort_dates(store)
+        self.assertEqual(store["old"]["base_date"], "2002-06-05")
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,4 +1,4 @@
 {
-  "requested": "2026-08-11T14:15:00Z",
-  "reason": "Backfill transaction obligations and validate the cumulative fiscal-year chart"
+  "requested": "2026-08-11T14:40:00Z",
+  "reason": "Add the monthly obligations line chart and resume transaction backfill"
 }

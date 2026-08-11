@@ -24,7 +24,8 @@ for the legal appropriation denominator used in the filing.
   pre-generated annual archives for history and current-year updates, with a
   durable award store, daily transaction-obligation series, and compact
   dashboard aggregate. Award cohorts use performance start dates; fiscal-year
-  flows use `federal_action_obligation` by `action_date`.
+  flows use `federal_action_obligation` by `action_date`; the site presents both
+  cumulative fiscal-year overlays and a monthly transaction-flow line chart.
 - A dependency-free static site, tests, and GitHub Actions for weekly refreshes
   and GitHub Pages deployment.
 
@@ -74,7 +75,8 @@ history. The current fiscal year is refreshed on every weekly run. Each annual
 archive replaces its daily-obligation partition, so repeated refreshes do not
 duplicate transactions. Each archive is checkpointed separately by the
 workflow so an API interruption resumes at the incomplete year rather than
-restarting history.
+restarting history. If a bulk ZIP is unavailable, the puller falls back to the
+official paginated transaction-search endpoint for that agency-year.
 
 ## Methodological boundary
 

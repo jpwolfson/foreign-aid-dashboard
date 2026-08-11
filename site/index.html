@@ -240,6 +240,7 @@ function renderExecution(data) {
 const FY_MONTH_OFFSETS=[0,31,61,92,123,151,182,212,243,273,304,335];
 const FY_MONTHS=["Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep"];
 const fyDateLabel=d=>new Date(2024,9,1+Math.min(d,364)).toLocaleString("en-US",{month:"short",day:"numeric"});
+const monthLabel=m=>new Date(`${m}-15T12:00:00`).toLocaleString("en-US",{month:"short",year:"numeric"});
 
 function cumulativeObligationsChart(plot, rawSeries) {
   plot.replaceChildren();
@@ -291,6 +292,31 @@ function obligationMonthTable(series) {
   }));
 }
 
+function monthlyObligationsChart(plot, pts) {
+  plot.replaceChildren();if(!pts.length)return;
+  const W=1020,H=300,L=62,R=18,T=15,B=38;
+  let low=Math.min(0,...pts.map(p=>p.obligations)),high=Math.max(0,...pts.map(p=>p.obligations));
+  if(high===low)high=low+1;
+  const svg=el("svg",{viewBox:`0 0 ${W} ${H}`,role:"img","aria-label":"Net grant transaction obligations by month"});
+  const tip=el("div",{class:"tip",role:"status","aria-live":"polite"});
+  const X=i=>L+(pts.length>1?i/(pts.length-1):.5)*(W-L-R),Y=v=>T+(high-v)/(high-low)*(H-B-T);
+  for(let i=0;i<=4;i++){const v=low+(high-low)*i/4;svg.append(el("line",{class:"grid",x1:L,x2:W-R,y1:Y(v),y2:Y(v)}),el("text",{class:"axis",x:L-8,y:Y(v)+4,"text-anchor":"end",text:fmtMoney(v)}));}
+  if(low<0)svg.append(el("line",{x1:L,x2:W-R,y1:Y(0),y2:Y(0),stroke:"var(--muted)","stroke-width":1.2}));
+  pts.forEach((p,i)=>{if(p.month.endsWith("-01")&&Number(p.month.slice(0,4))%2===1)svg.append(el("text",{class:"axis",x:X(i),y:H-12,"text-anchor":"middle",text:p.month.slice(0,4)}));});
+  const line=pts.map((p,i)=>`${i?"L":"M"}${X(i).toFixed(1)},${Y(p.obligations).toFixed(1)}`).join("");
+  svg.append(el("path",{d:line,fill:"none",stroke:COLORS[0],"stroke-width":2,"stroke-linejoin":"round","stroke-linecap":"round"}));
+  const last=pts.length-1;svg.append(el("circle",{cx:X(last),cy:Y(pts[last].obligations),r:4.5,fill:COLORS[0],stroke:"var(--surface)","stroke-width":2}),el("text",{class:"axis",x:X(last)-7,y:Y(pts[last].obligations)-10,"text-anchor":"end",fill:COLORS[0],text:fmtMoney(pts[last].obligations)}));
+  const cross=el("line",{y1:T,y2:H-B,stroke:"var(--muted)","stroke-width":1,visibility:"hidden"}),dot=el("circle",{r:4.5,fill:COLORS[0],stroke:"var(--surface)","stroke-width":2,visibility:"hidden"});svg.append(cross,dot);
+  svg.addEventListener("pointermove",event=>{
+    const bounds=svg.getBoundingClientRect(),vx=(event.clientX-bounds.left)*W/bounds.width;
+    const i=Math.max(0,Math.min(last,Math.round((vx-L)/(W-L-R)*last))),point=pts[i],x=X(i);
+    cross.setAttribute("x1",x);cross.setAttribute("x2",x);cross.setAttribute("visibility","visible");dot.setAttribute("cx",x);dot.setAttribute("cy",Y(point.obligations));dot.setAttribute("visibility","visible");
+    showTip(tip,plot,x*bounds.width/W,Y(point.obligations)*bounds.width/W,monthLabel(point.month),[{color:COLORS[0],value:fmtMoney(point.obligations),label:"net obligations"},{color:"transparent",value:fmtN(point.transactions),label:"transactions"}]);
+  });
+  svg.addEventListener("pointerleave",()=>{tip.style.display="none";cross.setAttribute("visibility","hidden");dot.setAttribute("visibility","hidden");});
+  plot.append(svg,tip);
+}
+
 function renderAwards(data) {
   const p=$("#awards"); p.replaceChildren();
   p.append(el("div",{class:"banner"},el("strong",{text:"Award and transaction view. "}),document.createTextNode(data.definition+" Award records show current lifetime totals; the time series separately sums transaction obligations by action date."),el("div",{class:"download-links"},downloadLink("awards.csv",`Download all ${fmtN(data.totalAwards||0)} awards (CSV)`),downloadLink("award_obligations_daily.csv","Download daily obligation flows (CSV)"))));
@@ -300,6 +326,10 @@ function renderAwards(data) {
   p.append(el("div",{class:"kpis"},kpi("Awards in store",fmtN(data.totalAwards),"Deduplicated prime awards"),kpi(`FY${curTransactions.fy} award starts`,fmtN(curCohort.awards),"By performance start date"),kpi(`FY${curTransactions.fy} obligations`,fmtMoney(curTransactions.obligations),"Net transaction obligations"),kpi("Transaction data through",data.transactionLatestActionDate||"—","USAspending Award Data Archive")));
   const chart=el("div",{class:"card"},el("h2",{text:"Cumulative grant obligations through the fiscal year"}),el("p",{class:"note",text:"Net transaction obligations by action date; each line starts October 1. The slope shows the within-year obligation rate, including deobligations. Hover to compare exact cumulative totals on the same date across years."}));
   const plot=el("div",{class:"plot"});chart.append(plot,obligationMonthTable(data.fyCumulative||[]));p.append(chart);cumulativeObligationsChart(plot,data.fyCumulative||[]);
+  if(data.transactionMonthly?.length){
+    const time=el("div",{class:"card"},el("h2",{text:"Net grant obligations by month"}),el("p",{class:"note",text:"Monthly transaction-obligation flow since October 2015, at the same resolution as the DMS time-series chart. Negative values are net deobligations."}));
+    const timePlot=el("div",{class:"plot"});time.append(timePlot,tableDetails(["Month","Net obligations","Transactions"],data.transactionMonthly.map(r=>[monthLabel(r.month),fmtMoney(r.obligations),fmtN(r.transactions)])));p.append(time);monthlyObligationsChart(timePlot,data.transactionMonthly);
+  }
   const card=el("div",{class:"card"},el("h2",{text:"Award detail"}),el("p",{class:"note",text:"Most recent 1,000 awards are loaded in the browser; the repository CSV is the full store."})); const tools=el("div",{class:"award-tools"}),search=el("input",{type:"search",placeholder:"Search recipient, award ID, or description","aria-label":"Search awards"}),agency=el("select",{"aria-label":"Agency filter"},el("option",{value:"",text:"All agencies"}),...Array.from(new Set(data.recentAwards.map(a=>a.awarding_agency))).sort().map(x=>el("option",{value:x,text:x})));tools.append(search,agency);const holder=el("div",{class:"table-wrap"});card.append(tools,holder);p.append(card);
   const draw=()=>{
     const q=search.value.toLowerCase();
