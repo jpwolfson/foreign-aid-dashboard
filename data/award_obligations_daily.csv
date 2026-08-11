@@ -4205,3 +4205,629 @@ action_date,fiscal_year,awarding_agency,transactions,obligations
 2022-09-29,2022,Department of State,327,78871054.97
 2022-09-30,2022,Agency for International Development,67,89332400.00
 2022-09-30,2022,Department of State,228,83465462.54
+2022-10-01,2023,Department of State,1,0.00
+2022-10-03,2023,Department of State,2,0.00
+2022-10-04,2023,Department of State,1,-159346.27
+2022-10-05,2023,Agency for International Development,2,0.00
+2022-10-05,2023,Department of State,7,-4987.50
+2022-10-06,2023,Agency for International Development,5,1350000.00
+2022-10-06,2023,Department of State,1,0.00
+2022-10-07,2023,Agency for International Development,3,6500000.00
+2022-10-07,2023,Department of State,2,0.00
+2022-10-10,2023,Agency for International Development,1,4154526.00
+2022-10-10,2023,Department of State,1,0.00
+2022-10-11,2023,Agency for International Development,4,3277181.00
+2022-10-11,2023,Department of State,11,-6482.83
+2022-10-12,2023,Agency for International Development,8,2100745.00
+2022-10-12,2023,Department of State,8,99804.00
+2022-10-13,2023,Agency for International Development,9,10494140.00
+2022-10-13,2023,Department of State,11,297806.60
+2022-10-14,2023,Agency for International Development,20,10653853.00
+2022-10-14,2023,Department of State,22,-17801.64
+2022-10-16,2023,Agency for International Development,4,23000000.00
+2022-10-16,2023,Department of State,2,0.00
+2022-10-17,2023,Agency for International Development,8,8770421.00
+2022-10-17,2023,Department of State,16,2283.75
+2022-10-18,2023,Agency for International Development,29,11258277.00
+2022-10-18,2023,Department of State,45,4983.92
+2022-10-19,2023,Agency for International Development,35,9441215.00
+2022-10-19,2023,Department of State,19,-14457.00
+2022-10-20,2023,Agency for International Development,36,19643327.00
+2022-10-20,2023,Department of State,50,47219.50
+2022-10-21,2023,Agency for International Development,15,11166677.00
+2022-10-21,2023,Department of State,22,-6324.31
+2022-10-22,2023,Agency for International Development,1,0.00
+2022-10-22,2023,Department of State,2,-10957.04
+2022-10-23,2023,Agency for International Development,1,7000000.00
+2022-10-23,2023,Department of State,1,78479.00
+2022-10-24,2023,Agency for International Development,28,19877386.00
+2022-10-24,2023,Department of State,13,1154334.96
+2022-10-25,2023,Agency for International Development,10,8966768.00
+2022-10-25,2023,Department of State,25,66475588.50
+2022-10-26,2023,Agency for International Development,26,4490774.00
+2022-10-26,2023,Department of State,20,-29.73
+2022-10-27,2023,Agency for International Development,60,9260149.00
+2022-10-27,2023,Department of State,25,421679.07
+2022-10-28,2023,Agency for International Development,46,35881369.00
+2022-10-28,2023,Department of State,16,3487336.66
+2022-10-30,2023,Agency for International Development,2,0.00
+2022-10-30,2023,Department of State,1,0.00
+2022-10-31,2023,Agency for International Development,89,14011721.00
+2022-10-31,2023,Department of State,35,208353.50
+2022-11-01,2023,Agency for International Development,11,28372367.00
+2022-11-01,2023,Department of State,36,193916.14
+2022-11-02,2023,Agency for International Development,9,6028013.00
+2022-11-02,2023,Department of State,15,1616014.70
+2022-11-03,2023,Agency for International Development,16,920710.00
+2022-11-03,2023,Department of State,26,29944.97
+2022-11-04,2023,Agency for International Development,16,19051663.00
+2022-11-04,2023,Department of State,13,-3131627.19
+2022-11-06,2023,Department of State,2,0.00
+2022-11-07,2023,Agency for International Development,16,3387567.00
+2022-11-07,2023,Department of State,27,1048404.53
+2022-11-08,2023,Agency for International Development,12,32879201.00
+2022-11-08,2023,Department of State,23,29260.62
+2022-11-09,2023,Agency for International Development,21,25252844.00
+2022-11-09,2023,Department of State,15,2703597.54
+2022-11-10,2023,Agency for International Development,22,15862155.00
+2022-11-10,2023,Department of State,19,17490.76
+2022-11-11,2023,Department of State,1,0.00
+2022-11-13,2023,Department of State,3,8599.08
+2022-11-14,2023,Agency for International Development,13,17366567.00
+2022-11-14,2023,Department of State,39,-8046.86
+2022-11-15,2023,Agency for International Development,22,50376782.00
+2022-11-15,2023,Department of State,45,668228.95
+2022-11-16,2023,Agency for International Development,15,29823049.00
+2022-11-16,2023,Department of State,22,2152414.12
+2022-11-17,2023,Agency for International Development,13,1875038.00
+2022-11-17,2023,Department of State,21,1152042.31
+2022-11-18,2023,Agency for International Development,16,28972836.00
+2022-11-18,2023,Department of State,14,3110156.69
+2022-11-19,2023,Department of State,1,-5401.65
+2022-11-20,2023,Department of State,1,1056000.00
+2022-11-21,2023,Agency for International Development,19,15638562.00
+2022-11-21,2023,Department of State,28,29681643.28
+2022-11-22,2023,Agency for International Development,16,26336833.00
+2022-11-22,2023,Department of State,25,12319706.00
+2022-11-23,2023,Agency for International Development,10,32780255.00
+2022-11-23,2023,Department of State,20,15073699.00
+2022-11-24,2023,Agency for International Development,1,800000.00
+2022-11-24,2023,Department of State,1,15000.00
+2022-11-25,2023,Agency for International Development,10,13047346.00
+2022-11-25,2023,Department of State,22,140162.90
+2022-11-27,2023,Agency for International Development,1,1000000.00
+2022-11-27,2023,Department of State,1,-5000.00
+2022-11-28,2023,Agency for International Development,17,178452027.00
+2022-11-28,2023,Department of State,38,6976920.27
+2022-11-29,2023,Agency for International Development,23,109233602.00
+2022-11-29,2023,Department of State,39,5333150.28
+2022-11-30,2023,Agency for International Development,13,17123171.00
+2022-11-30,2023,Department of State,16,636485.76
+2022-12-01,2023,Agency for International Development,30,52938452.00
+2022-12-01,2023,Department of State,46,637189.25
+2022-12-02,2023,Agency for International Development,8,12696320.00
+2022-12-02,2023,Department of State,68,6926005.16
+2022-12-04,2023,Agency for International Development,1,0.00
+2022-12-04,2023,Department of State,1,0.00
+2022-12-05,2023,Agency for International Development,14,68809443.00
+2022-12-05,2023,Department of State,28,1573658.27
+2022-12-06,2023,Agency for International Development,12,8988541.00
+2022-12-06,2023,Department of State,21,551059.72
+2022-12-07,2023,Agency for International Development,21,45437883.00
+2022-12-07,2023,Department of State,38,4255518.19
+2022-12-08,2023,Agency for International Development,22,43264393.00
+2022-12-08,2023,Department of State,18,62345.96
+2022-12-09,2023,Agency for International Development,8,49720000.00
+2022-12-09,2023,Department of State,32,1904269.78
+2022-12-11,2023,Agency for International Development,6,250000.00
+2022-12-12,2023,Agency for International Development,32,119174180.00
+2022-12-12,2023,Department of State,14,44325.59
+2022-12-13,2023,Agency for International Development,21,63206558.00
+2022-12-13,2023,Department of State,43,1798000.58
+2022-12-14,2023,Agency for International Development,16,21292005.00
+2022-12-14,2023,Department of State,33,1839657.55
+2022-12-15,2023,Agency for International Development,26,98068454.00
+2022-12-15,2023,Department of State,37,14002787.73
+2022-12-16,2023,Agency for International Development,13,65310939.00
+2022-12-16,2023,Department of State,23,-116835.97
+2022-12-18,2023,Department of State,1,0.00
+2022-12-19,2023,Agency for International Development,29,300085719.00
+2022-12-19,2023,Department of State,31,1351511.53
+2022-12-20,2023,Agency for International Development,25,43937228.00
+2022-12-20,2023,Department of State,28,1396477.06
+2022-12-21,2023,Agency for International Development,25,40548629.00
+2022-12-21,2023,Department of State,28,1118219.62
+2022-12-22,2023,Agency for International Development,21,23027825.00
+2022-12-22,2023,Department of State,62,3861484.52
+2022-12-23,2023,Agency for International Development,16,57405827.00
+2022-12-23,2023,Department of State,34,1628268.23
+2022-12-24,2023,Department of State,2,1076085.00
+2022-12-26,2023,Agency for International Development,2,12243.00
+2022-12-26,2023,Department of State,6,244848.36
+2022-12-27,2023,Agency for International Development,5,2199603.00
+2022-12-27,2023,Department of State,45,795026.00
+2022-12-28,2023,Agency for International Development,19,18277640.00
+2022-12-28,2023,Department of State,40,1212506.61
+2022-12-29,2023,Agency for International Development,11,12676594.00
+2022-12-29,2023,Department of State,29,-1383.00
+2022-12-30,2023,Agency for International Development,7,7630317.00
+2022-12-30,2023,Department of State,50,125379.83
+2022-12-31,2023,Department of State,1,0.00
+2023-01-02,2023,Department of State,7,2641.56
+2023-01-03,2023,Agency for International Development,8,2658149.00
+2023-01-03,2023,Department of State,22,24884.88
+2023-01-04,2023,Agency for International Development,11,10833656.00
+2023-01-04,2023,Department of State,20,84251.89
+2023-01-05,2023,Agency for International Development,8,26349319.00
+2023-01-05,2023,Department of State,37,57539.05
+2023-01-06,2023,Agency for International Development,9,24920779.00
+2023-01-06,2023,Department of State,23,18727988.12
+2023-01-07,2023,Department of State,1,0.00
+2023-01-08,2023,Agency for International Development,1,0.00
+2023-01-08,2023,Department of State,1,-6371.56
+2023-01-09,2023,Agency for International Development,17,13771717.00
+2023-01-09,2023,Department of State,40,787966.82
+2023-01-10,2023,Agency for International Development,16,396771.00
+2023-01-10,2023,Department of State,36,117284.60
+2023-01-11,2023,Agency for International Development,22,11246566.00
+2023-01-11,2023,Department of State,13,21120413.57
+2023-01-12,2023,Agency for International Development,24,14749242.00
+2023-01-12,2023,Department of State,21,-349400.09
+2023-01-13,2023,Agency for International Development,11,35116938.00
+2023-01-13,2023,Department of State,20,83841.72
+2023-01-15,2023,Department of State,2,9681.40
+2023-01-16,2023,Agency for International Development,1,417367.00
+2023-01-16,2023,Department of State,2,93489000.00
+2023-01-17,2023,Agency for International Development,17,34649136.00
+2023-01-17,2023,Department of State,16,45511.25
+2023-01-18,2023,Agency for International Development,12,15556503.00
+2023-01-18,2023,Department of State,25,212144.59
+2023-01-19,2023,Agency for International Development,15,6148908.00
+2023-01-19,2023,Department of State,22,6392723.42
+2023-01-20,2023,Agency for International Development,7,32324570.00
+2023-01-20,2023,Department of State,20,104103.36
+2023-01-22,2023,Department of State,1,2475.00
+2023-01-23,2023,Agency for International Development,24,13160081.00
+2023-01-23,2023,Department of State,30,13006822.77
+2023-01-24,2023,Agency for International Development,11,11795758.00
+2023-01-24,2023,Department of State,42,4179786.75
+2023-01-25,2023,Agency for International Development,21,21078801.00
+2023-01-25,2023,Department of State,23,11888727.96
+2023-01-26,2023,Agency for International Development,15,13042878.00
+2023-01-26,2023,Department of State,26,3859850.81
+2023-01-27,2023,Agency for International Development,13,60073562.00
+2023-01-27,2023,Department of State,31,10295358.85
+2023-01-29,2023,Agency for International Development,1,621566.00
+2023-01-29,2023,Department of State,1,-200000.00
+2023-01-30,2023,Agency for International Development,20,21409725.00
+2023-01-30,2023,Department of State,43,9121747.75
+2023-01-31,2023,Agency for International Development,32,80629239.00
+2023-01-31,2023,Department of State,38,19372645.99
+2023-02-01,2023,Agency for International Development,21,15472552.00
+2023-02-01,2023,Department of State,26,-2586425.40
+2023-02-02,2023,Agency for International Development,15,23380100.00
+2023-02-02,2023,Department of State,44,3867880.38
+2023-02-03,2023,Agency for International Development,15,17979828.00
+2023-02-03,2023,Department of State,29,6085869.99
+2023-02-04,2023,Agency for International Development,1,5050000.00
+2023-02-05,2023,Agency for International Development,3,8714165.00
+2023-02-05,2023,Department of State,3,-7059.23
+2023-02-06,2023,Agency for International Development,14,4892292.00
+2023-02-06,2023,Department of State,21,2508648.52
+2023-02-07,2023,Agency for International Development,15,9732225.00
+2023-02-07,2023,Department of State,23,215367902.10
+2023-02-08,2023,Agency for International Development,16,58885761.00
+2023-02-08,2023,Department of State,40,19878736.89
+2023-02-09,2023,Agency for International Development,15,3490166.00
+2023-02-09,2023,Department of State,41,20449320.47
+2023-02-10,2023,Agency for International Development,14,40617067.00
+2023-02-10,2023,Department of State,22,5149760.74
+2023-02-11,2023,Department of State,1,0.00
+2023-02-12,2023,Agency for International Development,3,0.00
+2023-02-13,2023,Agency for International Development,23,15984251.00
+2023-02-13,2023,Department of State,28,18878760.76
+2023-02-14,2023,Agency for International Development,27,10418963.00
+2023-02-14,2023,Department of State,70,14170502.41
+2023-02-15,2023,Agency for International Development,21,22391333.00
+2023-02-15,2023,Department of State,28,13636137.34
+2023-02-16,2023,Agency for International Development,15,10805670.00
+2023-02-16,2023,Department of State,33,1772110.08
+2023-02-17,2023,Agency for International Development,12,3749745.00
+2023-02-17,2023,Department of State,37,-3600957.09
+2023-02-18,2023,Department of State,2,543700.00
+2023-02-19,2023,Department of State,1,0.00
+2023-02-20,2023,Department of State,5,94469.01
+2023-02-21,2023,Agency for International Development,22,27947569.00
+2023-02-21,2023,Department of State,42,7985732.10
+2023-02-22,2023,Agency for International Development,18,4150886.00
+2023-02-22,2023,Department of State,27,-75020.88
+2023-02-23,2023,Agency for International Development,21,25238278.00
+2023-02-23,2023,Department of State,52,12654433.96
+2023-02-24,2023,Agency for International Development,12,8052681.00
+2023-02-24,2023,Department of State,29,-206375.48
+2023-02-25,2023,Department of State,5,-2850.00
+2023-02-26,2023,Agency for International Development,1,0.00
+2023-02-26,2023,Department of State,3,14241.00
+2023-02-27,2023,Agency for International Development,10,24573121.00
+2023-02-27,2023,Department of State,57,-809116.09
+2023-02-28,2023,Agency for International Development,37,122133531.00
+2023-02-28,2023,Department of State,36,7064128.31
+2023-03-01,2023,Agency for International Development,19,31476890.00
+2023-03-01,2023,Department of State,35,641224.32
+2023-03-02,2023,Agency for International Development,16,35732341.00
+2023-03-02,2023,Department of State,44,5933800.83
+2023-03-03,2023,Agency for International Development,20,15403290.00
+2023-03-03,2023,Department of State,27,-222557.44
+2023-03-04,2023,Department of State,1,-6869.74
+2023-03-05,2023,Agency for International Development,1,1300000.00
+2023-03-05,2023,Department of State,1,-4990.00
+2023-03-06,2023,Agency for International Development,11,21878282.00
+2023-03-06,2023,Department of State,26,-1549477.91
+2023-03-07,2023,Agency for International Development,27,20298127.00
+2023-03-07,2023,Department of State,37,7925549.73
+2023-03-08,2023,Agency for International Development,17,12982166.00
+2023-03-08,2023,Department of State,32,17790265.44
+2023-03-09,2023,Agency for International Development,22,25331821.00
+2023-03-09,2023,Department of State,45,-1432987.43
+2023-03-10,2023,Agency for International Development,10,11734523.00
+2023-03-10,2023,Department of State,30,1118899.72
+2023-03-11,2023,Department of State,1,0.00
+2023-03-12,2023,Agency for International Development,1,200000.00
+2023-03-12,2023,Department of State,1,-24950.00
+2023-03-13,2023,Agency for International Development,19,14342019.00
+2023-03-13,2023,Department of State,45,-738057.39
+2023-03-14,2023,Agency for International Development,28,41079868.00
+2023-03-14,2023,Department of State,32,-9158765.44
+2023-03-15,2023,Agency for International Development,22,15485474.00
+2023-03-15,2023,Department of State,30,110405.93
+2023-03-16,2023,Agency for International Development,26,33360958.00
+2023-03-16,2023,Department of State,28,5408676.01
+2023-03-17,2023,Agency for International Development,23,13195710.00
+2023-03-17,2023,Department of State,22,1201313.96
+2023-03-19,2023,Department of State,1,0.00
+2023-03-20,2023,Agency for International Development,21,28572735.00
+2023-03-20,2023,Department of State,44,340892.91
+2023-03-21,2023,Agency for International Development,19,15618764.00
+2023-03-21,2023,Department of State,41,8273412.56
+2023-03-22,2023,Agency for International Development,18,27098742.00
+2023-03-22,2023,Department of State,48,4385769.92
+2023-03-23,2023,Agency for International Development,17,8539044.00
+2023-03-23,2023,Department of State,61,9114020.56
+2023-03-24,2023,Agency for International Development,14,22854767.00
+2023-03-24,2023,Department of State,25,-617398.59
+2023-03-25,2023,Department of State,1,1912.00
+2023-03-26,2023,Agency for International Development,3,8699254.00
+2023-03-26,2023,Department of State,5,84925.61
+2023-03-27,2023,Agency for International Development,22,45790187.00
+2023-03-27,2023,Department of State,28,-10380772.19
+2023-03-28,2023,Agency for International Development,25,14446980.00
+2023-03-28,2023,Department of State,53,930688.83
+2023-03-29,2023,Agency for International Development,9,12420479.00
+2023-03-29,2023,Department of State,39,2981682.74
+2023-03-30,2023,Agency for International Development,21,28839012.00
+2023-03-30,2023,Department of State,58,4746647.30
+2023-03-31,2023,Agency for International Development,15,29101164.00
+2023-03-31,2023,Department of State,64,2735595.68
+2023-04-01,2023,Agency for International Development,1,2730116.00
+2023-04-01,2023,Department of State,4,340020.00
+2023-04-02,2023,Department of State,4,3900.00
+2023-04-03,2023,Agency for International Development,7,14720277.00
+2023-04-03,2023,Department of State,45,4017568.16
+2023-04-04,2023,Agency for International Development,23,23352933.00
+2023-04-04,2023,Department of State,29,2983445.43
+2023-04-05,2023,Agency for International Development,15,18555896.00
+2023-04-05,2023,Department of State,26,473030.32
+2023-04-06,2023,Agency for International Development,25,8385937.00
+2023-04-06,2023,Department of State,48,3167642.17
+2023-04-07,2023,Agency for International Development,7,12962122.00
+2023-04-07,2023,Department of State,12,379768.74
+2023-04-10,2023,Agency for International Development,9,8088005.00
+2023-04-10,2023,Department of State,6,206727.91
+2023-04-11,2023,Agency for International Development,23,26941847.00
+2023-04-11,2023,Department of State,31,2887672.88
+2023-04-12,2023,Agency for International Development,13,25647401.00
+2023-04-12,2023,Department of State,46,2627683.82
+2023-04-13,2023,Agency for International Development,16,89452185.00
+2023-04-13,2023,Department of State,29,2825964.95
+2023-04-14,2023,Agency for International Development,25,19281037.00
+2023-04-14,2023,Department of State,34,4211520.49
+2023-04-15,2023,Department of State,1,0.00
+2023-04-16,2023,Agency for International Development,3,6256932.00
+2023-04-16,2023,Department of State,2,-10428.65
+2023-04-17,2023,Agency for International Development,12,22682109.00
+2023-04-17,2023,Department of State,39,7457074.22
+2023-04-18,2023,Agency for International Development,25,48973187.00
+2023-04-18,2023,Department of State,32,25085222.90
+2023-04-19,2023,Agency for International Development,17,14335618.00
+2023-04-19,2023,Department of State,35,-1013714.80
+2023-04-20,2023,Agency for International Development,18,26225785.00
+2023-04-20,2023,Department of State,39,4928695.73
+2023-04-21,2023,Agency for International Development,11,10897047.00
+2023-04-21,2023,Department of State,31,6884710.73
+2023-04-22,2023,Agency for International Development,1,0.00
+2023-04-23,2023,Agency for International Development,4,2413758.48
+2023-04-24,2023,Agency for International Development,18,13743480.00
+2023-04-24,2023,Department of State,26,8588758.93
+2023-04-25,2023,Agency for International Development,11,12751977.00
+2023-04-25,2023,Department of State,22,44146.86
+2023-04-26,2023,Agency for International Development,16,8129261.00
+2023-04-26,2023,Department of State,39,1015240903.25
+2023-04-27,2023,Agency for International Development,34,67002837.00
+2023-04-27,2023,Department of State,28,26876451.46
+2023-04-28,2023,Agency for International Development,15,20776068.00
+2023-04-28,2023,Department of State,38,6492729.85
+2023-04-30,2023,Agency for International Development,3,3793666.00
+2023-05-01,2023,Agency for International Development,9,3254979.00
+2023-05-01,2023,Department of State,14,2240173.94
+2023-05-02,2023,Agency for International Development,12,19112374.00
+2023-05-02,2023,Department of State,42,-4526476.63
+2023-05-03,2023,Agency for International Development,9,8087351.00
+2023-05-03,2023,Department of State,29,22019.08
+2023-05-04,2023,Agency for International Development,13,11576142.00
+2023-05-04,2023,Department of State,34,9881865.25
+2023-05-05,2023,Agency for International Development,3,5310213.00
+2023-05-05,2023,Department of State,24,205792.93
+2023-05-06,2023,Department of State,3,-4894.79
+2023-05-08,2023,Agency for International Development,27,185418748.00
+2023-05-08,2023,Department of State,39,309677.60
+2023-05-09,2023,Agency for International Development,25,16682503.00
+2023-05-09,2023,Department of State,48,-1112537.45
+2023-05-10,2023,Agency for International Development,19,14068356.00
+2023-05-10,2023,Department of State,34,29224277.46
+2023-05-11,2023,Agency for International Development,24,62575705.00
+2023-05-11,2023,Department of State,24,157092.55
+2023-05-12,2023,Agency for International Development,21,25733698.00
+2023-05-12,2023,Department of State,46,2178859.03
+2023-05-14,2023,Department of State,5,18183.75
+2023-05-15,2023,Agency for International Development,17,18693956.00
+2023-05-15,2023,Department of State,33,1250773.20
+2023-05-16,2023,Agency for International Development,27,61874060.00
+2023-05-16,2023,Department of State,34,1529520.32
+2023-05-17,2023,Agency for International Development,21,6747259.00
+2023-05-17,2023,Department of State,38,-254661.14
+2023-05-18,2023,Agency for International Development,18,17390159.00
+2023-05-18,2023,Department of State,47,9047683.98
+2023-05-19,2023,Agency for International Development,13,25014745.00
+2023-05-19,2023,Department of State,61,2008566.51
+2023-05-20,2023,Agency for International Development,1,1864658.00
+2023-05-20,2023,Department of State,1,500000.00
+2023-05-21,2023,Agency for International Development,1,0.00
+2023-05-21,2023,Department of State,3,1013504.22
+2023-05-22,2023,Agency for International Development,12,5953098.00
+2023-05-22,2023,Department of State,58,328710.99
+2023-05-23,2023,Agency for International Development,18,3885078.00
+2023-05-23,2023,Department of State,46,-266455.65
+2023-05-24,2023,Agency for International Development,12,57246045.00
+2023-05-24,2023,Department of State,38,1523549.20
+2023-05-25,2023,Agency for International Development,19,9213273.00
+2023-05-25,2023,Department of State,63,261011.94
+2023-05-26,2023,Agency for International Development,22,17872959.00
+2023-05-26,2023,Department of State,23,3254212.71
+2023-05-29,2023,Agency for International Development,13,22197660.00
+2023-05-29,2023,Department of State,7,98944.38
+2023-05-30,2023,Agency for International Development,11,23854978.00
+2023-05-30,2023,Department of State,47,11053585.68
+2023-05-31,2023,Agency for International Development,33,57553178.00
+2023-05-31,2023,Department of State,40,5844076.34
+2023-06-01,2023,Agency for International Development,35,52448724.00
+2023-06-01,2023,Department of State,41,8564795.29
+2023-06-02,2023,Agency for International Development,19,63822964.00
+2023-06-02,2023,Department of State,46,2589259.91
+2023-06-03,2023,Department of State,2,2980.00
+2023-06-04,2023,Agency for International Development,1,0.00
+2023-06-04,2023,Department of State,3,0.00
+2023-06-05,2023,Agency for International Development,25,22409666.00
+2023-06-05,2023,Department of State,41,2453011.56
+2023-06-06,2023,Agency for International Development,26,48497157.00
+2023-06-06,2023,Department of State,41,767412.85
+2023-06-07,2023,Agency for International Development,18,12796565.00
+2023-06-07,2023,Department of State,24,-206807.33
+2023-06-08,2023,Agency for International Development,23,18428492.00
+2023-06-08,2023,Department of State,35,18622556.67
+2023-06-09,2023,Agency for International Development,21,18660936.00
+2023-06-09,2023,Department of State,36,-980652.35
+2023-06-10,2023,Agency for International Development,1,1250000.00
+2023-06-10,2023,Department of State,1,-230879.00
+2023-06-11,2023,Agency for International Development,3,4851957.23
+2023-06-11,2023,Department of State,2,12981.00
+2023-06-12,2023,Agency for International Development,23,29752669.00
+2023-06-12,2023,Department of State,43,5723839.92
+2023-06-13,2023,Agency for International Development,13,25975570.00
+2023-06-13,2023,Department of State,53,226599.61
+2023-06-14,2023,Agency for International Development,20,37970447.00
+2023-06-14,2023,Department of State,62,905052.54
+2023-06-15,2023,Agency for International Development,18,17217341.00
+2023-06-15,2023,Department of State,50,-356071.80
+2023-06-16,2023,Agency for International Development,7,19750000.00
+2023-06-16,2023,Department of State,51,-2331677.66
+2023-06-17,2023,Agency for International Development,1,1485000.00
+2023-06-17,2023,Department of State,2,2100000.00
+2023-06-18,2023,Agency for International Development,10,24168427.00
+2023-06-19,2023,Agency for International Development,1,2000000.00
+2023-06-19,2023,Department of State,12,5651596.60
+2023-06-20,2023,Agency for International Development,18,58322708.00
+2023-06-20,2023,Department of State,45,7381983.56
+2023-06-21,2023,Agency for International Development,9,40884258.00
+2023-06-21,2023,Department of State,58,1181184.44
+2023-06-22,2023,Agency for International Development,26,59980906.00
+2023-06-22,2023,Department of State,33,-272481.36
+2023-06-23,2023,Agency for International Development,27,63466681.00
+2023-06-23,2023,Department of State,34,3721516.14
+2023-06-25,2023,Agency for International Development,2,-501173.00
+2023-06-25,2023,Department of State,2,-25334.19
+2023-06-26,2023,Agency for International Development,14,26098628.00
+2023-06-26,2023,Department of State,42,-2748896.24
+2023-06-27,2023,Agency for International Development,12,40829079.00
+2023-06-27,2023,Department of State,67,689194.86
+2023-06-28,2023,Agency for International Development,20,12279243.00
+2023-06-28,2023,Department of State,31,-1562038.10
+2023-06-29,2023,Agency for International Development,38,58580957.00
+2023-06-29,2023,Department of State,53,3224549.37
+2023-06-30,2023,Agency for International Development,25,52752129.00
+2023-06-30,2023,Department of State,49,12127155.86
+2023-07-01,2023,Department of State,6,863602.00
+2023-07-02,2023,Agency for International Development,1,4800000.00
+2023-07-03,2023,Agency for International Development,20,28091837.00
+2023-07-03,2023,Department of State,27,18264355.13
+2023-07-04,2023,Agency for International Development,2,3000000.00
+2023-07-04,2023,Department of State,2,1400000.00
+2023-07-05,2023,Agency for International Development,20,57571095.00
+2023-07-05,2023,Department of State,45,3256175.98
+2023-07-06,2023,Agency for International Development,17,31128339.00
+2023-07-06,2023,Department of State,29,10937127.52
+2023-07-07,2023,Agency for International Development,14,26376539.00
+2023-07-07,2023,Department of State,28,1642525.48
+2023-07-08,2023,Department of State,1,12462684.00
+2023-07-09,2023,Agency for International Development,1,1208000.00
+2023-07-09,2023,Department of State,4,-14570.82
+2023-07-10,2023,Agency for International Development,14,13619731.00
+2023-07-10,2023,Department of State,37,3196180.90
+2023-07-11,2023,Agency for International Development,15,19320185.00
+2023-07-11,2023,Department of State,66,22729600.06
+2023-07-12,2023,Agency for International Development,34,57840760.00
+2023-07-12,2023,Department of State,29,3638032.98
+2023-07-13,2023,Agency for International Development,21,52990722.00
+2023-07-13,2023,Department of State,31,333669.27
+2023-07-14,2023,Agency for International Development,21,37849942.00
+2023-07-14,2023,Department of State,74,4079061.16
+2023-07-15,2023,Agency for International Development,1,5207000.00
+2023-07-15,2023,Department of State,2,-16049.11
+2023-07-16,2023,Department of State,3,55089.16
+2023-07-17,2023,Agency for International Development,32,46005126.00
+2023-07-17,2023,Department of State,66,3889588.01
+2023-07-18,2023,Agency for International Development,23,36753187.00
+2023-07-18,2023,Department of State,45,1117373.58
+2023-07-19,2023,Agency for International Development,18,20740392.00
+2023-07-19,2023,Department of State,76,2982569.57
+2023-07-20,2023,Agency for International Development,32,18792474.00
+2023-07-20,2023,Department of State,53,5667145.57
+2023-07-21,2023,Agency for International Development,23,57002138.00
+2023-07-21,2023,Department of State,39,2819463.15
+2023-07-23,2023,Agency for International Development,1,4170488.00
+2023-07-23,2023,Department of State,1,15000.00
+2023-07-24,2023,Agency for International Development,25,110293644.00
+2023-07-24,2023,Department of State,51,6733611.94
+2023-07-25,2023,Agency for International Development,30,52618581.00
+2023-07-25,2023,Department of State,77,4955332.21
+2023-07-26,2023,Agency for International Development,37,88947375.00
+2023-07-26,2023,Department of State,64,17273081.10
+2023-07-27,2023,Agency for International Development,29,23481624.00
+2023-07-27,2023,Department of State,55,61671675.44
+2023-07-28,2023,Agency for International Development,15,23126346.00
+2023-07-28,2023,Department of State,50,2505780.23
+2023-07-29,2023,Department of State,2,6333480.00
+2023-07-30,2023,Agency for International Development,2,808100.00
+2023-07-30,2023,Department of State,9,192505.98
+2023-07-31,2023,Agency for International Development,16,55663666.00
+2023-07-31,2023,Department of State,43,20761133.67
+2023-08-01,2023,Agency for International Development,31,39742211.00
+2023-08-01,2023,Department of State,56,18345415.86
+2023-08-02,2023,Agency for International Development,24,50847086.00
+2023-08-02,2023,Department of State,63,13798456.88
+2023-08-03,2023,Agency for International Development,27,73815713.00
+2023-08-03,2023,Department of State,54,22107103.01
+2023-08-04,2023,Agency for International Development,23,37833721.00
+2023-08-04,2023,Department of State,57,2451993.54
+2023-08-05,2023,Department of State,1,0.00
+2023-08-06,2023,Department of State,3,6000962.00
+2023-08-07,2023,Agency for International Development,17,31516936.00
+2023-08-07,2023,Department of State,67,39048619.17
+2023-08-08,2023,Agency for International Development,25,29456542.00
+2023-08-08,2023,Department of State,75,8169188.54
+2023-08-09,2023,Agency for International Development,42,88874752.00
+2023-08-09,2023,Department of State,63,1137417.24
+2023-08-10,2023,Agency for International Development,22,34180292.00
+2023-08-10,2023,Department of State,95,17768749.58
+2023-08-11,2023,Agency for International Development,21,21798226.00
+2023-08-11,2023,Department of State,34,6092470.29
+2023-08-12,2023,Agency for International Development,1,0.00
+2023-08-12,2023,Department of State,1,500000.00
+2023-08-13,2023,Department of State,6,88280.00
+2023-08-14,2023,Agency for International Development,19,40218325.00
+2023-08-14,2023,Department of State,34,119003.65
+2023-08-15,2023,Agency for International Development,19,17263732.00
+2023-08-15,2023,Department of State,55,5722017.85
+2023-08-16,2023,Agency for International Development,21,20173263.00
+2023-08-16,2023,Department of State,63,13010196.76
+2023-08-17,2023,Agency for International Development,14,41772743.00
+2023-08-17,2023,Department of State,59,13184538.91
+2023-08-18,2023,Agency for International Development,37,109991453.00
+2023-08-18,2023,Department of State,55,17179004.03
+2023-08-19,2023,Agency for International Development,3,2700000.00
+2023-08-20,2023,Agency for International Development,1,1300000.00
+2023-08-20,2023,Department of State,2,0.00
+2023-08-21,2023,Agency for International Development,30,64479556.00
+2023-08-21,2023,Department of State,57,15689603.83
+2023-08-22,2023,Agency for International Development,29,78568129.00
+2023-08-22,2023,Department of State,68,20413023.46
+2023-08-23,2023,Agency for International Development,37,79471975.00
+2023-08-23,2023,Department of State,86,15072320.97
+2023-08-24,2023,Agency for International Development,23,10521235.00
+2023-08-24,2023,Department of State,60,8070728.35
+2023-08-25,2023,Agency for International Development,21,135311631.00
+2023-08-25,2023,Department of State,67,10199271.27
+2023-08-27,2023,Agency for International Development,3,0.00
+2023-08-27,2023,Department of State,2,2699967.00
+2023-08-28,2023,Agency for International Development,26,97737921.00
+2023-08-28,2023,Department of State,81,42740053.67
+2023-08-29,2023,Agency for International Development,33,104402401.00
+2023-08-29,2023,Department of State,104,25908154.81
+2023-08-30,2023,Agency for International Development,31,122442564.00
+2023-08-30,2023,Department of State,78,34438747.47
+2023-08-31,2023,Agency for International Development,44,107525014.00
+2023-08-31,2023,Department of State,118,73549917.34
+2023-09-01,2023,Agency for International Development,30,19366092.00
+2023-09-01,2023,Department of State,87,10602548.84
+2023-09-02,2023,Department of State,5,150820.76
+2023-09-03,2023,Department of State,3,1499458.00
+2023-09-04,2023,Agency for International Development,1,0.00
+2023-09-04,2023,Department of State,9,2285931.30
+2023-09-05,2023,Agency for International Development,34,33589108.00
+2023-09-05,2023,Department of State,90,38275640.53
+2023-09-06,2023,Agency for International Development,37,109659076.00
+2023-09-06,2023,Department of State,93,37592090.86
+2023-09-07,2023,Agency for International Development,31,39491193.00
+2023-09-07,2023,Department of State,104,33599673.25
+2023-09-08,2023,Agency for International Development,33,45880287.00
+2023-09-08,2023,Department of State,81,12427657.99
+2023-09-09,2023,Department of State,3,250997.00
+2023-09-10,2023,Agency for International Development,5,6750000.00
+2023-09-10,2023,Department of State,7,274016.09
+2023-09-11,2023,Agency for International Development,31,64077837.00
+2023-09-11,2023,Department of State,130,27756636.87
+2023-09-12,2023,Agency for International Development,49,73394690.00
+2023-09-12,2023,Department of State,117,6922556.73
+2023-09-13,2023,Agency for International Development,43,78109291.00
+2023-09-13,2023,Department of State,144,32505000.10
+2023-09-14,2023,Agency for International Development,43,65847551.00
+2023-09-14,2023,Department of State,131,19250871.68
+2023-09-15,2023,Agency for International Development,38,55119615.00
+2023-09-15,2023,Department of State,138,26594641.13
+2023-09-16,2023,Department of State,1,0.00
+2023-09-17,2023,Agency for International Development,3,0.00
+2023-09-17,2023,Department of State,16,2383614.59
+2023-09-18,2023,Agency for International Development,51,78091191.00
+2023-09-18,2023,Department of State,157,36978763.29
+2023-09-19,2023,Agency for International Development,84,89291051.00
+2023-09-19,2023,Department of State,216,26280202.91
+2023-09-20,2023,Agency for International Development,89,104248794.00
+2023-09-20,2023,Department of State,220,25523736.82
+2023-09-21,2023,Agency for International Development,59,105477671.00
+2023-09-21,2023,Department of State,225,43068067.78
+2023-09-22,2023,Agency for International Development,70,214057096.00
+2023-09-22,2023,Department of State,271,37325257.39
+2023-09-23,2023,Department of State,12,10937904.55
+2023-09-24,2023,Agency for International Development,5,876000.00
+2023-09-24,2023,Department of State,12,3500770.00
+2023-09-25,2023,Agency for International Development,52,73321005.00
+2023-09-25,2023,Department of State,343,95415987.45
+2023-09-26,2023,Agency for International Development,82,151356577.00
+2023-09-26,2023,Department of State,369,160248289.42
+2023-09-27,2023,Agency for International Development,117,277380661.00
+2023-09-27,2023,Department of State,428,111110291.85
+2023-09-28,2023,Agency for International Development,96,174063342.00
+2023-09-28,2023,Department of State,431,148112779.28
+2023-09-29,2023,Agency for International Development,104,158517004.00
+2023-09-29,2023,Department of State,364,141292272.72
+2023-09-30,2023,Agency for International Development,9,23608141.00
+2023-09-30,2023,Department of State,56,5186693.70
