@@ -22,7 +22,9 @@ for the legal appropriation denominator used in the filing.
   cross-checks the live 25/26 obligations.
 - An award puller for USAID and State grants (award type codes 02-05), using
   pre-generated annual archives for history and current-year updates, with a
-  durable award store and compact dashboard aggregate.
+  durable award store, daily transaction-obligation series, and compact
+  dashboard aggregate. Award cohorts use performance start dates; fiscal-year
+  flows use `federal_action_obligation` by `action_date`.
 - A dependency-free static site, tests, and GitHub Actions for weekly refreshes
   and GitHub Pages deployment.
 
@@ -37,6 +39,8 @@ for the legal appropriation denominator used in the filing.
 - `data/awards.json` - compact award aggregate consumed by the site.
 - `data/execution_profiles.csv` - flat account/cohort/month values behind the
   appropriation execution chart.
+- `data/award_obligations_daily.csv` - daily USAID and State transaction flows
+  behind the cumulative fiscal-year chart.
 - `data/file_a_snapshots.csv` and `data/awards.csv` - durable stores created by
   refresh runs; records are replaced by stable keys, never silently pruned.
 - `site/index.html` - static dashboard.
@@ -65,10 +69,12 @@ The account refresh requests two agency files for the year-one September close
 and the latest year-two reporting period. This is deliberately bounded because
 USAspending throttles repeated generated custom-download files; the filing
 supplies the full historical profiles. The award pull is partitioned by agency
-and month so no large paginated query is trusted as the sole source of a fiscal
-year. The current fiscal year is refreshed on every weekly run. Each annual
-archive is checkpointed separately by the workflow so an API
-interruption resumes at the incomplete year rather than restarting history.
+and fiscal year so no large paginated query is trusted as the sole source of
+history. The current fiscal year is refreshed on every weekly run. Each annual
+archive replaces its daily-obligation partition, so repeated refreshes do not
+duplicate transactions. Each archive is checkpointed separately by the
+workflow so an API interruption resumes at the incomplete year rather than
+restarting history.
 
 ## Methodological boundary
 

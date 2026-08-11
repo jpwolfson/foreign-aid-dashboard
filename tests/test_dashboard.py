@@ -5,6 +5,9 @@ import sys
 import tempfile
 import unittest
 import zipfile
+from collections import defaultdict
+from datetime import date
+from decimal import Decimal
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -168,17 +171,48 @@ class AwardTests(unittest.TestCase):
                 "assistance_award_unique_key": "ASST_TEST_072",
                 "award_id_fain": "TEST-1",
                 "action_date": action,
+                "period_of_performance_start_date": "2021-06-30",
                 "last_modified_date": modified,
+                "federal_action_obligation": "100" if amount == "100" else "150",
                 "total_obligated_amount": amount,
                 "total_outlayed_amount_for_overall_award": "50",
                 "recipient_name": "Test Recipient",
                 "cfda_number": "98.001",
                 "awarding_agency_name": "Agency for International Development",
             })
-        store = pull_awards.merge_archive({}, rows)
+        daily = defaultdict(lambda: {"transactions": 0, "obligations": Decimal(0)})
+        store = pull_awards.merge_archive({}, rows, daily)
         self.assertEqual(len(store), 1)
-        self.assertEqual(store["ASST_TEST_072"]["base_date"], "2024-10-01")
+        self.assertEqual(store["ASST_TEST_072"]["base_date"], "2021-06-30")
         self.assertEqual(store["ASST_TEST_072"]["amount"], "250.0")
+        self.assertEqual(sum(v["transactions"] for v in daily.values()), 2)
+        self.assertEqual(sum(v["obligations"] for v in daily.values()), Decimal("250"))
+
+    def test_daily_obligation_partition_is_replaced_not_duplicated(self):
+        old = [
+            {"action_date":"2024-10-01","fiscal_year":"2025","awarding_agency":"USAID","transactions":"2","obligations":"100.00"},
+            {"action_date":"2023-10-01","fiscal_year":"2024","awarding_agency":"USAID","transactions":"1","obligations":"25.00"},
+        ]
+        fresh = defaultdict(lambda: {"transactions": 0, "obligations": Decimal(0)})
+        fresh[("2024-10-02", "USAID")].update(
+            transactions=3, obligations=Decimal("90.00")
+        )
+        got = pull_awards.replace_obligation_fiscal_year(old, 2025, fresh)
+        self.assertEqual(len(got), 2)
+        self.assertNotIn("2024-10-01", [r["action_date"] for r in got])
+        self.assertEqual(next(r for r in got if r["fiscal_year"] == "2025")["obligations"], "90.00")
+
+    def test_cumulative_series_uses_transaction_flows_and_keeps_deobligations(self):
+        rows = [
+            {"action_date":"2024-10-01","fiscal_year":"2025","awarding_agency":"USAID","transactions":"1","obligations":"100.00"},
+            {"action_date":"2024-10-08","fiscal_year":"2025","awarding_agency":"USAID","transactions":"1","obligations":"50.00"},
+            {"action_date":"2024-10-10","fiscal_year":"2025","awarding_agency":"State","transactions":"1","obligations":"-20.00"},
+        ]
+        totals, series = pull_awards.cumulative_obligations(rows, date(2025, 10, 2))
+        self.assertEqual(totals[0]["obligations"], 130.0)
+        self.assertEqual(totals[0]["transactions"], 3)
+        self.assertEqual(series[0]["points"][-1]["obligations"], 130.0)
+        self.assertFalse(series[0]["partial"])
 
 
 if __name__ == "__main__":
