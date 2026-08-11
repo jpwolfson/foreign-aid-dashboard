@@ -237,24 +237,105 @@ function renderExecution(data) {
   p.append(live);
 }
 
-function fyBars(plot, rows) {
-  plot.replaceChildren(); if(!rows.length)return; const W=980,H=280,L=55,R=12,T=15,B=34,max=Math.max(...rows.map(r=>r.obligations),1),bw=(W-L-R)/rows.length*.62;
-  const svg=el("svg",{viewBox:`0 0 ${W} ${H}`,role:"img","aria-label":"Grant obligations by fiscal year"});
-  rows.forEach((r,i)=>{const x=L+(i+.5)*(W-L-R)/rows.length,h=r.obligations/max*(H-T-B);svg.append(el("rect",{x:x-bw/2,y:H-B-h,width:bw,height:h,rx:3,fill:"#2878b5"}),el("text",{class:"axis",x,y:H-12,"text-anchor":"middle",text:`FY${String(r.fy).slice(2)}`}));}); plot.append(svg);
+const FY_MONTH_OFFSETS=[0,31,61,92,123,151,182,212,243,273,304,335];
+const FY_MONTHS=["Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep"];
+const fyDateLabel=d=>new Date(2024,9,1+Math.min(d,364)).toLocaleString("en-US",{month:"short",day:"numeric"});
+const monthLabel=m=>new Date(`${m}-15T12:00:00`).toLocaleString("en-US",{month:"short",year:"numeric"});
+
+function cumulativeObligationsChart(plot, rawSeries) {
+  plot.replaceChildren();
+  if(!rawSeries?.length)return;
+  const series=rawSeries.slice().sort((a,b)=>b.fy-a.fy).map((s,i)=>({...s,color:COLORS[i]}));
+  const W=1020,H=340,L=62,R=132,T=15,B=42,DAYS=365;
+  const max=Math.max(...series.flatMap(s=>s.points.map(p=>p.obligations)),1)*1.06;
+  const svg=el("svg",{viewBox:`0 0 ${W} ${H}`,role:"img","aria-label":"Cumulative grant transaction obligations through each fiscal year"});
+  const tip=el("div",{class:"tip",role:"status","aria-live":"polite"});
+  const X=d=>L+Math.min(d,DAYS-1)/(DAYS-1)*(W-L-R),Y=v=>H-B-v/max*(H-B-T);
+  for(let i=0;i<=4;i++){const v=max*i/4;svg.append(el("line",{class:"grid",x1:L,x2:W-R,y1:Y(v),y2:Y(v)}),el("text",{class:"axis",x:L-8,y:Y(v)+4,"text-anchor":"end",text:fmtMoney(v)}));}
+  FY_MONTH_OFFSETS.forEach((off,i)=>{svg.append(el("line",{x1:X(off),x2:X(off),y1:H-B,y2:H-B+6,stroke:"var(--muted)","stroke-width":1}),el("text",{class:"axis",x:X(off+15),y:H-14,"text-anchor":"middle",text:FY_MONTHS[i]}));});
+  [...series].reverse().forEach(s=>{
+    const d=s.points.map((p,i)=>`${i?"L":"M"}${X(p.d).toFixed(1)},${Y(p.obligations).toFixed(1)}`).join("");
+    svg.append(el("path",{d,fill:"none",stroke:s.color,"stroke-width":s.partial?3.4:2,"stroke-opacity":s.partial?1:.78,"stroke-linejoin":"round","stroke-linecap":"round"}));
+    const end=s.points.at(-1);svg.append(el("circle",{cx:X(end.d),cy:Y(end.obligations),r:s.partial?5:4,fill:s.color,stroke:"var(--surface)","stroke-width":2}));
+    if(s.partial)svg.append(el("text",{class:"axis",x:X(end.d)-8,y:Y(end.obligations)-11,"text-anchor":"end",fill:s.color,text:`FY${String(s.fy).slice(2)} · ${fmtMoney(end.obligations)}`}));
+  });
+  let priorY=-Infinity;
+  series.filter(s=>!s.partial).sort((a,b)=>b.points.at(-1).obligations-a.points.at(-1).obligations).forEach(s=>{
+    const value=s.points.at(-1).obligations,labelY=Math.max(Y(value)+4,priorY+15);priorY=labelY;
+    svg.append(el("line",{x1:W-R+6,x2:W-R+14,y1:labelY-4,y2:labelY-4,stroke:s.color,"stroke-width":2.5,"stroke-linecap":"round"}),el("text",{class:"axis",x:W-R+18,y:labelY,fill:s.color,text:`FY${String(s.fy).slice(2)} · ${fmtMoney(value)}`}));
+  });
+  const cross=el("line",{y1:T,y2:H-B,stroke:"var(--muted)","stroke-width":1,visibility:"hidden"});svg.append(cross);
+  svg.addEventListener("pointermove",event=>{
+    const bounds=svg.getBoundingClientRect(),vx=(event.clientX-bounds.left)*W/bounds.width;
+    const day=Math.max(0,Math.min(DAYS-1,Math.round((vx-L)/(W-L-R)*(DAYS-1)))),x=X(day);
+    cross.setAttribute("x1",x);cross.setAttribute("x2",x);cross.setAttribute("visibility","visible");
+    const rows=series.filter(s=>day<=Math.min(s.points.at(-1).d,DAYS-1)).map(s=>{
+      const point=day===DAYS-1&&!s.partial?s.points.at(-1):s.points[Math.min(day,s.points.length-1)];
+      return {color:s.color,value:fmtMoney(point.obligations),label:`FY${s.fy} · ${fmtN(point.transactions)} transactions`};
+    });
+    showTip(tip,plot,x*bounds.width/W,T*bounds.width/W+tip.offsetHeight+18,`Through ${fyDateLabel(day)} (day ${day+1})`,rows);
+  });
+  svg.addEventListener("pointerleave",()=>{tip.style.display="none";cross.setAttribute("visibility","hidden");});
+  const keys=series.map(s=>el("span",{class:"key"},el("i",{style:`background:${s.color}`}),document.createTextNode(`FY${s.fy}${s.partial?` (through ${s.throughDate})`:""}`)));
+  plot.append(svg,tip,el("div",{class:"legend"},...keys));
+}
+
+function obligationMonthTable(series) {
+  const ordered=series.slice().sort((a,b)=>b.fy-a.fy);
+  return tableDetails(["Through end of",...ordered.map(s=>`FY${s.fy}${s.partial?" (to date)":""}`)],FY_MONTH_OFFSETS.map((start,i)=>{
+    const end=(FY_MONTH_OFFSETS[i+1]??365)-1;
+    return [FY_MONTHS[i],...ordered.map(s=>{
+      const last=s.points.at(-1);if(start>Math.min(last.d,364))return "—";
+      const point=end===364&&!s.partial?last:s.points[Math.min(end,s.points.length-1)];
+      return fmtMoney(point.obligations);
+    })];
+  }));
+}
+
+function monthlyObligationsChart(plot, pts) {
+  plot.replaceChildren();if(!pts.length)return;
+  const W=1020,H=300,L=62,R=18,T=15,B=38;
+  let low=Math.min(0,...pts.map(p=>p.obligations)),high=Math.max(0,...pts.map(p=>p.obligations));
+  if(high===low)high=low+1;
+  const svg=el("svg",{viewBox:`0 0 ${W} ${H}`,role:"img","aria-label":"Net grant transaction obligations by month"});
+  const tip=el("div",{class:"tip",role:"status","aria-live":"polite"});
+  const X=i=>L+(pts.length>1?i/(pts.length-1):.5)*(W-L-R),Y=v=>T+(high-v)/(high-low)*(H-B-T);
+  for(let i=0;i<=4;i++){const v=low+(high-low)*i/4;svg.append(el("line",{class:"grid",x1:L,x2:W-R,y1:Y(v),y2:Y(v)}),el("text",{class:"axis",x:L-8,y:Y(v)+4,"text-anchor":"end",text:fmtMoney(v)}));}
+  if(low<0)svg.append(el("line",{x1:L,x2:W-R,y1:Y(0),y2:Y(0),stroke:"var(--muted)","stroke-width":1.2}));
+  pts.forEach((p,i)=>{if(p.month.endsWith("-01")&&Number(p.month.slice(0,4))%2===1)svg.append(el("text",{class:"axis",x:X(i),y:H-12,"text-anchor":"middle",text:p.month.slice(0,4)}));});
+  const line=pts.map((p,i)=>`${i?"L":"M"}${X(i).toFixed(1)},${Y(p.obligations).toFixed(1)}`).join("");
+  svg.append(el("path",{d:line,fill:"none",stroke:COLORS[0],"stroke-width":2,"stroke-linejoin":"round","stroke-linecap":"round"}));
+  const last=pts.length-1;svg.append(el("circle",{cx:X(last),cy:Y(pts[last].obligations),r:4.5,fill:COLORS[0],stroke:"var(--surface)","stroke-width":2}),el("text",{class:"axis",x:X(last)-7,y:Y(pts[last].obligations)-10,"text-anchor":"end",fill:COLORS[0],text:fmtMoney(pts[last].obligations)}));
+  const cross=el("line",{y1:T,y2:H-B,stroke:"var(--muted)","stroke-width":1,visibility:"hidden"}),dot=el("circle",{r:4.5,fill:COLORS[0],stroke:"var(--surface)","stroke-width":2,visibility:"hidden"});svg.append(cross,dot);
+  svg.addEventListener("pointermove",event=>{
+    const bounds=svg.getBoundingClientRect(),vx=(event.clientX-bounds.left)*W/bounds.width;
+    const i=Math.max(0,Math.min(last,Math.round((vx-L)/(W-L-R)*last))),point=pts[i],x=X(i);
+    cross.setAttribute("x1",x);cross.setAttribute("x2",x);cross.setAttribute("visibility","visible");dot.setAttribute("cx",x);dot.setAttribute("cy",Y(point.obligations));dot.setAttribute("visibility","visible");
+    showTip(tip,plot,x*bounds.width/W,Y(point.obligations)*bounds.width/W,monthLabel(point.month),[{color:COLORS[0],value:fmtMoney(point.obligations),label:"net obligations"},{color:"transparent",value:fmtN(point.transactions),label:"transactions"}]);
+  });
+  svg.addEventListener("pointerleave",()=>{tip.style.display="none";cross.setAttribute("visibility","hidden");dot.setAttribute("visibility","hidden");});
+  plot.append(svg,tip);
 }
 
 function renderAwards(data) {
   const p=$("#awards"); p.replaceChildren();
-  p.append(el("div",{class:"banner"},el("strong",{text:"Award-level view. "}),document.createTextNode(data.definition+" Amounts are current prime-award obligations, so amendments can revise older cohorts."),el("div",{class:"download-links"},downloadLink("awards.csv",`Download all ${fmtN(data.totalAwards||0)} awards (CSV)`))));
+  p.append(el("div",{class:"banner"},el("strong",{text:"Award and transaction view. "}),document.createTextNode(data.definition+" Award records show current lifetime totals; the time series separately sums transaction obligations by action date."),el("div",{class:"download-links"},downloadLink("awards.csv",`Download all ${fmtN(data.totalAwards||0)} awards (CSV)`),downloadLink("award_obligations_daily.csv","Download daily obligation flows (CSV)"))));
   if(data.status!=="available") { p.append(el("div",{class:"card empty"},el("strong",{text:"Award pipeline ready; first refresh pending"}),document.createTextNode("The repository contains the durable USAspending puller and scheduled workflow. After the first successful API run, this view will populate with recipient-level records and trends."))); return; }
-  const cur=data.fiscalYears.at(-1)||{awards:0,obligations:0,fy:"—"}; p.append(el("div",{class:"kpis"},kpi("Awards in store",fmtN(data.totalAwards),"Deduplicated prime awards"),kpi(`FY${cur.fy} new awards`,fmtN(cur.awards),"By base obligation date"),kpi(`FY${cur.fy} current obligations`,fmtMoney(cur.obligations),"Rolled-up award amount"),kpi("Last refresh",data.generated,"USAspending Award Data Archive")));
-  const chart=el("div",{class:"card"},el("h2",{text:"Grant obligations by fiscal year"}),el("p",{class:"note",text:"Current rolled-up obligations assigned to the award’s base-obligation fiscal year."})); const plot=el("div",{class:"plot"}); chart.append(plot,tableDetails(["Fiscal year","Awards","Current obligations"],data.fiscalYears.map(r=>[`FY${r.fy}`,fmtN(r.awards),fmtMoney(r.obligations)]))); p.append(chart); fyBars(plot,data.fiscalYears);
+  const curTransactions=data.transactionFiscalYears?.at(-1)||{transactions:0,obligations:0,fy:"—"};
+  const curCohort=data.fiscalYears.find(x=>x.fy===curTransactions.fy)||{awards:0};
+  p.append(el("div",{class:"kpis"},kpi("Awards in store",fmtN(data.totalAwards),"Deduplicated prime awards"),kpi(`FY${curTransactions.fy} award starts`,fmtN(curCohort.awards),"By performance start date"),kpi(`FY${curTransactions.fy} obligations`,fmtMoney(curTransactions.obligations),"Net transaction obligations"),kpi("Transaction data through",data.transactionLatestActionDate||"—","USAspending Award Data Archive")));
+  const chart=el("div",{class:"card"},el("h2",{text:"Cumulative grant obligations through the fiscal year"}),el("p",{class:"note",text:"Net transaction obligations by action date; each line starts October 1. The slope shows the within-year obligation rate, including deobligations. Hover to compare exact cumulative totals on the same date across years."}));
+  const plot=el("div",{class:"plot"});chart.append(plot,obligationMonthTable(data.fyCumulative||[]));p.append(chart);cumulativeObligationsChart(plot,data.fyCumulative||[]);
+  if(data.transactionMonthly?.length){
+    const time=el("div",{class:"card"},el("h2",{text:"Net grant obligations by month"}),el("p",{class:"note",text:"Monthly transaction-obligation flow since October 2015, at the same resolution as the DMS time-series chart. Negative values are net deobligations."}));
+    const timePlot=el("div",{class:"plot"});time.append(timePlot,tableDetails(["Month","Net obligations","Transactions"],data.transactionMonthly.map(r=>[monthLabel(r.month),fmtMoney(r.obligations),fmtN(r.transactions)])));p.append(time);monthlyObligationsChart(timePlot,data.transactionMonthly);
+  }
   const card=el("div",{class:"card"},el("h2",{text:"Award detail"}),el("p",{class:"note",text:"Most recent 1,000 awards are loaded in the browser; the repository CSV is the full store."})); const tools=el("div",{class:"award-tools"}),search=el("input",{type:"search",placeholder:"Search recipient, award ID, or description","aria-label":"Search awards"}),agency=el("select",{"aria-label":"Agency filter"},el("option",{value:"",text:"All agencies"}),...Array.from(new Set(data.recentAwards.map(a=>a.awarding_agency))).sort().map(x=>el("option",{value:x,text:x})));tools.append(search,agency);const holder=el("div",{class:"table-wrap"});card.append(tools,holder);p.append(card);
   const draw=()=>{
     const q=search.value.toLowerCase();
     const filtered=data.recentAwards.filter(a=>(!agency.value||a.awarding_agency===agency.value)&&
       (!q||[a.recipient,a.award_id,a.description,a.assistance_listing].join(" ").toLowerCase().includes(q))).slice(0,200);
-    const headers=["Base date","Recipient / award","Agency","Listing","Obligations","Description"]
+    const headers=["Award start","Recipient / award","Agency","Listing","Lifetime obligations","Description"]
       .map((h,i)=>el("th",{class:i===4?"num":"",text:h}));
     const rows=filtered.map(a=>el("tr",{},el("td",{text:a.base_date}),
       el("td",{},el("strong",{text:a.recipient||"Unknown recipient"}),el("span",{class:"subcell"},el("a",{href:`https://www.usaspending.gov/award/${encodeURIComponent(a.id)}/latest`,target:"_blank",rel:"noopener",text:a.award_id}))),
@@ -269,12 +350,12 @@ function renderAwards(data) {
 function renderMethod(data) {
   const p=$("#method");
   const accountText="Tracks cumulative obligations for Treasury accounts. The filing supplies the legally adjusted denominators and the independently published benchmark. USAspending File A supplies the machine-readable account-balance cross-check.";
-  const awardText="Tracks prime grants and cooperative agreements awarded by USAID and State, with recipient, assistance listing, agency, description, dates, current obligations, and outlays. It cannot reproduce an appropriation execution rate because award records omit non-award obligations and the legal denominator.";
+  const awardText="Tracks prime grants and cooperative agreements awarded by USAID and State. Award-level lifetime totals are cohort-tagged by performance start date; the fiscal-year chart independently sums transaction obligations by action date. It cannot reproduce an appropriation execution rate because award records omit non-award obligations and the legal denominator.";
   const grid=el("div",{class:"method-grid",style:"margin-top:14px"},
     el("div",{},el("h3",{text:"Appropriation execution (SF 133 / File A)"}),el("p",{text:accountText})),
     el("div",{},el("h3",{text:"Grant awards (USAspending Award Data Archive)"}),el("p",{text:awardText})));
   p.replaceChildren(el("div",{class:"card"},el("h2",{text:"Two datasets, two levels of truth"}),grid));
-  p.append(el("div",{class:"card"},el("h2",{text:"Download data"}),el("p",{class:"note",text:"The award file is the complete durable award store; the execution file contains every account, cohort, and monthly chart value; File A rows are the independent live source checkpoints."}),el("div",{class:"download-links"},downloadLink("awards.csv","Award-level grants (CSV)"),downloadLink("execution_profiles.csv","Appropriation execution profiles (CSV)"),downloadLink("file_a_snapshots.csv","USAspending File A snapshots (CSV)"))));
+  p.append(el("div",{class:"card"},el("h2",{text:"Download data"}),el("p",{class:"note",text:"The award file is the complete durable award store; the daily obligation file is the source for the fiscal-year overlays; the execution file contains every account, cohort, and monthly chart value; File A rows are the independent live source checkpoints."}),el("div",{class:"download-links"},downloadLink("awards.csv","Award-level grants (CSV)"),downloadLink("award_obligations_daily.csv","Daily grant obligation flows (CSV)"),downloadLink("execution_profiles.csv","Appropriation execution profiles (CSV)"),downloadLink("file_a_snapshots.csv","USAspending File A snapshots (CSV)"))));
   p.append(el("div",{class:"card"},el("h2",{text:"Filing replication rules"}),el("div",{class:"method-grid",style:"margin-top:14px"},...Object.entries(data.method).map(([k,v])=>el("div",{},el("h3",{text:k.replace(/([A-Z])/g," $1").replace(/^./,x=>x.toUpperCase())}),el("p",{text:v}))))));
   p.append(el("div",{class:"card"},el("h2",{text:"Sources"}),el("p",{class:"note"},document.createTextNode(`${data.benchmark.title}, ${data.benchmark.case}, ${data.benchmark.document}, Appendix A pages ${data.benchmark.pages}. `),el("a",{href:"https://api.usaspending.gov/docs/endpoints",text:"USAspending API endpoint documentation"}),document.createTextNode(". File A is generated from agencies’ GTAS account-balance submissions."))));
 }

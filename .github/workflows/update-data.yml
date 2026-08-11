@@ -59,7 +59,7 @@ jobs:
         run: |
           END_FY=$(python -c 'from datetime import date; d=date.today(); print(d.year + (d.month >= 10))')
           FORCE=""
-          if [ "${{ inputs.full_awards }}" = "true" ]; then FORCE="--force-archive"; fi
+          if [ "${{ inputs.full_awards }}" = "true" ] || [ ! -f data/award_obligations_daily.csv ]; then FORCE="--force-archive"; fi
           for FY in $(seq 2016 "$((END_FY - 1))"); do
             python scripts/pull_awards.py --archive-fy "$FY" $FORCE
             git add data
