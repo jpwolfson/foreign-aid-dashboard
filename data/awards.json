@@ -5,64 +5,779 @@
  "totalAwards": 79966,
  "monthly": [
   {
+   "month": "1996-09",
+   "awards": 1,
+   "obligations": 493005536.0
+  },
+  {
+   "month": "1997-09",
+   "awards": 1,
+   "obligations": 124387164.0
+  },
+  {
+   "month": "2000-08",
+   "awards": 1,
+   "obligations": 1392669.0
+  },
+  {
+   "month": "2000-09",
+   "awards": 1,
+   "obligations": 1672982.0
+  },
+  {
+   "month": "2001-09",
+   "awards": 1,
+   "obligations": 17953811.0
+  },
+  {
+   "month": "2001-10",
+   "awards": 1,
+   "obligations": 202218.0
+  },
+  {
+   "month": "2002-01",
+   "awards": 2,
+   "obligations": 3201842.0
+  },
+  {
+   "month": "2002-06",
+   "awards": 1,
+   "obligations": 10205456596.0
+  },
+  {
+   "month": "2002-09",
+   "awards": 1,
+   "obligations": 6299567.0
+  },
+  {
+   "month": "2002-10",
+   "awards": 1,
+   "obligations": -787432.0
+  },
+  {
+   "month": "2003-04",
+   "awards": 1,
+   "obligations": 3269888.0
+  },
+  {
+   "month": "2003-05",
+   "awards": 1,
+   "obligations": 19998000.0
+  },
+  {
+   "month": "2003-06",
+   "awards": 1,
+   "obligations": 5056022.0
+  },
+  {
+   "month": "2003-07",
+   "awards": 1,
+   "obligations": 188581.0
+  },
+  {
+   "month": "2003-08",
+   "awards": 2,
+   "obligations": 2786477.0
+  },
+  {
+   "month": "2003-09",
+   "awards": 3,
+   "obligations": 110294892.0
+  },
+  {
+   "month": "2003-12",
+   "awards": 1,
+   "obligations": 19249271.0
+  },
+  {
+   "month": "2004-01",
+   "awards": 1,
+   "obligations": 26347422.0
+  },
+  {
+   "month": "2004-02",
+   "awards": 1,
+   "obligations": 1356023.0
+  },
+  {
+   "month": "2004-05",
+   "awards": 1,
+   "obligations": 5184573.0
+  },
+  {
+   "month": "2004-06",
+   "awards": 3,
+   "obligations": 20621915.0
+  },
+  {
+   "month": "2004-07",
+   "awards": 2,
+   "obligations": 49697362.0
+  },
+  {
+   "month": "2004-08",
+   "awards": 2,
+   "obligations": 3604176.0
+  },
+  {
+   "month": "2004-09",
+   "awards": 6,
+   "obligations": 79973154.0
+  },
+  {
+   "month": "2004-12",
+   "awards": 1,
+   "obligations": 1345464.0
+  },
+  {
+   "month": "2005-05",
+   "awards": 1,
+   "obligations": 9941105.0
+  },
+  {
+   "month": "2005-08",
+   "awards": 1,
+   "obligations": 904834.0
+  },
+  {
+   "month": "2005-09",
+   "awards": 11,
+   "obligations": 259756613.46
+  },
+  {
+   "month": "2005-10",
+   "awards": 2,
+   "obligations": 17179.0
+  },
+  {
+   "month": "2005-12",
+   "awards": 2,
+   "obligations": 3766728.0
+  },
+  {
+   "month": "2006-01",
+   "awards": 1,
+   "obligations": 3084791.0
+  },
+  {
+   "month": "2006-03",
+   "awards": 1,
+   "obligations": 18613948.0
+  },
+  {
+   "month": "2006-04",
+   "awards": 1,
+   "obligations": 689683.0
+  },
+  {
+   "month": "2006-05",
+   "awards": 2,
+   "obligations": 24326963.0
+  },
+  {
+   "month": "2006-06",
+   "awards": 1,
+   "obligations": 32008604.0
+  },
+  {
+   "month": "2006-07",
+   "awards": 2,
+   "obligations": 232916790.8
+  },
+  {
+   "month": "2006-08",
+   "awards": 2,
+   "obligations": 42361160.0
+  },
+  {
+   "month": "2006-09",
+   "awards": 11,
+   "obligations": 172353006.0
+  },
+  {
+   "month": "2006-10",
+   "awards": 4,
+   "obligations": 59259087.0
+  },
+  {
+   "month": "2006-12",
+   "awards": 2,
+   "obligations": 15434570.0
+  },
+  {
+   "month": "2007-01",
+   "awards": 1,
+   "obligations": 3976612.0
+  },
+  {
+   "month": "2007-04",
+   "awards": 3,
+   "obligations": 13744531.0
+  },
+  {
+   "month": "2007-05",
+   "awards": 1,
+   "obligations": 99982.0
+  },
+  {
+   "month": "2007-06",
+   "awards": 1,
+   "obligations": 13506975.0
+  },
+  {
+   "month": "2007-07",
+   "awards": 2,
+   "obligations": 32188285.0
+  },
+  {
+   "month": "2007-08",
+   "awards": 4,
+   "obligations": 5592721.0
+  },
+  {
+   "month": "2007-09",
+   "awards": 15,
+   "obligations": 674584699.0
+  },
+  {
+   "month": "2007-10",
+   "awards": 2,
+   "obligations": 45012831.0
+  },
+  {
+   "month": "2007-11",
+   "awards": 4,
+   "obligations": 514680654.0
+  },
+  {
+   "month": "2007-12",
+   "awards": 4,
+   "obligations": 43592606.0
+  },
+  {
+   "month": "2008-01",
+   "awards": 5,
+   "obligations": 89834284.0
+  },
+  {
+   "month": "2008-02",
+   "awards": 2,
+   "obligations": 243297673.0
+  },
+  {
+   "month": "2008-03",
+   "awards": 5,
+   "obligations": 30394452.0
+  },
+  {
+   "month": "2008-04",
+   "awards": 3,
+   "obligations": 26175425.0
+  },
+  {
+   "month": "2008-05",
+   "awards": 6,
+   "obligations": 34906145.0
+  },
+  {
+   "month": "2008-06",
+   "awards": 2,
+   "obligations": 11923547.0
+  },
+  {
+   "month": "2008-07",
+   "awards": 3,
+   "obligations": 48724956.0
+  },
+  {
+   "month": "2008-08",
+   "awards": 8,
+   "obligations": 107737066.7
+  },
+  {
+   "month": "2008-09",
+   "awards": 30,
+   "obligations": 420551084.0
+  },
+  {
+   "month": "2008-10",
+   "awards": 12,
+   "obligations": 129228090.0
+  },
+  {
+   "month": "2008-11",
+   "awards": 2,
+   "obligations": 68882441.0
+  },
+  {
+   "month": "2008-12",
+   "awards": 6,
+   "obligations": 120488964.0
+  },
+  {
+   "month": "2009-01",
+   "awards": 5,
+   "obligations": 109494211.0
+  },
+  {
+   "month": "2009-02",
+   "awards": 5,
+   "obligations": 33604172.0
+  },
+  {
+   "month": "2009-03",
+   "awards": 9,
+   "obligations": 620532331.87
+  },
+  {
+   "month": "2009-04",
+   "awards": 3,
+   "obligations": 11109081.0
+  },
+  {
+   "month": "2009-05",
+   "awards": 7,
+   "obligations": 89970430.0
+  },
+  {
+   "month": "2009-06",
+   "awards": 6,
+   "obligations": 44588081.0
+  },
+  {
+   "month": "2009-07",
+   "awards": 7,
+   "obligations": 260074386.0
+  },
+  {
+   "month": "2009-08",
+   "awards": 13,
+   "obligations": 88117400.0
+  },
+  {
+   "month": "2009-09",
+   "awards": 32,
+   "obligations": 1010088937.0
+  },
+  {
+   "month": "2009-10",
+   "awards": 14,
+   "obligations": 179223111.0
+  },
+  {
+   "month": "2009-11",
+   "awards": 4,
+   "obligations": 57148403.0
+  },
+  {
+   "month": "2009-12",
+   "awards": 6,
+   "obligations": 44651825.0
+  },
+  {
+   "month": "2010-01",
+   "awards": 10,
+   "obligations": 113499822.33
+  },
+  {
+   "month": "2010-02",
+   "awards": 6,
+   "obligations": 105829093.0
+  },
+  {
+   "month": "2010-03",
+   "awards": 10,
+   "obligations": 197725778.0
+  },
+  {
+   "month": "2010-04",
+   "awards": 6,
+   "obligations": 73378498.0
+  },
+  {
+   "month": "2010-05",
+   "awards": 8,
+   "obligations": 114322625.0
+  },
+  {
+   "month": "2010-06",
+   "awards": 15,
+   "obligations": 316936171.0
+  },
+  {
+   "month": "2010-07",
+   "awards": 11,
+   "obligations": 121842403.0
+  },
+  {
+   "month": "2010-08",
+   "awards": 20,
+   "obligations": 531754760.0
+  },
+  {
+   "month": "2010-09",
+   "awards": 59,
+   "obligations": 3864605346.68
+  },
+  {
+   "month": "2010-10",
+   "awards": 17,
+   "obligations": 221961665.0
+  },
+  {
+   "month": "2010-11",
+   "awards": 5,
+   "obligations": 74881629.0
+  },
+  {
+   "month": "2010-12",
+   "awards": 7,
+   "obligations": 33645671.0
+  },
+  {
+   "month": "2011-01",
+   "awards": 11,
+   "obligations": 681308378.0
+  },
+  {
+   "month": "2011-02",
+   "awards": 8,
+   "obligations": 49727693.0
+  },
+  {
+   "month": "2011-03",
+   "awards": 17,
+   "obligations": 132096231.0
+  },
+  {
+   "month": "2011-04",
+   "awards": 19,
+   "obligations": 318414573.0
+  },
+  {
+   "month": "2011-05",
+   "awards": 10,
+   "obligations": 81258799.0
+  },
+  {
+   "month": "2011-06",
+   "awards": 9,
+   "obligations": 36013917.0
+  },
+  {
+   "month": "2011-07",
+   "awards": 25,
+   "obligations": 337931246.0
+  },
+  {
+   "month": "2011-08",
+   "awards": 27,
+   "obligations": 625586903.0
+  },
+  {
+   "month": "2011-09",
+   "awards": 81,
+   "obligations": 3164169793.19
+  },
+  {
+   "month": "2011-10",
+   "awards": 34,
+   "obligations": 945020765.01
+  },
+  {
+   "month": "2011-11",
+   "awards": 7,
+   "obligations": 286373027.0
+  },
+  {
+   "month": "2011-12",
+   "awards": 6,
+   "obligations": 107180222.0
+  },
+  {
+   "month": "2012-01",
+   "awards": 9,
+   "obligations": 90965499.0
+  },
+  {
+   "month": "2012-02",
+   "awards": 18,
+   "obligations": 203636473.0
+  },
+  {
+   "month": "2012-03",
+   "awards": 21,
+   "obligations": 348157947.82
+  },
+  {
+   "month": "2012-04",
+   "awards": 21,
+   "obligations": 87992008.85
+  },
+  {
+   "month": "2012-05",
+   "awards": 30,
+   "obligations": 332005916.0
+  },
+  {
+   "month": "2012-06",
+   "awards": 25,
+   "obligations": 255761098.0
+  },
+  {
+   "month": "2012-07",
+   "awards": 29,
+   "obligations": 284181791.0
+  },
+  {
+   "month": "2012-08",
+   "awards": 34,
+   "obligations": 1169174217.0
+  },
+  {
+   "month": "2012-09",
+   "awards": 92,
+   "obligations": 1294062808.16
+  },
+  {
+   "month": "2012-10",
+   "awards": 63,
+   "obligations": 1059423335.73
+  },
+  {
+   "month": "2012-11",
+   "awards": 24,
+   "obligations": 285838294.0
+  },
+  {
+   "month": "2012-12",
+   "awards": 26,
+   "obligations": 285586634.0
+  },
+  {
+   "month": "2013-01",
+   "awards": 18,
+   "obligations": 259947222.0
+  },
+  {
+   "month": "2013-02",
+   "awards": 22,
+   "obligations": 251739426.68
+  },
+  {
+   "month": "2013-03",
+   "awards": 25,
+   "obligations": 391769976.0
+  },
+  {
+   "month": "2013-04",
+   "awards": 25,
+   "obligations": 273942727.3
+  },
+  {
+   "month": "2013-05",
+   "awards": 26,
+   "obligations": 427500766.55
+  },
+  {
+   "month": "2013-06",
+   "awards": 44,
+   "obligations": 884622758.0
+  },
+  {
+   "month": "2013-07",
+   "awards": 38,
+   "obligations": 447145393.0
+  },
+  {
+   "month": "2013-08",
+   "awards": 38,
+   "obligations": 445199008.09
+  },
+  {
+   "month": "2013-09",
+   "awards": 92,
+   "obligations": 675716780.97
+  },
+  {
+   "month": "2013-10",
+   "awards": 70,
+   "obligations": 630257116.31
+  },
+  {
+   "month": "2013-11",
+   "awards": 31,
+   "obligations": 240386969.91
+  },
+  {
+   "month": "2013-12",
+   "awards": 24,
+   "obligations": 299281852.45
+  },
+  {
+   "month": "2014-01",
+   "awards": 19,
+   "obligations": 317842862.92
+  },
+  {
+   "month": "2014-02",
+   "awards": 21,
+   "obligations": 164219356.0
+  },
+  {
+   "month": "2014-03",
+   "awards": 24,
+   "obligations": 653450388.42
+  },
+  {
+   "month": "2014-04",
+   "awards": 44,
+   "obligations": 519590631.73
+  },
+  {
+   "month": "2014-05",
+   "awards": 24,
+   "obligations": 124215462.65
+  },
+  {
+   "month": "2014-06",
+   "awards": 24,
+   "obligations": 679538956.33
+  },
+  {
+   "month": "2014-07",
+   "awards": 52,
+   "obligations": 710944301.06
+  },
+  {
+   "month": "2014-08",
+   "awards": 35,
+   "obligations": 254312522.5
+  },
+  {
+   "month": "2014-09",
+   "awards": 142,
+   "obligations": 1279317837.54
+  },
+  {
+   "month": "2014-10",
+   "awards": 80,
+   "obligations": 734617024.75
+  },
+  {
+   "month": "2014-11",
+   "awards": 35,
+   "obligations": 168999548.15
+  },
+  {
+   "month": "2014-12",
+   "awards": 27,
+   "obligations": 471454108.44
+  },
+  {
+   "month": "2015-01",
+   "awards": 34,
+   "obligations": 401820756.0
+  },
+  {
+   "month": "2015-02",
+   "awards": 30,
+   "obligations": 432615388.9
+  },
+  {
+   "month": "2015-03",
+   "awards": 28,
+   "obligations": 232977320.0
+  },
+  {
+   "month": "2015-04",
+   "awards": 42,
+   "obligations": 342304324.46
+  },
+  {
+   "month": "2015-05",
+   "awards": 32,
+   "obligations": 128907429.01
+  },
+  {
+   "month": "2015-06",
+   "awards": 37,
+   "obligations": 199783321.43
+  },
+  {
+   "month": "2015-07",
+   "awards": 45,
+   "obligations": 629557647.86
+  },
+  {
+   "month": "2015-08",
+   "awards": 40,
+   "obligations": 396449734.89
+  },
+  {
+   "month": "2015-09",
+   "awards": 154,
+   "obligations": 897458517.48
+  },
+  {
    "month": "2015-10",
-   "awards": 272,
-   "obligations": 4183012709.49
+   "awards": 139,
+   "obligations": 1865827756.55
   },
   {
    "month": "2015-11",
-   "awards": 286,
-   "obligations": 5740399914.05
+   "awards": 69,
+   "obligations": 686499104.1
   },
   {
    "month": "2015-12",
-   "awards": 390,
-   "obligations": 6853729096.6
+   "awards": 77,
+   "obligations": 696632488.15
   },
   {
    "month": "2016-01",
-   "awards": 293,
-   "obligations": 4925564270.48
+   "awards": 81,
+   "obligations": 442020628.74
   },
   {
    "month": "2016-02",
-   "awards": 362,
-   "obligations": 15111385353.91
+   "awards": 81,
+   "obligations": 276775104.82
   },
   {
    "month": "2016-03",
-   "awards": 344,
-   "obligations": 3659123850.7
+   "awards": 141,
+   "obligations": 814283908.67
   },
   {
    "month": "2016-04",
-   "awards": 353,
-   "obligations": 2677143279.31
+   "awards": 157,
+   "obligations": 478633611.44
   },
   {
    "month": "2016-05",
-   "awards": 299,
-   "obligations": 2657562382.22
+   "awards": 145,
+   "obligations": 532928092.72
   },
   {
    "month": "2016-06",
-   "awards": 334,
-   "obligations": 1964183526.38
+   "awards": 188,
+   "obligations": 743707834.61
   },
   {
    "month": "2016-07",
-   "awards": 388,
-   "obligations": 3138644822.74
+   "awards": 250,
+   "obligations": 1196506146.72
   },
   {
    "month": "2016-08",
-   "awards": 566,
-   "obligations": 2767042455.06
+   "awards": 359,
+   "obligations": 838358133.38
   },
   {
    "month": "2016-09",
-   "awards": 1628,
-   "obligations": 7700083545.09
+   "awards": 1272,
+   "obligations": 2300644298.75
   },
   {
    "month": "2016-10",
@@ -657,9 +1372,99 @@
  ],
  "fiscalYears": [
   {
+   "fy": 1996,
+   "awards": 1,
+   "obligations": 493005536.0
+  },
+  {
+   "fy": 1997,
+   "awards": 1,
+   "obligations": 124387164.0
+  },
+  {
+   "fy": 2000,
+   "awards": 2,
+   "obligations": 3065651.0
+  },
+  {
+   "fy": 2001,
+   "awards": 1,
+   "obligations": 17953811.0
+  },
+  {
+   "fy": 2002,
+   "awards": 5,
+   "obligations": 10215160223.0
+  },
+  {
+   "fy": 2003,
+   "awards": 10,
+   "obligations": 140806428.0
+  },
+  {
+   "fy": 2004,
+   "awards": 17,
+   "obligations": 206033896.0
+  },
+  {
+   "fy": 2005,
+   "awards": 14,
+   "obligations": 271948016.46
+  },
+  {
+   "fy": 2006,
+   "awards": 25,
+   "obligations": 530138852.8
+  },
+  {
+   "fy": 2007,
+   "awards": 33,
+   "obligations": 818387462.0
+  },
+  {
+   "fy": 2008,
+   "awards": 74,
+   "obligations": 1616830723.7
+  },
+  {
+   "fy": 2009,
+   "awards": 107,
+   "obligations": 2586178524.87
+  },
+  {
+   "fy": 2010,
+   "awards": 169,
+   "obligations": 5720917836.01
+  },
+  {
+   "fy": 2011,
+   "awards": 236,
+   "obligations": 5756996498.19
+  },
+  {
+   "fy": 2012,
+   "awards": 326,
+   "obligations": 5404511772.84
+  },
+  {
+   "fy": 2013,
+   "awards": 441,
+   "obligations": 5688432322.32
+  },
+  {
+   "fy": 2014,
+   "awards": 510,
+   "obligations": 5873358257.82
+  },
+  {
+   "fy": 2015,
+   "awards": 584,
+   "obligations": 5036945121.37
+  },
+  {
    "fy": 2016,
-   "awards": 5515,
-   "obligations": 61377875206.03
+   "awards": 2959,
+   "obligations": 10872817108.65
   },
   {
    "fy": 2017,
@@ -712,6 +1517,15 @@
    "obligations": 4427509301.03
   }
  ],
+ "transactionFiscalYears": [
+  {
+   "fy": 2016,
+   "transactions": 7124,
+   "obligations": 11729858025.2
+  }
+ ],
+ "fyCumulative": [],
+ "transactionLatestActionDate": "2016-09-30",
  "recentAwards": [
   {
    "id": "ASST_NON_STW20026GR0020_019",

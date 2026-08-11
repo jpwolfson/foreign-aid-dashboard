@@ -1,0 +1,562 @@
+action_date,fiscal_year,awarding_agency,transactions,obligations
+2015-10-01,2016,Agency for International Development,6,1206959.00
+2015-10-01,2016,Department of State,43,61207774.00
+2015-10-02,2016,Agency for International Development,3,12570000.00
+2015-10-02,2016,Department of State,1,548505.00
+2015-10-05,2016,Agency for International Development,1,0.00
+2015-10-06,2016,Agency for International Development,15,8004245.00
+2015-10-07,2016,Agency for International Development,7,1452431.00
+2015-10-08,2016,Agency for International Development,5,10983535.00
+2015-10-09,2016,Agency for International Development,16,-360807.00
+2015-10-12,2016,Agency for International Development,1,0.00
+2015-10-13,2016,Agency for International Development,4,0.00
+2015-10-14,2016,Agency for International Development,11,6408801.00
+2015-10-15,2016,Agency for International Development,14,692116.00
+2015-10-16,2016,Agency for International Development,4,618459.00
+2015-10-19,2016,Agency for International Development,13,13466732.00
+2015-10-19,2016,Department of State,1,2151242.00
+2015-10-20,2016,Agency for International Development,7,7037235.00
+2015-10-20,2016,Department of State,3,7917301.00
+2015-10-21,2016,Agency for International Development,17,17307737.00
+2015-10-21,2016,Department of State,1,1195880.00
+2015-10-22,2016,Agency for International Development,14,36307674.00
+2015-10-23,2016,Agency for International Development,6,4740645.00
+2015-10-23,2016,Department of State,2,3819428.00
+2015-10-25,2016,Department of State,1,38049.00
+2015-10-26,2016,Agency for International Development,11,5809220.00
+2015-10-26,2016,Department of State,1,3455884.00
+2015-10-27,2016,Agency for International Development,9,2649400.00
+2015-10-27,2016,Department of State,2,2879745.00
+2015-10-28,2016,Agency for International Development,13,18061231.00
+2015-10-29,2016,Agency for International Development,15,14522484.00
+2015-10-29,2016,Department of State,2,4032624.00
+2015-10-30,2016,Agency for International Development,15,4821088.00
+2015-10-30,2016,Department of State,5,2885508.00
+2015-10-31,2016,Agency for International Development,6,600000.00
+2015-11-01,2016,Agency for International Development,3,491968.00
+2015-11-02,2016,Agency for International Development,13,14010651.00
+2015-11-02,2016,Department of State,6,8729671.00
+2015-11-03,2016,Agency for International Development,20,44683308.00
+2015-11-03,2016,Department of State,2,7939447.00
+2015-11-04,2016,Agency for International Development,11,8524075.00
+2015-11-04,2016,Department of State,1,52847.00
+2015-11-05,2016,Agency for International Development,12,11273077.00
+2015-11-05,2016,Department of State,2,1600598.00
+2015-11-06,2016,Agency for International Development,11,26537216.00
+2015-11-06,2016,Department of State,1,469156.00
+2015-11-08,2016,Agency for International Development,1,-412900.00
+2015-11-09,2016,Agency for International Development,9,13006864.00
+2015-11-09,2016,Department of State,2,115000.00
+2015-11-10,2016,Agency for International Development,14,24624708.00
+2015-11-10,2016,Department of State,2,1924051.00
+2015-11-11,2016,Department of State,1,25000.00
+2015-11-12,2016,Agency for International Development,12,8236371.00
+2015-11-12,2016,Department of State,1,120000.00
+2015-11-13,2016,Agency for International Development,6,36475117.00
+2015-11-13,2016,Department of State,1,93350.00
+2015-11-16,2016,Agency for International Development,15,31505494.00
+2015-11-16,2016,Department of State,1,42067.00
+2015-11-17,2016,Agency for International Development,21,10734501.00
+2015-11-17,2016,Department of State,2,4954900.00
+2015-11-18,2016,Agency for International Development,15,18348502.00
+2015-11-18,2016,Department of State,1,150000.00
+2015-11-19,2016,Agency for International Development,11,14925730.00
+2015-11-19,2016,Department of State,4,6621604.00
+2015-11-20,2016,Agency for International Development,9,1880667.00
+2015-11-20,2016,Department of State,3,1967524.00
+2015-11-23,2016,Agency for International Development,16,35926657.00
+2015-11-24,2016,Agency for International Development,26,27758594.00
+2015-11-24,2016,Department of State,2,214727.00
+2015-11-25,2016,Agency for International Development,17,18125404.00
+2015-11-25,2016,Department of State,3,2890367.00
+2015-11-26,2016,Agency for International Development,2,4063660.00
+2015-11-27,2016,Agency for International Development,8,6347887.00
+2015-11-27,2016,Department of State,2,1354244.00
+2015-11-30,2016,Agency for International Development,12,24391783.00
+2015-11-30,2016,Department of State,5,8419638.00
+2015-12-01,2016,Agency for International Development,12,20792389.00
+2015-12-01,2016,Department of State,3,14675281.00
+2015-12-02,2016,Agency for International Development,13,12255671.00
+2015-12-02,2016,Department of State,5,3192289.00
+2015-12-03,2016,Agency for International Development,17,-7608699.00
+2015-12-03,2016,Department of State,4,4638756.00
+2015-12-04,2016,Agency for International Development,17,14473251.00
+2015-12-04,2016,Department of State,4,5797448.00
+2015-12-05,2016,Department of State,1,1245.45
+2015-12-06,2016,Agency for International Development,3,1757753.00
+2015-12-07,2016,Agency for International Development,19,15109631.00
+2015-12-07,2016,Department of State,2,13604392.00
+2015-12-08,2016,Agency for International Development,12,7496677.00
+2015-12-08,2016,Department of State,1,7268324.00
+2015-12-09,2016,Agency for International Development,17,25700368.00
+2015-12-09,2016,Department of State,4,3660483.00
+2015-12-10,2016,Agency for International Development,22,17728160.00
+2015-12-10,2016,Department of State,1,7076028.00
+2015-12-11,2016,Agency for International Development,8,9432736.00
+2015-12-11,2016,Department of State,1,40000.00
+2015-12-12,2016,Agency for International Development,1,1535000.00
+2015-12-13,2016,Agency for International Development,1,0.00
+2015-12-14,2016,Agency for International Development,18,11344198.00
+2015-12-14,2016,Department of State,2,137368.00
+2015-12-15,2016,Agency for International Development,10,8092604.00
+2015-12-16,2016,Agency for International Development,17,10255334.00
+2015-12-16,2016,Department of State,2,2590000.00
+2015-12-17,2016,Agency for International Development,26,29439337.00
+2015-12-17,2016,Department of State,1,1000000.00
+2015-12-18,2016,Agency for International Development,11,14746874.00
+2015-12-19,2016,Agency for International Development,2,0.00
+2015-12-20,2016,Agency for International Development,2,1519403.00
+2015-12-21,2016,Agency for International Development,25,60969817.00
+2015-12-21,2016,Department of State,5,27371883.00
+2015-12-22,2016,Agency for International Development,25,18604668.00
+2015-12-22,2016,Department of State,1,2046537.00
+2015-12-23,2016,Agency for International Development,19,73754164.00
+2015-12-23,2016,Department of State,8,12827977.00
+2015-12-24,2016,Agency for International Development,11,32637096.00
+2015-12-24,2016,Department of State,7,11028149.00
+2015-12-27,2016,Agency for International Development,1,0.00
+2015-12-28,2016,Agency for International Development,18,39920701.00
+2015-12-28,2016,Department of State,3,1065138.00
+2015-12-29,2016,Agency for International Development,16,41330125.00
+2015-12-29,2016,Department of State,2,909000.00
+2015-12-30,2016,Agency for International Development,24,37930183.00
+2015-12-30,2016,Department of State,4,12238826.00
+2015-12-31,2016,Agency for International Development,13,22612151.00
+2015-12-31,2016,Department of State,5,26820147.00
+2016-01-01,2016,Agency for International Development,1,4336885.00
+2016-01-01,2016,Department of State,1,63384.00
+2016-01-03,2016,Agency for International Development,1,500000.00
+2016-01-03,2016,Department of State,1,35000.00
+2016-01-04,2016,Agency for International Development,14,37832678.00
+2016-01-04,2016,Department of State,4,4518323.00
+2016-01-05,2016,Agency for International Development,9,5735110.00
+2016-01-05,2016,Department of State,4,2127255.00
+2016-01-06,2016,Agency for International Development,17,82207264.00
+2016-01-06,2016,Department of State,2,522875.00
+2016-01-07,2016,Agency for International Development,18,306446379.00
+2016-01-07,2016,Department of State,2,3047597.00
+2016-01-08,2016,Agency for International Development,15,14817804.00
+2016-01-08,2016,Department of State,5,521613.00
+2016-01-10,2016,Agency for International Development,4,0.00
+2016-01-11,2016,Agency for International Development,29,9941576.00
+2016-01-11,2016,Department of State,7,9560086.00
+2016-01-12,2016,Agency for International Development,22,74447920.00
+2016-01-12,2016,Department of State,1,3200000.00
+2016-01-13,2016,Agency for International Development,14,9755349.00
+2016-01-13,2016,Department of State,1,50000.00
+2016-01-14,2016,Agency for International Development,12,6360000.00
+2016-01-14,2016,Department of State,4,1931533.00
+2016-01-15,2016,Agency for International Development,17,37154589.00
+2016-01-15,2016,Department of State,5,2058284.00
+2016-01-18,2016,Agency for International Development,2,1085098.00
+2016-01-19,2016,Agency for International Development,19,73027034.00
+2016-01-19,2016,Department of State,4,2601410.00
+2016-01-20,2016,Agency for International Development,12,32683930.00
+2016-01-20,2016,Department of State,2,436625.00
+2016-01-21,2016,Agency for International Development,13,14375296.00
+2016-01-21,2016,Department of State,2,11060049.00
+2016-01-22,2016,Agency for International Development,7,6090504.00
+2016-01-22,2016,Department of State,2,238548.00
+2016-01-25,2016,Agency for International Development,9,19006487.00
+2016-01-26,2016,Agency for International Development,11,5971511.00
+2016-01-26,2016,Department of State,2,261855.00
+2016-01-27,2016,Agency for International Development,12,27577856.00
+2016-01-28,2016,Agency for International Development,18,8850486.00
+2016-01-29,2016,Agency for International Development,17,23732217.00
+2016-01-29,2016,Department of State,10,19739439.00
+2016-01-31,2016,Agency for International Development,2,-184054.00
+2016-01-31,2016,Department of State,1,88000.00
+2016-02-01,2016,Agency for International Development,24,84226348.00
+2016-02-01,2016,Department of State,4,514240.00
+2016-02-02,2016,Agency for International Development,14,29894614.00
+2016-02-02,2016,Department of State,2,57260.00
+2016-02-03,2016,Agency for International Development,11,32758794.00
+2016-02-03,2016,Department of State,3,179375.00
+2016-02-04,2016,Agency for International Development,31,5927228.00
+2016-02-04,2016,Department of State,5,1517400.00
+2016-02-05,2016,Agency for International Development,20,434797347.00
+2016-02-05,2016,Department of State,2,362623.00
+2016-02-08,2016,Agency for International Development,23,-8371627.00
+2016-02-08,2016,Department of State,3,772300.00
+2016-02-09,2016,Agency for International Development,17,9997825.00
+2016-02-09,2016,Department of State,6,1685266.00
+2016-02-10,2016,Agency for International Development,12,16813104.00
+2016-02-10,2016,Department of State,4,2589426.00
+2016-02-11,2016,Agency for International Development,14,26192747.00
+2016-02-11,2016,Department of State,3,188850.00
+2016-02-12,2016,Agency for International Development,16,4843067.00
+2016-02-12,2016,Department of State,6,2248428.00
+2016-02-15,2016,Agency for International Development,2,6440211.00
+2016-02-16,2016,Agency for International Development,20,13154929.00
+2016-02-16,2016,Department of State,4,28714992.00
+2016-02-17,2016,Agency for International Development,19,51849331.00
+2016-02-17,2016,Department of State,6,6841339.00
+2016-02-18,2016,Agency for International Development,19,19425200.00
+2016-02-18,2016,Department of State,2,109150.00
+2016-02-19,2016,Agency for International Development,14,9556749.00
+2016-02-19,2016,Department of State,6,19806887.00
+2016-02-20,2016,Agency for International Development,1,-2750000.00
+2016-02-21,2016,Agency for International Development,2,-857.00
+2016-02-22,2016,Agency for International Development,23,3813237.00
+2016-02-22,2016,Department of State,1,200000.00
+2016-02-23,2016,Agency for International Development,19,41376587.00
+2016-02-23,2016,Department of State,5,3641481.00
+2016-02-24,2016,Agency for International Development,20,17039636.00
+2016-02-24,2016,Department of State,2,6570943.00
+2016-02-25,2016,Agency for International Development,18,30738615.00
+2016-02-25,2016,Department of State,4,6483129.00
+2016-02-26,2016,Agency for International Development,13,2554613.00
+2016-02-26,2016,Department of State,5,4913504.00
+2016-02-27,2016,Agency for International Development,4,0.00
+2016-02-28,2016,Agency for International Development,1,0.00
+2016-02-28,2016,Department of State,1,43740.00
+2016-02-29,2016,Agency for International Development,19,17590804.00
+2016-02-29,2016,Department of State,2,876804.00
+2016-03-01,2016,Agency for International Development,11,8192194.00
+2016-03-01,2016,Department of State,5,513220.00
+2016-03-02,2016,Agency for International Development,20,48000709.00
+2016-03-02,2016,Department of State,2,531188.00
+2016-03-03,2016,Agency for International Development,17,77862965.00
+2016-03-03,2016,Department of State,2,303080.00
+2016-03-04,2016,Agency for International Development,7,14502958.00
+2016-03-04,2016,Department of State,3,4172656.00
+2016-03-06,2016,Department of State,2,58484.00
+2016-03-07,2016,Agency for International Development,15,14874961.00
+2016-03-08,2016,Agency for International Development,21,47652109.00
+2016-03-08,2016,Department of State,4,500787250.00
+2016-03-09,2016,Agency for International Development,8,11148795.00
+2016-03-09,2016,Department of State,10,405000.00
+2016-03-10,2016,Agency for International Development,15,32019547.00
+2016-03-10,2016,Department of State,5,1589559.00
+2016-03-11,2016,Agency for International Development,8,16168236.00
+2016-03-11,2016,Department of State,9,13411175.00
+2016-03-13,2016,Agency for International Development,1,0.00
+2016-03-14,2016,Agency for International Development,14,13749257.00
+2016-03-14,2016,Department of State,4,6957105.00
+2016-03-15,2016,Agency for International Development,27,21427597.00
+2016-03-15,2016,Department of State,4,1862836.00
+2016-03-16,2016,Agency for International Development,11,23506838.00
+2016-03-16,2016,Department of State,4,1640107.00
+2016-03-17,2016,Agency for International Development,25,23062814.00
+2016-03-17,2016,Department of State,4,7079226.00
+2016-03-18,2016,Agency for International Development,11,7500780.00
+2016-03-18,2016,Department of State,5,1162086.00
+2016-03-20,2016,Agency for International Development,1,1033383.00
+2016-03-20,2016,Department of State,1,30000.00
+2016-03-21,2016,Agency for International Development,24,141631500.00
+2016-03-21,2016,Department of State,2,1028990.00
+2016-03-22,2016,Agency for International Development,32,122531258.00
+2016-03-22,2016,Department of State,10,10367144.00
+2016-03-23,2016,Agency for International Development,14,40582005.00
+2016-03-23,2016,Department of State,3,1695000.00
+2016-03-24,2016,Agency for International Development,15,10063130.00
+2016-03-24,2016,Department of State,4,2361910.00
+2016-03-25,2016,Agency for International Development,4,44940999.00
+2016-03-25,2016,Department of State,4,4140829.00
+2016-03-28,2016,Agency for International Development,11,1180097.00
+2016-03-28,2016,Department of State,12,2071586.23
+2016-03-29,2016,Agency for International Development,15,10546631.00
+2016-03-29,2016,Department of State,6,2426777.00
+2016-03-30,2016,Agency for International Development,11,5421665.00
+2016-03-30,2016,Department of State,7,10339114.00
+2016-03-31,2016,Agency for International Development,12,30136645.00
+2016-03-31,2016,Department of State,5,798123.00
+2016-04-01,2016,Agency for International Development,14,19362985.00
+2016-04-01,2016,Department of State,8,9708299.00
+2016-04-03,2016,Agency for International Development,2,282260.00
+2016-04-04,2016,Agency for International Development,30,16109212.00
+2016-04-04,2016,Department of State,9,19523764.00
+2016-04-05,2016,Agency for International Development,22,45231435.00
+2016-04-05,2016,Department of State,5,4446644.00
+2016-04-06,2016,Agency for International Development,15,26590825.00
+2016-04-06,2016,Department of State,3,11991233.00
+2016-04-07,2016,Agency for International Development,13,8440660.00
+2016-04-07,2016,Department of State,8,27027125.00
+2016-04-08,2016,Agency for International Development,17,44593019.00
+2016-04-08,2016,Department of State,8,5332027.00
+2016-04-09,2016,Agency for International Development,1,0.00
+2016-04-10,2016,Department of State,1,17330.00
+2016-04-11,2016,Agency for International Development,15,7014181.00
+2016-04-11,2016,Department of State,5,13392459.00
+2016-04-12,2016,Agency for International Development,17,7873649.00
+2016-04-12,2016,Department of State,6,1207195.00
+2016-04-13,2016,Agency for International Development,13,8335765.00
+2016-04-13,2016,Department of State,8,1272775.00
+2016-04-14,2016,Agency for International Development,21,25497052.00
+2016-04-14,2016,Department of State,11,13269904.00
+2016-04-15,2016,Agency for International Development,16,20648384.00
+2016-04-15,2016,Department of State,5,10050858.00
+2016-04-16,2016,Agency for International Development,3,-423189.00
+2016-04-17,2016,Agency for International Development,1,0.00
+2016-04-18,2016,Agency for International Development,19,36326518.00
+2016-04-18,2016,Department of State,10,128656486.00
+2016-04-19,2016,Agency for International Development,22,41399397.00
+2016-04-19,2016,Department of State,2,2583640.00
+2016-04-20,2016,Agency for International Development,16,4931883.00
+2016-04-20,2016,Department of State,6,70261495.00
+2016-04-21,2016,Agency for International Development,19,19311282.00
+2016-04-21,2016,Department of State,3,203558.00
+2016-04-22,2016,Agency for International Development,15,40378566.00
+2016-04-22,2016,Department of State,2,159138.00
+2016-04-23,2016,Agency for International Development,2,10000000.00
+2016-04-24,2016,Department of State,1,48880.00
+2016-04-25,2016,Agency for International Development,18,13478915.00
+2016-04-25,2016,Department of State,4,5532930.00
+2016-04-26,2016,Agency for International Development,19,22608984.00
+2016-04-26,2016,Department of State,6,8947958.00
+2016-04-27,2016,Agency for International Development,12,3713479.00
+2016-04-27,2016,Department of State,8,1885778.00
+2016-04-28,2016,Agency for International Development,13,15325083.00
+2016-04-28,2016,Department of State,2,580501.00
+2016-04-29,2016,Agency for International Development,14,9347109.00
+2016-04-29,2016,Department of State,8,13870739.00
+2016-05-01,2016,Agency for International Development,3,358445.00
+2016-05-01,2016,Department of State,5,271944.00
+2016-05-02,2016,Agency for International Development,14,20585865.00
+2016-05-02,2016,Department of State,6,2207997.00
+2016-05-03,2016,Agency for International Development,9,4761066.00
+2016-05-03,2016,Department of State,10,4081700.00
+2016-05-04,2016,Agency for International Development,22,7315551.00
+2016-05-04,2016,Department of State,6,7957596.00
+2016-05-05,2016,Agency for International Development,12,23412250.00
+2016-05-05,2016,Department of State,3,169965.00
+2016-05-06,2016,Agency for International Development,6,12597619.00
+2016-05-06,2016,Department of State,6,1514635.00
+2016-05-08,2016,Department of State,1,8180.00
+2016-05-09,2016,Agency for International Development,9,9254443.00
+2016-05-09,2016,Department of State,4,703764.00
+2016-05-10,2016,Agency for International Development,15,11257224.00
+2016-05-10,2016,Department of State,4,3660203.00
+2016-05-11,2016,Agency for International Development,15,15098458.00
+2016-05-11,2016,Department of State,2,270000.00
+2016-05-12,2016,Agency for International Development,5,4255867.00
+2016-05-12,2016,Department of State,4,647910.00
+2016-05-13,2016,Agency for International Development,9,13961844.00
+2016-05-13,2016,Department of State,1,221179.00
+2016-05-16,2016,Agency for International Development,14,13686474.00
+2016-05-16,2016,Department of State,3,515135.00
+2016-05-17,2016,Agency for International Development,18,85117309.00
+2016-05-17,2016,Department of State,7,23596063.00
+2016-05-18,2016,Agency for International Development,21,889865496.00
+2016-05-18,2016,Department of State,3,150205.00
+2016-05-19,2016,Agency for International Development,20,46646067.00
+2016-05-19,2016,Department of State,6,2265228.00
+2016-05-20,2016,Agency for International Development,27,41400847.00
+2016-05-20,2016,Department of State,5,304323.00
+2016-05-21,2016,Agency for International Development,2,12337820.00
+2016-05-22,2016,Agency for International Development,1,0.00
+2016-05-22,2016,Department of State,3,99880.00
+2016-05-23,2016,Agency for International Development,24,28201549.00
+2016-05-23,2016,Department of State,4,558857.00
+2016-05-24,2016,Agency for International Development,17,37284203.00
+2016-05-24,2016,Department of State,5,7090274.00
+2016-05-25,2016,Agency for International Development,16,17455165.00
+2016-05-25,2016,Department of State,5,811347.00
+2016-05-26,2016,Agency for International Development,17,33715032.00
+2016-05-26,2016,Department of State,6,1317580.00
+2016-05-27,2016,Agency for International Development,15,36150312.00
+2016-05-27,2016,Department of State,3,1701602.00
+2016-05-30,2016,Agency for International Development,2,1489321.00
+2016-05-31,2016,Agency for International Development,5,7110635.00
+2016-05-31,2016,Department of State,7,2852919.70
+2016-06-01,2016,Agency for International Development,4,30350589.00
+2016-06-01,2016,Department of State,9,2248326.00
+2016-06-02,2016,Agency for International Development,2,375251.00
+2016-06-02,2016,Department of State,3,1181000.00
+2016-06-03,2016,Agency for International Development,14,36934398.00
+2016-06-03,2016,Department of State,13,2470012.00
+2016-06-05,2016,Department of State,1,10199.00
+2016-06-06,2016,Agency for International Development,22,44368243.00
+2016-06-06,2016,Department of State,6,954648.00
+2016-06-07,2016,Agency for International Development,18,17883815.00
+2016-06-07,2016,Department of State,4,1470900.00
+2016-06-08,2016,Agency for International Development,24,44873786.00
+2016-06-08,2016,Department of State,7,1597679.00
+2016-06-09,2016,Agency for International Development,13,13460622.00
+2016-06-09,2016,Department of State,4,2766121.00
+2016-06-10,2016,Agency for International Development,17,12629454.00
+2016-06-10,2016,Department of State,7,1782917.00
+2016-06-11,2016,Agency for International Development,1,-521000.00
+2016-06-12,2016,Agency for International Development,2,18050760.00
+2016-06-13,2016,Agency for International Development,20,14238437.00
+2016-06-13,2016,Department of State,2,201237.00
+2016-06-14,2016,Agency for International Development,9,4020699.00
+2016-06-14,2016,Department of State,8,1274104.67
+2016-06-15,2016,Agency for International Development,15,5935691.00
+2016-06-15,2016,Department of State,8,3359456.00
+2016-06-16,2016,Agency for International Development,13,6123004.00
+2016-06-16,2016,Department of State,7,2485668.00
+2016-06-17,2016,Agency for International Development,15,31284798.00
+2016-06-17,2016,Department of State,9,4928804.00
+2016-06-19,2016,Department of State,2,9410.00
+2016-06-20,2016,Agency for International Development,4,2598975.00
+2016-06-20,2016,Department of State,6,1046002.00
+2016-06-21,2016,Agency for International Development,24,20349823.00
+2016-06-21,2016,Department of State,8,9415547.00
+2016-06-22,2016,Agency for International Development,8,4742394.00
+2016-06-22,2016,Department of State,4,3185748.00
+2016-06-23,2016,Agency for International Development,12,14807042.00
+2016-06-23,2016,Department of State,7,6135916.00
+2016-06-24,2016,Agency for International Development,13,10087625.00
+2016-06-24,2016,Department of State,6,195781.71
+2016-06-25,2016,Department of State,2,38892.00
+2016-06-26,2016,Agency for International Development,2,134963.00
+2016-06-27,2016,Agency for International Development,18,47568239.00
+2016-06-27,2016,Department of State,5,79480692.00
+2016-06-28,2016,Agency for International Development,17,16364799.00
+2016-06-28,2016,Department of State,7,2637715.00
+2016-06-29,2016,Agency for International Development,18,14920932.00
+2016-06-29,2016,Department of State,8,2373918.00
+2016-06-30,2016,Agency for International Development,16,11243602.00
+2016-06-30,2016,Department of State,13,8804194.00
+2016-07-01,2016,Agency for International Development,26,20166736.00
+2016-07-01,2016,Department of State,10,3740528.00
+2016-07-03,2016,Department of State,2,468726.00
+2016-07-05,2016,Agency for International Development,21,17595157.00
+2016-07-05,2016,Department of State,1,49070.00
+2016-07-06,2016,Agency for International Development,16,26154545.00
+2016-07-06,2016,Department of State,5,1681763.00
+2016-07-07,2016,Agency for International Development,15,6831057.00
+2016-07-07,2016,Department of State,5,10978310.00
+2016-07-08,2016,Agency for International Development,12,12063429.00
+2016-07-08,2016,Department of State,4,3380976.00
+2016-07-11,2016,Agency for International Development,20,28313082.00
+2016-07-11,2016,Department of State,4,574541.00
+2016-07-12,2016,Agency for International Development,14,19140303.00
+2016-07-12,2016,Department of State,9,1702229.00
+2016-07-13,2016,Agency for International Development,17,40451256.00
+2016-07-13,2016,Department of State,6,1509735.00
+2016-07-14,2016,Agency for International Development,30,23695604.00
+2016-07-14,2016,Department of State,6,2997030.00
+2016-07-15,2016,Agency for International Development,15,-6351147.00
+2016-07-15,2016,Department of State,11,3155049.00
+2016-07-17,2016,Department of State,1,21204.00
+2016-07-18,2016,Agency for International Development,4,13289376.00
+2016-07-18,2016,Department of State,8,1661340.00
+2016-07-19,2016,Agency for International Development,17,27765011.00
+2016-07-19,2016,Department of State,8,12735374.00
+2016-07-20,2016,Agency for International Development,21,13983403.00
+2016-07-20,2016,Department of State,6,15574920.00
+2016-07-21,2016,Agency for International Development,43,65974962.00
+2016-07-21,2016,Department of State,3,1067001.00
+2016-07-22,2016,Agency for International Development,16,24173219.00
+2016-07-22,2016,Department of State,2,1505493.00
+2016-07-24,2016,Agency for International Development,1,0.00
+2016-07-24,2016,Department of State,1,6945.00
+2016-07-25,2016,Agency for International Development,24,42564996.00
+2016-07-25,2016,Department of State,15,6146126.27
+2016-07-26,2016,Agency for International Development,25,46359043.00
+2016-07-26,2016,Department of State,8,3659659.00
+2016-07-27,2016,Agency for International Development,30,12505726.00
+2016-07-27,2016,Department of State,9,3453008.00
+2016-07-28,2016,Agency for International Development,27,44360932.00
+2016-07-28,2016,Department of State,20,12690270.00
+2016-07-29,2016,Agency for International Development,26,33834227.00
+2016-07-29,2016,Department of State,8,7635522.00
+2016-07-30,2016,Department of State,1,80000.00
+2016-07-31,2016,Agency for International Development,2,-175000.00
+2016-08-01,2016,Agency for International Development,20,8872397.00
+2016-08-01,2016,Department of State,9,5105615.00
+2016-08-02,2016,Agency for International Development,36,18972274.00
+2016-08-02,2016,Department of State,4,3342470.00
+2016-08-03,2016,Agency for International Development,25,21512113.00
+2016-08-03,2016,Department of State,6,2725528.00
+2016-08-04,2016,Agency for International Development,18,4896851.00
+2016-08-04,2016,Department of State,5,2566170.00
+2016-08-05,2016,Agency for International Development,16,12674899.00
+2016-08-05,2016,Department of State,4,6635966.00
+2016-08-07,2016,Agency for International Development,1,-5485781.00
+2016-08-08,2016,Agency for International Development,32,15183451.00
+2016-08-08,2016,Department of State,4,354000.00
+2016-08-09,2016,Agency for International Development,17,3768178.00
+2016-08-09,2016,Department of State,8,14371415.00
+2016-08-10,2016,Agency for International Development,18,20115218.00
+2016-08-10,2016,Department of State,13,12369009.00
+2016-08-11,2016,Agency for International Development,21,28640244.00
+2016-08-11,2016,Department of State,10,5545951.00
+2016-08-12,2016,Agency for International Development,21,14310387.00
+2016-08-12,2016,Department of State,13,34334915.00
+2016-08-14,2016,Department of State,3,187350.00
+2016-08-15,2016,Agency for International Development,19,12470323.00
+2016-08-15,2016,Department of State,15,9356939.00
+2016-08-16,2016,Agency for International Development,10,10764215.00
+2016-08-16,2016,Department of State,5,1717726.00
+2016-08-17,2016,Agency for International Development,18,23350975.00
+2016-08-17,2016,Department of State,12,5748555.00
+2016-08-18,2016,Agency for International Development,11,7999799.00
+2016-08-18,2016,Department of State,12,3298434.00
+2016-08-19,2016,Agency for International Development,11,10719987.00
+2016-08-19,2016,Department of State,11,5200007.00
+2016-08-22,2016,Agency for International Development,27,28446175.00
+2016-08-22,2016,Department of State,17,11266541.64
+2016-08-23,2016,Agency for International Development,11,13716864.00
+2016-08-23,2016,Department of State,13,10052738.00
+2016-08-24,2016,Agency for International Development,9,8140433.00
+2016-08-24,2016,Department of State,16,18610104.00
+2016-08-25,2016,Agency for International Development,24,16935882.00
+2016-08-25,2016,Department of State,9,1230268.00
+2016-08-26,2016,Agency for International Development,22,21041184.00
+2016-08-26,2016,Department of State,19,11738064.00
+2016-08-27,2016,Department of State,1,20022.00
+2016-08-28,2016,Agency for International Development,1,3900000.00
+2016-08-28,2016,Department of State,2,105650.00
+2016-08-29,2016,Agency for International Development,18,33232896.00
+2016-08-29,2016,Department of State,14,9043459.00
+2016-08-30,2016,Agency for International Development,28,33260271.00
+2016-08-30,2016,Department of State,29,42877288.20
+2016-08-31,2016,Agency for International Development,18,15860479.00
+2016-08-31,2016,Department of State,50,45869448.00
+2016-09-01,2016,Agency for International Development,32,26655025.00
+2016-09-01,2016,Department of State,41,27398732.08
+2016-09-02,2016,Agency for International Development,24,50478388.00
+2016-09-02,2016,Department of State,26,13158696.00
+2016-09-03,2016,Department of State,1,327697.00
+2016-09-05,2016,Department of State,8,276572.00
+2016-09-06,2016,Agency for International Development,28,17616466.00
+2016-09-06,2016,Department of State,25,32885804.00
+2016-09-07,2016,Agency for International Development,13,24575637.00
+2016-09-07,2016,Department of State,21,6147330.00
+2016-09-08,2016,Agency for International Development,38,40011549.00
+2016-09-08,2016,Department of State,26,8492326.38
+2016-09-09,2016,Agency for International Development,40,13185273.00
+2016-09-09,2016,Department of State,19,2067309.00
+2016-09-10,2016,Department of State,1,31942.00
+2016-09-11,2016,Agency for International Development,1,722810.00
+2016-09-12,2016,Agency for International Development,28,28245067.00
+2016-09-12,2016,Department of State,31,10550002.00
+2016-09-13,2016,Agency for International Development,22,13144715.00
+2016-09-13,2016,Department of State,35,13687314.70
+2016-09-14,2016,Agency for International Development,35,20112334.00
+2016-09-14,2016,Department of State,35,19499084.63
+2016-09-15,2016,Agency for International Development,38,46388030.00
+2016-09-15,2016,Department of State,49,81339250.00
+2016-09-16,2016,Agency for International Development,31,36384264.00
+2016-09-16,2016,Department of State,31,15484564.00
+2016-09-17,2016,Agency for International Development,1,2200001.00
+2016-09-17,2016,Department of State,1,461607.00
+2016-09-18,2016,Agency for International Development,1,1300000.00
+2016-09-18,2016,Department of State,11,2647779.00
+2016-09-19,2016,Agency for International Development,49,80112562.00
+2016-09-19,2016,Department of State,73,63795370.83
+2016-09-20,2016,Agency for International Development,32,574947904.00
+2016-09-20,2016,Department of State,44,10566342.12
+2016-09-21,2016,Agency for International Development,36,52384302.00
+2016-09-21,2016,Department of State,62,25356759.57
+2016-09-22,2016,Agency for International Development,45,58514505.00
+2016-09-22,2016,Department of State,55,36315353.00
+2016-09-23,2016,Agency for International Development,49,80928380.00
+2016-09-23,2016,Department of State,74,38233274.00
+2016-09-24,2016,Agency for International Development,6,15816747.00
+2016-09-24,2016,Department of State,2,117842.00
+2016-09-25,2016,Agency for International Development,8,42891688.00
+2016-09-25,2016,Department of State,28,1215765.95
+2016-09-26,2016,Agency for International Development,61,114575212.00
+2016-09-26,2016,Department of State,75,37260617.86
+2016-09-27,2016,Agency for International Development,95,417854912.00
+2016-09-27,2016,Department of State,73,34093614.00
+2016-09-28,2016,Agency for International Development,100,253501410.00
+2016-09-28,2016,Department of State,92,28399926.21
+2016-09-29,2016,Agency for International Development,86,199597984.00
+2016-09-29,2016,Department of State,90,17634488.00
+2016-09-30,2016,Agency for International Development,83,384868978.00
+2016-09-30,2016,Department of State,79,44264623.00
