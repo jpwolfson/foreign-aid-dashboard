@@ -59,6 +59,31 @@ class BenchmarkTests(unittest.TestCase):
         self.assertEqual(nadr["main"], "1075")
         self.assertNotEqual(nadr["main"], "1022")
 
+    def test_execution_profile_csv_flattens_every_chart_point(self):
+        definitions = {a["slug"]: a for a in self.config["accounts"]}
+        accounts = [{**definitions[a["slug"]], "profiles": a["profiles"]}
+                    for a in self.benchmark["accounts"]]
+        expected_rows = sum(
+            len(a["profiles"][cohort])
+            for a in accounts for cohort in self.benchmark["cohorts"]
+        )
+        with tempfile.TemporaryDirectory() as td:
+            path = Path(td) / "execution_profiles.csv"
+            build_dashboard.write_execution_profiles(
+                accounts, self.benchmark["cohorts"], self.benchmark["source"], path
+            )
+            with path.open(newline="") as handle:
+                rows = list(csv.DictReader(handle))
+        self.assertEqual(len(rows), expected_rows)
+        current_da_june = next(
+            r for r in rows
+            if r["account_slug"] == "da"
+            and r["cohort"] == "2025/2026"
+            and r["month"] == "21"
+        )
+        self.assertEqual(current_da_june["percent_obligated"], "2.8")
+        self.assertIn("Carlile", current_da_june["source_title"])
+
 
 class FileATests(unittest.TestCase):
     def make_zip(self, rows):

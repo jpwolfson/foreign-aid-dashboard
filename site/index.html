@@ -33,6 +33,9 @@
   .panel[hidden] { display:none; }
   .banner { border:1px solid var(--line); border-left:4px solid var(--orange); border-radius:8px; background:var(--surface); padding:12px 15px; color:var(--ink2); }
   .banner strong { color:var(--ink); }
+  .download-links { display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
+  .download-link { display:inline-flex; align-items:center; border:1px solid var(--line); border-radius:6px; background:var(--surface); color:var(--blue); padding:6px 10px; font-size:12.5px; font-weight:650; text-decoration:none; }
+  .download-link:hover { border-color:var(--blue); text-decoration:underline; }
   .kpis { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin:18px 0; }
   .kpi,.card { background:var(--surface); border:1px solid var(--line); border-radius:10px; box-shadow:var(--shadow); }
   .kpi { padding:15px 17px; }
@@ -48,6 +51,13 @@
   select { max-width:380px; }
   .plot { margin-top:14px; min-height:320px; position:relative; }
   svg { display:block; width:100%; height:auto; overflow:visible; }
+  .plot svg { cursor:crosshair; touch-action:pan-y; }
+  .tip { position:absolute; pointer-events:none; display:none; z-index:5; background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:8px 10px; font-size:13px; box-shadow:0 2px 10px rgba(0,0,0,.12); min-width:210px; }
+  .tip .t-head { color:var(--ink2); margin-bottom:4px; }
+  .tip .t-row { display:flex; align-items:baseline; gap:7px; white-space:nowrap; }
+  .tip .t-key { width:14px; height:2.5px; border-radius:2px; flex:none; align-self:center; }
+  .tip .t-val { font-weight:650; font-variant-numeric:tabular-nums; }
+  .tip .t-lab { color:var(--ink2); }
   .axis { fill:var(--muted); font-size:11px; }
   .grid { stroke:var(--line); stroke-width:1; }
   .legend { display:flex; flex-wrap:wrap; gap:8px 16px; margin-top:7px; color:var(--ink2); font-size:12px; }
@@ -55,6 +65,8 @@
   .key i { width:18px; height:3px; border-radius:3px; }
   .callout { margin-top:10px; padding:9px 12px; background:color-mix(in srgb,var(--orange) 9%,var(--surface)); border-radius:6px; font-size:13px; }
   .table-wrap { overflow:auto; margin-top:10px; }
+  details { margin-top:10px; }
+  summary { color:var(--ink2); font-size:13px; cursor:pointer; user-select:none; }
   table { border-collapse:collapse; width:100%; font-size:13px; }
   th,td { border-bottom:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
   th { color:var(--ink2); font-weight:620; white-space:nowrap; }
@@ -111,6 +123,8 @@ const fmtN = v => Number(v).toLocaleString("en-US");
 const fmtPct = v => `${Number(v).toFixed(2)}%`;
 const fmtMoney = v => { const a=Math.abs(v); return `${v<0?"−":""}$${a>=1e9?(a/1e9).toFixed(2)+"B":a>=1e6?(a/1e6).toFixed(1)+"M":a>=1e3?(a/1e3).toFixed(0)+"K":a.toFixed(0)}`; };
 const shortCohort = c => c.split("/").map(x=>x.slice(2)).join("/");
+const monthOfAvailability = i => `${new Date(2024,9+i,1).toLocaleString("en-US",{month:"long"})} of year ${i<12?"one":"two"}`;
+const cohortMonth = (cohort,i) => new Date(Number(cohort.split("/")[0])-1,9+i,1).toLocaleString("en-US",{month:"short",year:"numeric"});
 
 document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () => {
   document.querySelectorAll(".tab").forEach(x=>x.setAttribute("aria-selected",x===b));
@@ -119,9 +133,40 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
 
 function kpi(label,value,note) { return el("div",{class:"kpi"},el("div",{class:"k-label",text:label}),el("div",{class:"k-value",text:value}),el("div",{class:"k-note",text:note})); }
 
+function downloadLink(file,label) {
+  return el("a",{class:"download-link",href:`${DATA}/${file}`,download:"",text:label});
+}
+
+function replaceTable(details,headers,rows) {
+  const wasOpen=details.open;
+  const head=el("tr",{},...headers.map((h,i)=>el("th",{class:i?"num":"",text:h})));
+  const body=rows.map(row=>el("tr",{},...row.map((value,i)=>el("td",{class:i?"num":"",text:value}))));
+  details.replaceChildren(
+    el("summary",{text:"View as table"}),
+    el("div",{class:"table-wrap"},el("table",{},el("thead",{},head),el("tbody",{},...body)))
+  );
+  details.open=wasOpen;
+}
+
+function tableDetails(headers,rows) {
+  const details=el("details");
+  replaceTable(details,headers,rows);
+  return details;
+}
+
+function showTip(tip,plot,xPix,yPix,head,rows) {
+  tip.replaceChildren(el("div",{class:"t-head",text:head}));
+  rows.forEach(row=>tip.append(el("div",{class:"t-row"},el("span",{class:"t-key",style:`background:${row.color}`}),el("span",{class:"t-val",text:row.value}),el("span",{class:"t-lab",text:row.label}))));
+  tip.style.display="block";
+  const width=tip.offsetWidth;
+  tip.style.left=Math.min(Math.max(4,xPix-width/2),plot.clientWidth-width-4)+"px";
+  tip.style.top=Math.max(0,yPix-tip.offsetHeight-12)+"px";
+}
+
 function lineChart(plot, account, cohorts) {
   plot.replaceChildren(); const W=1020,H=340,L=48,R=18,T=14,B=35;
   const svg=el("svg",{viewBox:`0 0 ${W} ${H}`,role:"img","aria-label":`${account.name} cumulative obligation profiles`});
+  const tip=el("div",{class:"tip",role:"status","aria-live":"polite"});
   const X=i=>L+i/23*(W-L-R), Y=v=>H-B-v/110*(H-B-T);
   [0,20,40,60,80,100].forEach(v=>{ svg.append(el("line",{class:"grid",x1:L,x2:W-R,y1:Y(v),y2:Y(v)}),el("text",{class:"axis",x:L-8,y:Y(v)+4,"text-anchor":"end",text:v+"%"})); });
   [1,3,6,9,12,15,18,21,24].forEach(m=>svg.append(el("text",{class:"axis",x:X(m-1),y:H-10,"text-anchor":"middle",text:m})));
@@ -131,10 +176,29 @@ function lineChart(plot, account, cohorts) {
     svg.append(el("path",{d,fill:"none",stroke:COLORS[j],"stroke-width":j===cohorts.length-1?3.6:2,"stroke-opacity":j===cohorts.length-1?1:.72,"stroke-linecap":"round","stroke-linejoin":"round"}));
     const i=pts.length-1; svg.append(el("circle",{cx:X(i),cy:Y(pts[i]),r:j===cohorts.length-1?4:2.5,fill:COLORS[j]}));
   });
+  const cross=el("line",{y1:T,y2:H-B,stroke:"var(--muted)","stroke-width":1,visibility:"hidden"});
+  const hoverDots=cohorts.map((c,j)=>el("circle",{r:4.5,fill:COLORS[j],stroke:"var(--surface)","stroke-width":2,visibility:"hidden"}));
+  svg.append(cross,...hoverDots);
+  const hideHover=()=>{tip.style.display="none";cross.setAttribute("visibility","hidden");hoverDots.forEach(dot=>dot.setAttribute("visibility","hidden"));};
+  svg.addEventListener("pointermove",event=>{
+    const bounds=svg.getBoundingClientRect(),vx=(event.clientX-bounds.left)*W/bounds.width;
+    const i=Math.max(0,Math.min(23,Math.round((vx-L)/(W-L-R)*23))),x=X(i);
+    cross.setAttribute("x1",x);cross.setAttribute("x2",x);cross.setAttribute("visibility","visible");
+    const rows=[];
+    cohorts.forEach((c,j)=>{
+      const value=account.profiles[c][i],dot=hoverDots[j];
+      if(value===undefined){dot.setAttribute("visibility","hidden");return;}
+      dot.setAttribute("cx",x);dot.setAttribute("cy",Y(value));dot.setAttribute("visibility","visible");
+      rows.push({color:COLORS[j],value:fmtPct(value),label:`${shortCohort(c)} · ${cohortMonth(c,i)}`});
+    });
+    const scale=bounds.width/W;
+    showTip(tip,plot,x*scale,T*scale+tip.offsetHeight+18,`Month ${i+1} — ${monthOfAvailability(i)}`,rows);
+  });
+  svg.addEventListener("pointerleave",hideHover);
   const keys=cohorts.map((c,j)=>el("span",{class:"key"},
     el("i",{style:`background:${COLORS[j]}`}),
     document.createTextNode(shortCohort(c)+(j===cohorts.length-1?" — current cohort":""))));
-  plot.append(svg,el("div",{class:"legend"},...keys));
+  plot.append(svg,tip,el("div",{class:"legend"},...keys));
 }
 
 function executionTable(data) {
@@ -147,11 +211,11 @@ function executionTable(data) {
 
 function renderExecution(data) {
   const p=$("#execution"); p.replaceChildren();
-  p.append(el("div",{class:"banner"},el("strong",{text:"Court-filing benchmark through June 30, 2026. "}),document.createTextNode("The lines below reproduce Appendix A. USAspending File A is a separate live cross-check, not a replacement for the filing’s curated appropriation denominators.")));
+  p.append(el("div",{class:"banner"},el("strong",{text:"Court-filing benchmark through June 30, 2026. "}),document.createTextNode("The lines below reproduce Appendix A. USAspending File A is a separate live cross-check, not a replacement for the filing’s curated appropriation denominators."),el("div",{class:"download-links"},downloadLink("execution_profiles.csv","Download chart data (CSV)"),downloadLink("file_a_snapshots.csv","Download File A source rows (CSV)"))));
   p.append(el("div",{class:"kpis"},kpi("Median obligated, 25/26",fmtPct(data.summary.medianCurrentPercent),`Prior medians: ${fmtPct(data.summary.medianPriorLow)}–58.66%`),kpi("Below every prior cohort",`${data.summary.belowAllFivePriors} of ${data.summary.accountCount}`,"At June of year two"),kpi("Development Assistance",fmtPct(data.accounts.find(a=>a.slug==="da").currentPercent),"15.77 pp below prior low"),kpi("Global Health Programs",fmtPct(data.accounts.find(a=>a.slug==="ghp").currentPercent),"40.23 pp below prior low")));
   const card=el("div",{class:"card"}), head=el("div",{class:"card-head"}), titles=el("div",{},el("h2",{text:"Cumulative obligation profile"}),el("p",{class:"note",text:"Share of adjusted appropriation obligated in each month of the two-year period of availability."}));
-  const select=el("select",{"aria-label":"Account"},...data.accounts.map(a=>el("option",{value:a.slug,text:`${a.abbrev} — ${a.name}`}))); head.append(titles,select); const plot=el("div",{class:"plot"}), call=el("div",{class:"callout"}); card.append(head,plot,call); p.append(card);
-  const draw=()=>{const a=data.accounts.find(x=>x.slug===select.value); lineChart(plot,a,data.cohorts); const cur=a.currentPercent, phrase=a.belowAllFivePriors?`below all five comparison cohorts and ${Math.abs(a.gapToPriorMin).toFixed(2)} percentage points below the prior low`:`ranked ${a.rankOfSix} of six cohorts`; call.textContent=`At month 21 (June of year two), ${a.abbrev} 25/26 was ${fmtPct(cur)} obligated — ${phrase}.`;}; select.addEventListener("change",draw); draw();
+  const select=el("select",{"aria-label":"Account"},...data.accounts.map(a=>el("option",{value:a.slug,text:`${a.abbrev} — ${a.name}`}))); head.append(titles,select); const plot=el("div",{class:"plot"}), call=el("div",{class:"callout"}), profileTable=el("details"); card.append(head,plot,call,profileTable); p.append(card);
+  const draw=()=>{const a=data.accounts.find(x=>x.slug===select.value); lineChart(plot,a,data.cohorts); replaceTable(profileTable,["Month",...data.cohorts.map(c=>shortCohort(c))],Array.from({length:24},(_,i)=>[`Month ${i+1}`,...data.cohorts.map(c=>a.profiles[c][i]===undefined?"—":fmtPct(a.profiles[c][i]))])); const cur=a.currentPercent, phrase=a.belowAllFivePriors?`below all five comparison cohorts and ${Math.abs(a.gapToPriorMin).toFixed(2)} percentage points below the prior low`:`ranked ${a.rankOfSix} of six cohorts`; call.textContent=`At month 21 (June of year two), ${a.abbrev} 25/26 was ${fmtPct(cur)} obligated — ${phrase}.`;}; select.addEventListener("change",draw); draw();
   const summary=el("div",{class:"card"},el("h2",{text:"June of the second year — filing Table 1"}),el("p",{class:"note",text:"The filing’s cross-account comparison point. Range uses the five preceding cohorts."}),executionTable(data)); p.append(summary);
   const live=el("div",{class:"card"},el("h2",{text:"USAspending File A cross-check"}));
   if(data.fileA.status!=="available") live.append(el("div",{class:"empty"},el("strong",{text:"Awaiting the first File A refresh"}),document.createTextNode(data.fileA.message||"The scheduled workflow will populate this independent account-balance check.")));
@@ -181,10 +245,10 @@ function fyBars(plot, rows) {
 
 function renderAwards(data) {
   const p=$("#awards"); p.replaceChildren();
-  p.append(el("div",{class:"banner"},el("strong",{text:"Award-level view. "}),document.createTextNode(data.definition+" Amounts are current prime-award obligations, so amendments can revise older cohorts.")));
+  p.append(el("div",{class:"banner"},el("strong",{text:"Award-level view. "}),document.createTextNode(data.definition+" Amounts are current prime-award obligations, so amendments can revise older cohorts."),el("div",{class:"download-links"},downloadLink("awards.csv",`Download all ${fmtN(data.totalAwards||0)} awards (CSV)`))));
   if(data.status!=="available") { p.append(el("div",{class:"card empty"},el("strong",{text:"Award pipeline ready; first refresh pending"}),document.createTextNode("The repository contains the durable USAspending puller and scheduled workflow. After the first successful API run, this view will populate with recipient-level records and trends."))); return; }
   const cur=data.fiscalYears.at(-1)||{awards:0,obligations:0,fy:"—"}; p.append(el("div",{class:"kpis"},kpi("Awards in store",fmtN(data.totalAwards),"Deduplicated prime awards"),kpi(`FY${cur.fy} new awards`,fmtN(cur.awards),"By base obligation date"),kpi(`FY${cur.fy} current obligations`,fmtMoney(cur.obligations),"Rolled-up award amount"),kpi("Last refresh",data.generated,"USAspending Award Data Archive")));
-  const chart=el("div",{class:"card"},el("h2",{text:"Grant obligations by fiscal year"}),el("p",{class:"note",text:"Current rolled-up obligations assigned to the award’s base-obligation fiscal year."})); const plot=el("div",{class:"plot"}); chart.append(plot); p.append(chart); fyBars(plot,data.fiscalYears);
+  const chart=el("div",{class:"card"},el("h2",{text:"Grant obligations by fiscal year"}),el("p",{class:"note",text:"Current rolled-up obligations assigned to the award’s base-obligation fiscal year."})); const plot=el("div",{class:"plot"}); chart.append(plot,tableDetails(["Fiscal year","Awards","Current obligations"],data.fiscalYears.map(r=>[`FY${r.fy}`,fmtN(r.awards),fmtMoney(r.obligations)]))); p.append(chart); fyBars(plot,data.fiscalYears);
   const card=el("div",{class:"card"},el("h2",{text:"Award detail"}),el("p",{class:"note",text:"Most recent 1,000 awards are loaded in the browser; the repository CSV is the full store."})); const tools=el("div",{class:"award-tools"}),search=el("input",{type:"search",placeholder:"Search recipient, award ID, or description","aria-label":"Search awards"}),agency=el("select",{"aria-label":"Agency filter"},el("option",{value:"",text:"All agencies"}),...Array.from(new Set(data.recentAwards.map(a=>a.awarding_agency))).sort().map(x=>el("option",{value:x,text:x})));tools.append(search,agency);const holder=el("div",{class:"table-wrap"});card.append(tools,holder);p.append(card);
   const draw=()=>{
     const q=search.value.toLowerCase();
@@ -193,7 +257,7 @@ function renderAwards(data) {
     const headers=["Base date","Recipient / award","Agency","Listing","Obligations","Description"]
       .map((h,i)=>el("th",{class:i===4?"num":"",text:h}));
     const rows=filtered.map(a=>el("tr",{},el("td",{text:a.base_date}),
-      el("td",{},el("strong",{text:a.recipient||"Unknown recipient"}),el("span",{class:"subcell",text:a.award_id})),
+      el("td",{},el("strong",{text:a.recipient||"Unknown recipient"}),el("span",{class:"subcell"},el("a",{href:`https://www.usaspending.gov/award/${encodeURIComponent(a.id)}/latest`,target:"_blank",rel:"noopener",text:a.award_id}))),
       el("td",{},document.createTextNode(a.awarding_agency),el("span",{class:"subcell",text:a.awarding_subagency})),
       el("td",{text:a.assistance_listing||"—"}),el("td",{class:"num",text:fmtMoney(Number(a.amount))}),
       el("td",{class:"award-desc",title:a.description,text:a.description||"—"})));
@@ -210,6 +274,7 @@ function renderMethod(data) {
     el("div",{},el("h3",{text:"Appropriation execution (SF 133 / File A)"}),el("p",{text:accountText})),
     el("div",{},el("h3",{text:"Grant awards (USAspending Award Data Archive)"}),el("p",{text:awardText})));
   p.replaceChildren(el("div",{class:"card"},el("h2",{text:"Two datasets, two levels of truth"}),grid));
+  p.append(el("div",{class:"card"},el("h2",{text:"Download data"}),el("p",{class:"note",text:"The award file is the complete durable award store; the execution file contains every account, cohort, and monthly chart value; File A rows are the independent live source checkpoints."}),el("div",{class:"download-links"},downloadLink("awards.csv","Award-level grants (CSV)"),downloadLink("execution_profiles.csv","Appropriation execution profiles (CSV)"),downloadLink("file_a_snapshots.csv","USAspending File A snapshots (CSV)"))));
   p.append(el("div",{class:"card"},el("h2",{text:"Filing replication rules"}),el("div",{class:"method-grid",style:"margin-top:14px"},...Object.entries(data.method).map(([k,v])=>el("div",{},el("h3",{text:k.replace(/([A-Z])/g," $1").replace(/^./,x=>x.toUpperCase())}),el("p",{text:v}))))));
   p.append(el("div",{class:"card"},el("h2",{text:"Sources"}),el("p",{class:"note"},document.createTextNode(`${data.benchmark.title}, ${data.benchmark.case}, ${data.benchmark.document}, Appendix A pages ${data.benchmark.pages}. `),el("a",{href:"https://api.usaspending.gov/docs/endpoints",text:"USAspending API endpoint documentation"}),document.createTextNode(". File A is generated from agencies’ GTAS account-balance submissions."))));
 }
