@@ -6224,7 +6224,7 @@ action_date,fiscal_year,awarding_agency,transactions,obligations
 2026-04-13,2026,Department of State,14,443819.07
 2026-04-14,2026,Department of State,13,831079.55
 2026-04-15,2026,Department of State,11,-220756.57
-2026-04-16,2026,Department of State,25,3192365.94
+2026-04-16,2026,Department of State,26,3192365.94
 2026-04-17,2026,Agency for International Development,6,471805.00
 2026-04-17,2026,Department of State,9,-183291.82
 2026-04-19,2026,Department of State,1,0.00
@@ -6278,7 +6278,7 @@ action_date,fiscal_year,awarding_agency,transactions,obligations
 2026-06-02,2026,Department of State,14,345562375.93
 2026-06-03,2026,Department of State,16,5754134.69
 2026-06-04,2026,Department of State,13,28648132.41
-2026-06-05,2026,Department of State,17,4799141.29
+2026-06-05,2026,Department of State,18,4816141.29
 2026-06-08,2026,Agency for International Development,1,0.00
 2026-06-08,2026,Department of State,27,-22842090.80
 2026-06-09,2026,Agency for International Development,2,500000.00
@@ -6299,11 +6299,11 @@ action_date,fiscal_year,awarding_agency,transactions,obligations
 2026-06-23,2026,Department of State,10,-294359.30
 2026-06-24,2026,Agency for International Development,1,200000.00
 2026-06-24,2026,Department of State,11,-89372.81
-2026-06-25,2026,Department of State,13,25086538.01
+2026-06-25,2026,Department of State,14,25087833.31
 2026-06-26,2026,Department of State,8,-72342.27
 2026-06-28,2026,Department of State,1,9000000.00
 2026-06-29,2026,Agency for International Development,2,0.00
-2026-06-29,2026,Department of State,15,98346196.35
+2026-06-29,2026,Department of State,16,98045990.92
 2026-06-30,2026,Department of State,30,50407845.97
 2026-07-01,2026,Agency for International Development,1,250947.00
 2026-07-01,2026,Department of State,14,4884303.20
@@ -6316,21 +6316,48 @@ action_date,fiscal_year,awarding_agency,transactions,obligations
 2026-07-10,2026,Department of State,8,59153818.06
 2026-07-13,2026,Agency for International Development,1,0.00
 2026-07-13,2026,Department of State,17,40513766.01
-2026-07-14,2026,Department of State,18,11266784.50
-2026-07-15,2026,Department of State,23,2853127.18
-2026-07-16,2026,Department of State,12,210163100.00
+2026-07-14,2026,Department of State,19,11289814.50
+2026-07-15,2026,Department of State,26,1258071.35
+2026-07-16,2026,Department of State,13,210145615.46
 2026-07-17,2026,Agency for International Development,3,-37357364.00
 2026-07-17,2026,Department of State,6,1016163.00
 2026-07-20,2026,Agency for International Development,1,-122252.00
-2026-07-20,2026,Department of State,15,9594330.46
+2026-07-20,2026,Department of State,17,12694330.46
 2026-07-21,2026,Agency for International Development,3,-375343.00
-2026-07-21,2026,Department of State,12,8103866.95
+2026-07-21,2026,Department of State,14,10121366.95
 2026-07-22,2026,Agency for International Development,2,-15189351.00
-2026-07-22,2026,Department of State,9,9073426.19
-2026-07-23,2026,Department of State,7,858511.26
+2026-07-22,2026,Department of State,11,9074006.19
+2026-07-23,2026,Department of State,10,858445.48
 2026-07-24,2026,Agency for International Development,1,0.00
-2026-07-24,2026,Department of State,3,67664.00
+2026-07-24,2026,Department of State,11,-187073525.18
+2026-07-25,2026,Department of State,1,196710.00
+2026-07-26,2026,Department of State,1,0.00
 2026-07-27,2026,Agency for International Development,7,-94167748.00
+2026-07-27,2026,Department of State,18,8011450.68
 2026-07-28,2026,Agency for International Development,1,-128157.00
+2026-07-28,2026,Department of State,14,2547587.53
+2026-07-29,2026,Department of State,20,52656900.32
 2026-07-30,2026,Agency for International Development,1,0.00
+2026-07-30,2026,Department of State,21,1732580.78
 2026-07-31,2026,Agency for International Development,1,700000.00
+2026-07-31,2026,Department of State,20,8256015.84
+2026-08-01,2026,Department of State,1,243694.00
+2026-08-03,2026,Department of State,29,455773.62
+2026-08-04,2026,Department of State,16,255003801.87
+2026-08-05,2026,Department of State,12,175071459.41
+2026-08-06,2026,Department of State,11,1200.00
+2026-08-07,2026,Department of State,23,293754.75
+2026-08-10,2026,Department of State,34,-2514693.86
+2026-08-11,2026,Department of State,31,4435598.47
+2026-08-12,2026,Agency for International Development,1,-3133309.00
+2026-08-12,2026,Department of State,17,960607.88
+2026-08-13,2026,Agency for International Development,2,-15533166.00
+2026-08-13,2026,Department of State,15,-1050604.29
+2026-08-14,2026,Department of State,9,5286000.00
+2026-08-15,2026,Department of State,1,1000000.00
+2026-08-16,2026,Department of State,3,9000000.00
+2026-08-17,2026,Department of State,17,7572804.18
+2026-08-18,2026,Department of State,7,15520000.00
+2026-08-19,2026,Department of State,13,499529.15
+2026-08-20,2026,Department of State,10,16628268.51
+2026-08-21,2026,Department of State,1,0.00
