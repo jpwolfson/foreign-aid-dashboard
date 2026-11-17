@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-10",
+  "generated": "2026-11-17",
   "benchmark": {
     "title": "Declaration of Joseph Carlile, Appendix A",
     "case": "Global Health Council v. Trump, No. 25-cv-402 (D.D.C.)",
@@ -1318,64 +1318,64 @@
   },
   "fileA": {
     "status": "available",
-    "latestPeriod": "FY2026P11",
-    "lastModified": "2026-10-01",
+    "latestPeriod": "FY2026P12",
+    "lastModified": "2026-11-16",
     "accounts": [
       {
         "slug": "esf",
         "denominator": 1940400000,
         "yearOneObligations": 0.0,
-        "yearTwoObligations": 1387724417.43,
-        "cumulativeObligations": 1387724417.43,
-        "percent": 71.5174
+        "yearTwoObligations": 1970395759.11,
+        "cumulativeObligations": 1970395759.11,
+        "percent": 101.5459
       },
       {
         "slug": "da",
         "denominator": 1431000000,
         "yearOneObligations": 0.0,
-        "yearTwoObligations": 40108000.0,
-        "cumulativeObligations": 40108000.0,
-        "percent": 2.8028
+        "yearTwoObligations": 1426059999.05,
+        "cumulativeObligations": 1426059999.05,
+        "percent": 99.6548
       },
       {
         "slug": "ghp",
         "denominator": 3485450000,
         "yearOneObligations": 0.0,
-        "yearTwoObligations": 877019653.37,
-        "cumulativeObligations": 877019653.37,
-        "percent": 25.1623
+        "yearTwoObligations": 3424973458.26,
+        "cumulativeObligations": 3424973458.26,
+        "percent": 98.2649
       },
       {
         "slug": "aeeca",
         "denominator": 334000,
         "yearOneObligations": 0.0,
-        "yearTwoObligations": 0.0,
-        "cumulativeObligations": 0.0,
-        "percent": 0.0
+        "yearTwoObligations": 334000.0,
+        "cumulativeObligations": 334000.0,
+        "percent": 100.0
       },
       {
         "slug": "incle",
         "denominator": 1285000000,
         "yearOneObligations": 174159917.52,
-        "yearTwoObligations": 130226564.51,
-        "cumulativeObligations": 304386482.03,
-        "percent": 23.6877
+        "yearTwoObligations": 1136121419.59,
+        "cumulativeObligations": 1310281337.11,
+        "percent": 101.9674
       },
       {
         "slug": "nadr",
         "denominator": 870000000,
         "yearOneObligations": 43314688.61,
-        "yearTwoObligations": 425124911.4,
-        "cumulativeObligations": 468439600.01,
-        "percent": 53.8436
+        "yearTwoObligations": 837006139.65,
+        "cumulativeObligations": 880320828.26,
+        "percent": 101.1863
       },
       {
         "slug": "df",
         "denominator": 262200000,
         "yearOneObligations": 0.0,
-        "yearTwoObligations": 10009489.46,
-        "cumulativeObligations": 10009489.46,
-        "percent": 3.8175
+        "yearTwoObligations": 203235320.11,
+        "cumulativeObligations": 203235320.11,
+        "percent": 77.5116
       }
     ]
   },
